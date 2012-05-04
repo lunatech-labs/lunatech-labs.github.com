@@ -30,14 +30,16 @@
 	        <article class="research">
 	            <hgroup>
 	                <h1>{{ page.title }}</h1>
+	                {% if page.author %}
 	                <h5>By <a href="">{{ page.author }}</a> on {{ page.date | date: "%d %B %Y" }}</h5>
+	                {% endif %}
 	            </hgroup>
 	            <section class="summary">
 	            	<!-- CMS content -->
 		            <p>{{ page.summary }}</p>
 	            </section>
 	            <section class="bodytext">
-{{ content }}
+					{{ content }}
 	            </section>
 	            <section class="signature">
 		            <p>{{ page.signature }}</p>
