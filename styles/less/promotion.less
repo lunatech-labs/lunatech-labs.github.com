@@ -1,0 +1,139 @@
+/*  ###########################################################################
+    Author:     Lunatech Research
+    date:       August 2011
+    ########################################################################### */
+    
+		
+    .homepage  { 
+        background-image:       url(../images/backgrounds/mouse-click.jpg);
+        }
+        
+    @media screen and (color){
+        .homepage { 
+            background-image:       url(../images/backgrounds/noise.png),
+                                    url(../images/backgrounds/mouse-click.jpg);
+            }
+        }
+
+    .homepage .content {
+        padding: 0;
+        background: none;
+        .box-shadow(0,0,0,transparent);
+        }
+    .homepage .content article {
+        padding: 0;
+        }
+    .homepage .content .article-box {
+        float: none
+        padding: 0;
+        width: auto;
+        font-size: 0.9em;
+        color: @grey5;
+        background-color: @light-color;
+        .box-shadow(0,0,@l);
+        }    
+    .homepage .content .article-box .panneled{
+        float: left
+        margin: 0;
+        }    
+    .homepage .promo {
+        position: relative;
+        float: none;
+        width: auto;
+        margin-bottom: @em * 2;
+        .rounded-corners(@em/2);
+        overflow: hidden;
+        background: rgba(0,0,0,0.07);
+        }
+    .homepage .promo-tabs {
+        float: left;
+        margin-left: -39%;
+        padding: 0;
+        width: 33.3%;
+        height: 154px;
+        background-color: transparent;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-image: url(../images/promotion/glow-white.png)
+        }
+        
+    .promo-tabs div:hover {
+        cursor: pointer;
+        }
+    .promo .promo-tabs .active,
+    .promo-tabs .active:hover {
+        position: absolute;
+        top: -(@interline/2);
+        left: @em;
+        z-index: 0;
+        display: block;
+        margin: 0;
+        width: 33.3%;
+        height: 170px;
+        background-size: 65%;
+        cursor: default;
+        .transition(all 0.2s ease-in);
+        }
+    .promo-tabs h2 { display: none; }
+    .promo-tabs div {
+        position: absolute;
+        z-index: 42;
+        left: @block/2;
+        display: block;
+        width: @em * 2;
+        height: @em * 2;
+        background-color: transparent;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        .box-sizing(border-box);
+        overflow: hidden;
+       }
+    .promo-tabs div:first-child {
+        top: 0;
+        background-image: url(../images/promotion/beaker.png);
+        }
+    .promo-tabs div + div {
+        top: @em * 2;
+        background-image: url(../images/promotion/stock-photo-13485370-human-mind.png);
+        }
+    .promo-tabs div + div + div {
+        top: @em * 4;
+        background-image: url(../images/promotion/stock-photo-18965906-building-block.png);
+        }
+    .promo-tabs div + div + div + div {
+        top: @em *6;
+        background-image: url(../images/promotion/stock-illustration-11073999-green-check-button.png);
+        }
+    .promo-tabs .active h2{
+        color: @text-color;
+        }
+        
+    .promo .pane {
+        position: absolute;
+        right: 0;
+        display: block !important;
+        margin-right: 2%;
+        width:64%;
+        font-style: italic;
+        font-size: 1.1em;
+        font-family: @typeface-quote;
+        .box-sizing(border-box);
+        color: @blue1;
+        overflow: hidden;
+        .opacity(0);
+        .transition(color 1s ease-in);
+        .transition(opacity 1s ease-in);
+        }
+    .promo .pane[style *= 'block'] {
+        color: @text-color;
+        .opacity(1);
+        .transition(opacity 1s ease-out);
+        }
+    .promo h4 {
+        .h1;
+        padding: @interline/2 0 0;
+        line-height: 1;
+        }
+        

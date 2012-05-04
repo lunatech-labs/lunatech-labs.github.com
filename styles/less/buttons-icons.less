@@ -1,0 +1,156 @@
+/*  ###########################################################################
+    Author:     Lunatech Research
+    ########################################################################### */
+
+
+/*  Buttons */    
+
+
+    button, .button {
+        // see fancy buttons below for progressive enhancement
+        zoom: 1; 
+        margin: 0;
+        padding: @h 1em;
+        .rounded-corners();
+        border: 0; 
+        font-weight: bold;
+        font-size: 1em;
+        text-transform: uppercase;
+        text-shadow: 0 @l @l @light-color;
+        color: @text-color;
+        .gradient(lighten(@grey1,5%),@grey2);
+        cursor: pointer;
+        }
+        
+    .button[href],
+    .button[href]:visited,
+    .button[href]:active {
+        color: @text-color;
+        }    
+    .button[href]:hover {
+        color: @light-color;
+        }    
+    button:hover, .button:hover {
+        // see fancy buttons below for progressive enhancement
+        color: @light-color;
+        .gradient(lighten(@green1,20%),@green2);
+        border: @l solid @green2; 
+        text-shadow: 0 -(@l) @l darken(@green2,10%);
+        }
+        
+    button:before, .button:before,
+    button:after, .button:after {
+        margin-left: -0.2em;
+        margin-right: 0.2em;
+        padding-right: 0.2em;
+        //font-size: 1.45em;
+        //line-height: 0.2;
+        font-family: @typeface-icons;
+        overflow: visible;
+        text-transform: none;
+        color: @blue1;
+        }
+        
+    button:hover:before, .button:hover:before,
+    button:hover:after, .button:hover:after {
+        color: @blue2;
+        text-shadow: 0 @l @l lighten(@green1,10%);
+        }
+        
+
+/*  ICONS */
+
+    // main navigation
+    
+    header nav ul li a:before {
+        font-family: @typeface-icons;
+        padding-right: 0.5em;
+        }
+            
+    .home a:before {
+        .icon-home;
+        }    
+    .about a:before {
+        .icon-book;
+        }    
+    .contact a:before {
+        .icon-envelope;
+        }    
+    .events a:before {
+        .icon-calendar;
+        }    
+
+    .services a:before {
+        .icon-cog;
+        }    
+
+    .employment a:before {
+        .icon-pushpin;
+        }    
+
+
+
+    // FANCY BOX SHADOW BUTTONS ##############################
+    
+    @media screen and (color){
+        button, .button {
+            border-width: 0;
+            border-top: @l solid @light-color; 
+            border-bottom: @l solid @grey2; 
+            box-shadow: 0 0 0 @l @grey3;
+            }
+        button:hover, .button:hover {
+            border-width: 0;
+            border-top: @l solid lighten(@green1,30%); 
+            border-bottom: @l solid @green2; 
+            box-shadow: 0 0 0 @l @green2;
+            }
+        .delete:hover,
+        .cancel:hover {
+            border-width: 0;
+            border-top: @l solid lighten(@red1,25%);
+            border-bottom: @l solid @red2;
+            box-shadow: 0 0 0 @l @red2;
+            }   
+        
+        
+        /* legacy */
+        .ie9 {
+            .rounded-corners(4px);
+            display: block;
+            box-shadow: 0 0 0 @l @grey3;
+            overflow: hidden;
+            }
+        .ie9:hover {
+            box-shadow: 0 0 0 @l @green2;
+            }
+        .ie9 button:hover,
+        .ie9 .button:hover {
+            box-shadow: none;
+            }
+            
+        .ie9-danger:hover {
+            box-shadow: 0 0 0 @l @red2;
+            }
+        .ie9-danger button:hover,
+        .ie9-danger .button:hover {
+            box-shadow: none;
+            }
+            
+        .buttons .ie9 {
+            float: right;
+            margin-left: @em/3;
+            }
+            
+        .ie9 button,
+        .ie9 .button{
+            float: none;
+            display: block;
+            margin: 0;
+            padding: 0.2em 1em;
+            white-space: nowrap;
+            }    
+            
+        }
+        
+    // #######################################################
