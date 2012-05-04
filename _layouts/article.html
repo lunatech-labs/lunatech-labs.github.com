@@ -47,6 +47,12 @@
 				<p>Please send comments on this article to editorial@lunatech.com</p>
 	        </article>
             <aside>
+                <h3>Related</h3>
+                <ul>
+	            	{% for article in site.related_posts %}
+	            		<li><a href="{{ article.url }}">{{ article.title }}</a></li>
+	            	{% endfor %}
+                </ul>
             </aside>
         </section>
         <footer>
