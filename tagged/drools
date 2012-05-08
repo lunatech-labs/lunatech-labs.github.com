@@ -1,0 +1,7 @@
+---
+layout: tag
+title: Drools
+---
+{% for article in site.tags.Drools %}
+	{% include article.html %}
+{% endfor %}
