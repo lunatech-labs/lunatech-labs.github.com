@@ -1,1 +1,1 @@
-permalink: "/:categories/:title.html"
+permalink: ":categories/:title.html"

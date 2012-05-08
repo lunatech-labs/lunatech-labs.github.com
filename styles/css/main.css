@@ -1501,3 +1501,9 @@ aside h3 {
   padding: 0.5em 0 0;
   line-height: 1;
 }
+
+/* Peter's additions */
+.tag {
+	margin-left: 0.7em;
+	color:#999;
+}
