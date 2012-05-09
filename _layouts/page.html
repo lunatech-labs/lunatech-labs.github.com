@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{{ page.title }} - Lunatech</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>{{ page.title }} - Lunatech</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
         <meta name="viewport" content="width=device-width; initial-scale=1.0;">
         <link rel="stylesheet" type="text/css" media="screen" href="../styles/css/main.css">
@@ -51,7 +51,7 @@
                 <h3>Services</h3>
                 <ul>
 				{% for article in site.categories.services %}
-					<li><a href="../{{ article.url }}">{{ article.title }}</a></li>
+					<li><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
 				{% endfor %}
                 </ul>
             </aside>

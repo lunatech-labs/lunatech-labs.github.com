@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: page
 title: Publishing solutions
 summary: Lunatech has been assisting companies and government for years with their electronic publishing processes. Our consultants have broad knowledge of content integration and the technologies involved in constructing successful end-user products. Our domain knowledge in the field of legal publications is extensive.
 ---

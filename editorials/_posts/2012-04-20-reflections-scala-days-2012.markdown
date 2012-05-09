@@ -1,11 +1,11 @@
 ---
 layout: article
-permalink: 2012/04/20/reflections-scala-days-2012.html
+permalink: archives/2012/04/20/reflections-scala-days-2012.html
 title: Reflections on Scala Days 2012
 tags: playframework scala
 author: Erik Bakker
 signature: Erik Bakker is a software developer at Lunatech Research and co-author of the book ‘Play for Scala’
-summary: This week was the week of Scala Days 2012. Rainy London was the stage for almost two full days of Scala talks, discussions, meets and greets with the people you know mostly by their Twitter name and chats with other Scala developers.
+summary: This week was the week of [Scala Days 2012](http://days2012.scala-lang.org/). Rainy London was the stage for almost two full days of Scala talks, discussions, meets and greets with the people you know mostly by their Twitter name and chats with other Scala developers.
 ---
 
 

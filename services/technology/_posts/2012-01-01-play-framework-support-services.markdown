@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: page
 title: Play framework support services
 categories: [technology]
 ---

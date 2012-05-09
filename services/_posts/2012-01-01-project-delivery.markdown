@@ -1,5 +1,5 @@
 ---
-layout: service
+layout: page
 title: Project delivery
 summary: Lunatech has a long track record of successful project delivery, based on small and effective teams of self-managing software developers. Our senior developers combine their technical expertise with technical project management experience, which allows Lunatech to deliver projects more efficiently, with less management overhead.
 ---

@@ -21,10 +21,10 @@ categories: [Publishing, Logistics, Technology]
         <header>
 	        <nav>
 	            <ul>
-	                <li class="home"><a href="index.html">Home</a></li>
+	                <li class="home"><a href="index">Home</a></li>
 	                <li class="services active"><a>Services</a></li>
-	                <li class="about"><a href="about.html">About</a></li>
-	            	<li class="contact"><a href="form.html">Contact</a></li>
+	                <li class="about"><a href="about">About</a></li>
+	            	<li class="contact"><a href="form">Contact</a></li>
 	            	<li class="employment"><a href="/jobs/">Jobs</a></li>
 	            </ul>
 	        </nav>
@@ -40,8 +40,8 @@ categories: [Publishing, Logistics, Technology]
 	            <section class="bodytext">
 	            	<!-- CMS content -->
 	            	{% for article in site.categories.editorials %}
-	            		<p><a href="../{{ article.url }}">{{ article.title }}</a>
-	            		<br>{{ article.summary }}</p>
+	            		<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            		{{ article.summary | markdownify }}
 	            	{% endfor %}
 	            </section>
 	        </article>

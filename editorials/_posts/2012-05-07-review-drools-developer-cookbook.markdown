@@ -1,11 +1,11 @@
 ---
 layout: article
-permalink: 2012/05/07/review-drools-developer-cookbook.html
+permalink: archives/2012/05/07/review-drools-developer-cookbook.html
 title: Review - Drools Developer’s Cookbook
 tags: drools
 author: Peter Hilton
-signature: Peter Hilton is a senior software developer at Lunatech Research, committer on the Play open-source project and co-author of the book Play for Scala.
-summary: This article is a review of Drools Developer’s Cookbook , a new book by Lucas Amador from Pack Publishing’s Open Source brand, based on Drools 5.2.0-Final.
+signature: Peter Hilton is a senior software developer at Lunatech Research, committer on the Play open-source project and co-author of the book [Play for Scala](http://bit.ly/playforscala).
+summary: This article is a review of [Drools Developer’s Cookbook](http://www.packtpub.com/drools-developers-using-jboss-cookbook/book), a new book from Pack Publishing’s Open Source brand by [Lucas Amador](http://lucazamador.wordpress.com/), based on Drools 5.2.0-Final.
 ---
 
 **Despite issues with the cookbook format, this is a useful book full of rich technical content: recommended for any Java developer working on a JBoss Rules implementation project.**
