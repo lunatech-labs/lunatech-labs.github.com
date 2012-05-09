@@ -2,7 +2,7 @@
 layout: article
 permalink: 2012/05/07/review-drools-developer-cookbook.html
 title: Review - Drools Developer’s Cookbook
-tags: Drools
+tags: drools
 author: Peter Hilton
 signature: Peter Hilton is a senior software developer at Lunatech Research, committer on the Play open-source project and co-author of the book Play for Scala.
 summary: This article is a review of Drools Developer’s Cookbook , a new book by Lucas Amador from Pack Publishing’s Open Source brand, based on Drools 5.2.0-Final.
