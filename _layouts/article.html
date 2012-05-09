@@ -64,7 +64,7 @@
                 <h3>Related articles</h3>
                 <ul>
 	            	{% for article in site.related_posts %}
-	            		<li><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+	            		<li><a href="../../../../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
 	            	{% endfor %}
                 </ul>
             </aside>
