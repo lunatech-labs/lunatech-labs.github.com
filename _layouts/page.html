@@ -19,6 +19,7 @@
 	            <ul>
 	                <li class="home"><a href="../index.html">Home</a></li>
 	                <li class="services active"><a>Services</a></li>
+	                <li class="about"><a href="../editorials/">Editorials</a></li>
 	                <li class="about"><a href="../about.html">About</a></li>
 	            	<li class="contact"><a href="../contact.html">Contact</a></li>
 	            	<li class="employment"><a href="/jobs/">Jobs</a></li>
@@ -34,7 +35,7 @@
 	                <h5>
 	                	By <a href="">{{ page.author }}</a> on {{ page.date | date: "%d %B %Y" }}
 						{% for tag in page.tags %}
-							<a class="tag" href="../tagged/{{ tag }}.html">#{{ tag }}</a>
+							<a class="tag" href="../editorials/tags/{{ tag }}.html">#{{ tag }}</a>
 						{% endfor %}
 	                </h5>
 	                {% endif %}
