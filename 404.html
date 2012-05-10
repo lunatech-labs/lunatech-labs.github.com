@@ -1,0 +1,61 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lunatech</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/css/main.css">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" data-main="scripts/init" src="scripts/require-jquery.js"></script>
+        <meta name="description" content="Our technology experts provide architecture and software development services in several industries, including logistics and transportation, and publishing." />
+    </head>
+    <body class="homepage">
+        
+        <header>
+	        <nav>
+	            <ul>
+	                <li class="home "><a href="index">Home</a></li>
+	                <li class="services "><a href="services/">Services</a></li>
+	                <li class="about"><a href="editorials">Editorials</a></li>
+	                <li class="about"><a href="about">About</a></li>
+	            	<li class="contact"><a href="contact">Contact</a></li>
+	            	<li class="employment"><a href="jobs">Jobs</a></li>
+	            </ul>
+	        </nav>
+        </header>
+        
+        <section class="content">
+			<h1>Not found</h1>
+			<p>The requested page could not be found - we probably broke a link. Sorry about that.</p>
+            <article class="article-box" style="width:100%">
+                <section class="panelled">
+                    <h3>All pages</h3>
+	            	{% for article in site.posts %}
+	            		<p><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            	{% endfor %}
+                </section>
+                <section class="panelled">
+                    <h3>Lunatech services</h3>
+	            	{% for article in site.categories.services %}
+	            		<p><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            	{% endfor %}
+                </section>
+                <section class="panelled">
+                    <h3>Events</h3>
+	            	{% for article in site.tags.event %}
+	            		<p><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            	{% endfor %}
+                </section>
+            </article>
+        </section>
+        <footer>
+            <p>Copyright &copy; 2005-2012, Lunatech Research B.V. All rights reserved.</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,5 +1,6 @@
 ---
 layout: page
+path_prefix: ../
 title: Logistics solutions
 level: top
 summary: Lunatech Labs has more than ten years of experience in the logistics world, supplying IT solutions for Lead Logistics Providers. Our strength is the operational process experience that we have built up over the years, integrating third-parties such as carriers and brokers, and taking on operational support of the IT solutions and logistics applications that we deliver.

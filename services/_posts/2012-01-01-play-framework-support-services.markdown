@@ -1,5 +1,7 @@
 ---
 layout: page
+path_prefix: ../
+depth: 1
 title: Play framework support services
 categories: [technology]
 ---
@@ -18,6 +20,8 @@ Play offers flexibility and agility in the Java world. The goal of this training
 
 This intermediate-level two-day training course targets developers and architects who want to learn more about the specifics and internals of the framework. Java and web development knowledge is a pre-requisite.
 
+[Learn More](play-framework-technical-training)
+
 ## Support
 
 We can provide expert developer support for the Play framework, with an SLA for developer questions, framework bug fixing and enhancements. Contact us for more information.
@@ -27,3 +31,5 @@ We can develop custom Play modules, as well as enhancements to the framework its
 ## Books
 
 Alternatively, buy the book! Our Play experts are sharing their knowledge in two Play framework books for Manning Publications.
+
+[Learn More](/books)
