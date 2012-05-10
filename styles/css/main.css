@@ -1507,6 +1507,16 @@ aside h3 {
 	margin-left: 0.7em;
 	color:#999;
 }
+article {
+	margin-top:1em;
+}
+.article p:first-child {
+	font-weight:bold;
+}
+.article p {
+	margin-top:0;
+	margin-bottom:0;
+}
 
 /* Pygments */
 .highlight .hll { background-color: #ffffcc }
