@@ -33,7 +33,7 @@
 	                <h1>{{ page.title }}</h1>
 	                {% if page.author %}
 	                <h5>
-	                	By <a href="">{{ page.author }}</a> on {{ page.date | date_to_long_string }}
+	                	By <a href="/users/{{ page.author | downcase | replace:' ','-' }}">{{ page.author }}</a> on {{ page.date | date_to_long_string }}
 						{% for tag in page.tags %}
 							<a class="tag" href="/editorials/tags/{{ tag }}">#{{ tag }}</a>
 						{% endfor %}
@@ -53,13 +53,11 @@
 				<p>Please send comments on this article to editorial@lunatech.com</p>
 	        </article>
             <aside>
-                <h3>Tags</h3>
+                <h3>Articles by tag</h3>
                 <ul>
-            		<li><a href="/editorials/tags/drools">Drools</a></li>
-            		<li><a href="/editorials/tags/event">Event</a></li>
-            		<li><a href="/editorials/tags/jpa">JPA</a></li>
-            		<li><a href="/editorials/tags/playframework">playframework</a></li>
-            		<li><a href="/editorials/tags/scala">Scala</a></li>
+	            	{% for article in site.categories.tags %}
+	            		<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+	            	{% endfor %}
                 </ul>
                 <h3>Related articles</h3>
                 <ul>

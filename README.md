@@ -1,15 +1,20 @@
 # lunatech-labs.github.com - GitHub pages prototype
 
-## Basics
+## Jekyll basics
 
 * Generated files can be viewed locally with working CSS and JavaScripts.
 * Generated files contain links with absolute URLs that only work online.
 * Files and directories whose names don’t start with an underscore are copied to the generated site.
 * Files that start with a [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) section are processed by the [Liquid templating system](https://github.com/shopify/liquid/wiki/liquid-for-designers) and have [Jekyll template data](https://github.com/mojombo/jekyll/wiki/template-data) available.
 * `_posts` files specify their target URL with a `permalink` variable.
+* `_posts` file names must have the format `yyyy-MM-dd-title.html`
 * Other generated pages URLs are determined by the `permalink` variable in `_config.yml`.
-* A page’s category is the name of its parent directory (e.g. ‘services’)
+* A post’s categories are the names of its parent directories (e.g. ‘services’)
 * Markdown files are rendered as HTML.
+
+## Site set-up
+
+* Editorials don’t have any categories.
 * Generated files have `.html` extensions, but the site (and its links) uses URLs without an extension (which presumably works because of the Github Pages web server configuration).
 
 ## Files
@@ -30,4 +35,4 @@ See also: [Jekyll usage - basic structure](https://github.com/mojombo/jekyll/wik
 
 `archives/` - static files (attachments) for editorials, in the generated URL structure
 
-`editorials/tags/` - browse-by-tag pages - these could generated from the `tags` variables in the articles front-matter sections
+`editorials/tags/_posts/` - Browse-by-tag pages - these could generated from the `tags` variables in the articles front-matter sections. These need to be in a `_posts` directory, so that they have the category `tags` from the parent directory, used to generate site tags lists.

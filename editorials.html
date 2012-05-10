@@ -38,45 +38,25 @@ categories: [Publishing, Logistics, Technology]
 	            </hgroup>
 	            <section class="bodytext">
 	            	<!-- CMS content -->
-	            	{% for article in site.categories.editorials %}
-	            		<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
-	            		{{ article.summary | markdownify }}
+	            	{% for article in site.posts %}
+	            		{% if article.categories == empty %}
+							<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+							{{ article.summary | markdownify }}
+	            		{% endif %}
 	            	{% endfor %}
 	            </section>
 	        </article>
             <aside>
+                <h3>Articles by tag</h3>
+                <ul>
+	            	{% for article in site.categories.tags | sort %}
+	            		<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+	            	{% endfor %}
+                </ul>
             </aside>
         </section>
-        <footer>
-			<article class="article-box">
-                <section class="panelled">
-                    <h4>About Lunatech</h4>
-                    <p>Lunatech Research was founded in 1993 as an IT consulting, product research and development team. Lunatech is a team of adept self-managing architects and programmers, working with a very experienced commercial team.</p>
-                </section>
-                <section class="panelled">
-					<h4>Lunatech Research B.V.</h4>
-					<p>
-						Heemraadssingel 70 <br/>
-						3021 DD Rotterdam, <br/>
-						The Netherlands
-					</p>
-					<p>
-						Tel: +31 10 750 2600<br/>
-						Fax: +31 10 243 9902<br/>
-						Email: contact@lunatech.com
-					</p>
-                </section>
-                <section class="panelled">
-                    <h4>Partners websites</h4>
-                    <ul>
-                        <li><a href="">Lunatech Ventures</a></li>
-                        <li><a href="">Minoto Video</a></li>
-                        <li><a href="">4wayGolf</a></li>
-                    </ul>
-                </section>
-			</article>
-            <p>Copyright &copy; 2005-2011, Lunatech Research B.V. All rights reserved.</p>
-        </footer>
+
+       	{% include footer.html %}
         
     </body>
 </html>
