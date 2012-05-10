@@ -1507,7 +1507,7 @@ aside h3 {
 	margin-left: 0.7em;
 	color:#999;
 }
-article {
+.article {
 	margin-top:1em;
 }
 .article p:first-child {
