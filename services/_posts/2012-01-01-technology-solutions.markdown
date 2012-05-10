@@ -10,13 +10,13 @@ summary: We believe technology does make a difference in creating successful web
 
 The Play framework represents a new approach to building Java web applications that challenges Java EE’s conventions and complexity, reducing time needed to build scalable web applications. Play! offers many of PHP’s advantages, while using the Java language and offering full access to the stability of established Java libraries. We are active contributors to the framework, offering a high level of expertise.
 
-[Read More](images/play-framework-support-services)
+[Read More](play-framework-support-services)
 
 ![jBPM](images/jbpm.png)
 
 For modeling and automating complex business processes we use JBoss Rules (Drools) or jBPM (JBoss Business Process Management). Each of these frameworks provides powerful tools that enable IT projects to manage the business logic embedded in software applications, making it possible to develop, test and maintain the software more effectively at lower cost.
 
-[Read More](images/jboss-rules-implementation)
+[Read More](jboss-rules-implementation)
 
 ![Scala](images/scala.png)
 
