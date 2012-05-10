@@ -2,7 +2,7 @@
 
 ## Jekyll basics
 
-* To generate the site locally, install and Jekyll with `sudo gem install jekyll` and `jekyll --pygments --safe`
+* To generate the site locally, install and run Jekyll with `sudo gem install jekyll` and `jekyll --pygments --safe`
 * Generated files can be viewed locally with working CSS and JavaScripts.
 * Generated files contain links with absolute URLs that only work online.
 * Files and directories whose names don’t start with an underscore are copied to the generated site.
