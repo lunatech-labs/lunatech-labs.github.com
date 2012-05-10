@@ -1,0 +1,84 @@
+---
+title: Services
+categories: [Publishing, Logistics, Technology]
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lunatech: editorials</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="stylesheet" type="text/css" media="screen" href="../styles/css/main.css">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" data-main="../scripts/init" src="../scripts/require-jquery.js"></script>
+        <meta name="description" content="Our technology experts provide architecture and software development services in several industries, including logistics and transportation, and publishing." />
+    </head>
+    <body>
+        
+        <header>
+	        <nav>
+	            <ul>
+	                <li class="home"><a href="/index">Home</a></li>
+	                <li class="services"><a href="services/">Services</a></li>
+	                <li class="about active"><a>Editorials</a></li>
+	                <li class="about"><a href="/about">About</a></li>
+	            	<li class="contact"><a href="/contact">Contact</a></li>
+	            	<li class="employment"><a href="/jobs">Jobs</a></li>
+	            </ul>
+	        </nav>
+        </header>
+        
+        <section class="content">
+	        <article class="research">
+	            <hgroup>
+	                <h1>Editorials</h1>
+	            </hgroup>
+	            <section class="summary">
+	            </section>
+	            <section class="bodytext">
+	            	<!-- CMS content -->
+	            	{% for article in site.categories.editorials %}
+	            		<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            		{{ article.summary | markdownify }}
+	            	{% endfor %}
+	            </section>
+	        </article>
+            <aside>
+            </aside>
+        </section>
+        <footer>
+			<article class="article-box">
+                <section class="panelled">
+                    <h4>About Lunatech</h4>
+                    <p>Lunatech Research was founded in 1993 as an IT consulting, product research and development team. Lunatech is a team of adept self-managing architects and programmers, working with a very experienced commercial team.</p>
+                </section>
+                <section class="panelled">
+					<h4>Lunatech Research B.V.</h4>
+					<p>
+						Heemraadssingel 70 <br/>
+						3021 DD Rotterdam, <br/>
+						The Netherlands
+					</p>
+					<p>
+						Tel: +31 10 750 2600<br/>
+						Fax: +31 10 243 9902<br/>
+						Email: contact@lunatech.com
+					</p>
+                </section>
+                <section class="panelled">
+                    <h4>Partners websites</h4>
+                    <ul>
+                        <li><a href="">Lunatech Ventures</a></li>
+                        <li><a href="">Minoto Video</a></li>
+                        <li><a href="">4wayGolf</a></li>
+                    </ul>
+                </section>
+			</article>
+            <p>Copyright &copy; 2005-2011, Lunatech Research B.V. All rights reserved.</p>
+        </footer>
+        
+    </body>
+</html>
