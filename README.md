@@ -24,8 +24,6 @@ See also: [Jekyll usage - basic structure](https://github.com/mojombo/jekyll/wik
 
 `archives/` - static files (attachments) for editorials, in the generated URL structure
 
-`editorials/_posts` - articles in Markdown format
-
-`editorials/index.html` - index page that includes a list of articles
+`_posts` - articles in Markdown format
 
 `editorials/tags/` - browse-by-tag pages - these could generated from the `tags` variables in the articles front-matter sections
