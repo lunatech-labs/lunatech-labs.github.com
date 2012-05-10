@@ -7,7 +7,7 @@ summary: From application design, development or prototyping, through database, 
 ---
 {% for article in site.categories.services %}
 	{% if article.level == "top" %}
-	<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a>
-	<br>{{ article.summary }}</p>
+	<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	{{ article.summary | markdownify }}
 	{% endif %}
 {% endfor %}
