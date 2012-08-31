@@ -1,4 +1,6 @@
-# lunatech-labs.github.com - GitHub pages prototype
+# www.lunatech-research.com GitHub Pages migration
+
+This repository is the [GitHub Pages](http://pages.github.com) site for http://www.lunatech-research.com/. GitHub Pages is based on Jekyll, a site generator written in Ruby.
 
 ## Jekyll basics
 
@@ -15,8 +17,9 @@
 
 ## Site set-up
 
-* Editorials don’t have any categories.
+* Page URLs are based on Jekyll ‘categories’, which are inferred from sub-directory names, and defined in `_config.yml`.
 * Generated files have `.html` extensions, but the site (and its links) uses URLs without an extension (which presumably works because of the Github Pages web server configuration).
+* Editorials at `/archives/` are a separate GitHub Pages site at [lunatech-labs/archives](https://github.com/lunatech-labs/archives).
 
 ## Files
 
@@ -28,12 +31,10 @@ See also: [Jekyll usage - basic structure](https://github.com/mojombo/jekyll/wik
 
 `_layouts/` - page layout templates specified by the [front-matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) `layout` variable
 
-`_posts` - articles in Markdown format
-
 `_site` - the generated static web site
 
 `404.html` - page served with an HTTP 404 Not Found response
 
-`archives/` - static files (attachments) for editorials, in the generated URL structure
+## To do
 
-`editorials/tags/_posts/` - Browse-by-tag pages - these could generated from the `tags` variables in the articles front-matter sections. These need to be in a `_posts` directory, so that they have the category `tags` from the parent directory, used to generate site tags lists.
+* Document the static page publishing process.
