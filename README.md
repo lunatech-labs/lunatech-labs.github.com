@@ -6,18 +6,17 @@ This repository is the [GitHub Pages](http://pages.github.com) site for http://w
 
 * To generate the site locally, install and run Jekyll with `sudo gem install jekyll` and `jekyll --pygments --safe`
 * Generated files can be viewed locally with working CSS and JavaScripts.
-* Generated files contain links with absolute URLs that only work online.
+* Generated files contain links with absolute URLs (without the `.html` suffix) that only work on-line.
 * Files and directories whose names don’t start with an underscore are copied to the generated site.
 * Files that start with a [YAML Front-Matter](https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) section are processed by the [Liquid templating system](https://github.com/shopify/liquid/wiki/liquid-for-designers) and have [Jekyll template data](https://github.com/mojombo/jekyll/wiki/template-data) available.
-* `_posts` files specify their target URL with a `permalink` variable.
+* `_posts` files may specify their target URL with a `permalink` variable.
 * `_posts` file names must have the format `yyyy-MM-dd-title.html`
-* Other generated pages URLs are determined by the `permalink` variable in `_config.yml`.
+* Other generated pages’ URLs are determined by the `permalink` variable in `_config.yml`, which may use categories.
 * A post’s categories are the names of its parent directories (e.g. ‘services’)
 * Markdown files are rendered as HTML.
 
 ## Site set-up
 
-* Page URLs are based on Jekyll ‘categories’, which are inferred from sub-directory names, and defined in `_config.yml`.
 * Generated files have `.html` extensions, but the site (and its links) uses URLs without an extension (which presumably works because of the Github Pages web server configuration).
 * Editorials at `/archives/` are a separate GitHub Pages site at [lunatech-labs/archives](https://github.com/lunatech-labs/archives).
 
