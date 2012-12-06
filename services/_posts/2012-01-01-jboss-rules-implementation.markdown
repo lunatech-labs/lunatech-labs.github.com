@@ -1,12 +1,12 @@
 ---
+title: JBoss Rules implementation
 layout: page
 path_prefix: ../
-title: JBoss Rules implementation
 level: top
 summary: The [JBoss Rules](http://www.jboss.org/drools/) business rules platform (also known as Drools), part of the [JBoss Enterprise Business Rules Management System](http://www.jboss.com/products/platforms/brms/) is a powerful system built around a sophisticated rules engine. This platform can enable IT projects to reach a new level of sophistication in their ability to manage the business logic embedded in software applications, making it possible to develop, test and maintain the software more effectively and lower cost.
 ---
 
-As with other modern application frameworks, such as [Seam](http://www.lunatech-research.com/content/seam-development), organisations who introduce this technology discover that these benefits come at the cost of a paradigm shift in software design that results in a steep learning curve for the development team, and increased project risk.
+As with other modern application frameworks, such as [Seam](/content/seam-development), organisations who introduce this technology discover that these benefits come at the cost of a paradigm shift in software design that results in a steep learning curve for the development team, and increased project risk.
 
 ## JBoss Rules implementation projects and consultancy
 

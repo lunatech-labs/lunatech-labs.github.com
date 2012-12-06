@@ -1,6 +1,6 @@
 # www.lunatech-research.com GitHub Pages migration
 
-This repository is the [GitHub Pages](http://pages.github.com) site for http://www.lunatech-research.com/. GitHub Pages is based on Jekyll, a site generator written in Ruby.
+This repository is the [GitHub Pages](http://pages.github.com) site for /. GitHub Pages is based on Jekyll, a site generator written in Ruby.
 
 ## Jekyll basics
 

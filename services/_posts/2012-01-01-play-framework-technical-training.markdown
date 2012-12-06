@@ -3,7 +3,7 @@ layout: page
 path_prefix: ../
 title: Play Framework Technical Training
 level: top
-summary: This course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises.
+summary: This Play 1.2.x course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises.
 sidebar: |
     ### Course details
     

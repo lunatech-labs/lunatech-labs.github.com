@@ -4,6 +4,7 @@ path_prefix: ../
 depth: 1
 title: Play framework support services
 categories: [technology]
+summary: Lunatech provides consultancy, training and support, to help you with your Play projects.
 ---
 
 ## Consultancy

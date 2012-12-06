@@ -1,0 +1,11 @@
+---
+layout: page
+path_prefix: ../
+title: Jobs - employment at Lunatech
+---
+{% for article in site.categories.jobs %}
+	{% if article.level == "top" %}
+	<p><a href="../{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	{{ article.summary | markdownify }}
+	{% endif %}
+{% endfor %}

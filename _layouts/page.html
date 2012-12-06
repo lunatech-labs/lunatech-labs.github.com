@@ -15,14 +15,17 @@
     <body>
         
         <header>
+			{% for c in page.categories %}
+				{% assign selected = c %}
+			{% endfor %}
 	        <nav>
 	            <ul>
 	                <li class="home"><a href="/">Home</a></li>
-	                <li class="services active"><a>Services</a></li>
-	                <li class="about"><a href="/archives/">Editorials</a></li>
-	                <li class="about"><a href="/about">About</a></li>
+	                <li class="services{% if selected == 'services' %} active{% endif %}"><a>Services</a></li>
+	                <li class="archives"><a href="/archives/">Editorials</a></li>
+	                <li class="about{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
 	            	<li class="contact"><a href="/contact">Contact</a></li>
-	            	<li class="employment"><a href="/jobs">Jobs</a></li>
+	            	<li class="employment{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li>
 	            </ul>
 	        </nav>
         </header>
@@ -41,7 +44,6 @@
 	                {% endif %}
 	            </hgroup>
 	            <section class="summary">
-	            	<!-- CMS content -->
 		            {{ page.summary | markdownify }}
 	            </section>
 	            <section class="bodytext">
@@ -50,12 +52,37 @@
 	        </article>
             <aside>
 				{{ page.sidebar | markdownify }}
-                <h3>Lunatech Services</h3>
-                <ul>
-				{% for article in site.categories.services %}
-					<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+				
+				{% for category in page.categories %}
+					{% if category == 'about' %}
+						<h3>More about Lunatech</h3>
+						<ul>
+						{% for article in site.categories.about reversed %}
+							<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+						{% endfor %}
+						</ul>
+					{% endif %}
 				{% endfor %}
-                </ul>
+				{% for category in page.categories %}
+					{% if category == 'jobs' %}
+						<h3>Job vacancies</h3>
+						<ul>
+						{% for article in site.categories.jobs reversed %}
+							<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+						{% endfor %}
+						</ul>
+					{% endif %}
+				{% endfor %}
+				{% for category in page.categories %}
+					{% if category == 'services' %}
+						<h3>Lunatech Services</h3>
+						<ul>
+						{% for article in site.categories.services reversed %}
+							<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+						{% endfor %}
+						</ul>
+					{% endif %}
+				{% endfor %}
             </aside>
         </section>
        	{% include footer.html %}
