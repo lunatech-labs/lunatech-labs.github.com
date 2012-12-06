@@ -25,13 +25,13 @@
 	                <li class="archives"><a href="/archives/">Editorials</a></li>
 	                <li class="about{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
 	            	<li class="contact{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
-	            	<li class="employment{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li>
+	            	<li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li>
 	            </ul>
 	        </nav>
         </header>
         
         <section class="content">
-	        <article class="research">
+	        <article class="{{ page.categories }}">
 	            <hgroup>
 	                <h1>{{ page.title }}</h1>
 	                {% if page.author %}

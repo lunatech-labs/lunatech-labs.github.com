@@ -950,6 +950,26 @@ body > header {
   padding-left: 42px;
   background: transparent url(../images/icons/lunatech-plant-38px.png) no-repeat 0 0;
 }
+.content .jobs hgroup:before {
+  position: absolute;
+  top: 0.125em;
+  left: -1.5400000000000003em;
+  margin: 0;
+  content: "\f08d";
+  font-size: 1.6800000000000002em;
+  font-family: "FontAwesome";
+  color: #adadad;
+}
+.content .services hgroup:before {
+  position: absolute;
+  top: 0.125em;
+  left: -1.5400000000000003em;
+  margin: 0;
+  content: "\f013";
+  font-size: 1.6800000000000002em;
+  font-family: "FontAwesome";
+  color: #adadad;
+}
 .content .contact hgroup:before {
   position: absolute;
   top: 0.125em;
@@ -1218,7 +1238,7 @@ header nav ul li a:before {
 .services a:before {
   content: "\f013";
 }
-.employment a:before {
+.jobs a:before {
   content: "\f08d";
 }
 @media screen and (color) {
