@@ -33,62 +33,44 @@
 /*  Font elements ------------------------------------------------------------- */
 @font-face {
   font-family: 'PTSerif';
-  src: url('../fonts/PTF55F-webfont.woff') format('woff');
+  src: url('../fonts/PTF55F-webfont.eot');
+  src: url('../fonts/PTF55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTF55F-webfont.woff') format('woff'), url('../fonts/PTF55F-webfont.ttf') format('truetype'), url('../fonts/PTF55F-webfont.svg#PTSerifRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PTSerif';
-  src: url('../fonts/PTF56F-webfont.woff') format('woff');
+  src: url('../fonts/PTF56F-webfont.eot');
+  src: url('../fonts/PTF56F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTF56F-webfont.woff') format('woff'), url('../fonts/PTF56F-webfont.ttf') format('truetype'), url('../fonts/PTF56F-webfont.svg#PTSerifItalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'PTSerif';
-  src: url('../fonts/PTF75F-webfont.woff') format('woff');
+  src: url('../fonts/PTF75F-webfont.eot');
+  src: url('../fonts/PTF75F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTF75F-webfont.woff') format('woff'), url('../fonts/PTF75F-webfont.ttf') format('truetype'), url('../fonts/PTF75F-webfont.svg#PTSerifBold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'PTSerif';
-  src: url('../fonts/PTF76F-webfont.woff') format('woff');
+  src: url('../fonts/PTF76F-webfont.eot');
+  src: url('../fonts/PTF76F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTF76F-webfont.woff') format('woff'), url('../fonts/PTF76F-webfont.ttf') format('truetype'), url('../fonts/PTF76F-webfont.svg#PTSerifBoldItalic') format('svg');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'PTSerifCaption';
-  src: url('../fonts/PTZ55F-webfont.woff') format('woff');
+  src: url('../fonts/PTZ55F-webfont.eot');
+  src: url('../fonts/PTZ55F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTZ55F-webfont.woff') format('woff'), url('../fonts/PTZ55F-webfont.ttf') format('truetype'), url('../fonts/PTZ55F-webfont.svg#PTSerifCaptionRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'PTSerifCaption';
-  src: url('../fonts/PTZ56F-webfont.woff') format('woff');
+  src: url('../fonts/PTZ56F-webfont.eot');
+  src: url('../fonts/PTZ56F-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/PTZ56F-webfont.woff') format('woff'), url('../fonts/PTZ56F-webfont.ttf') format('truetype'), url('../fonts/PTZ56F-webfont.svg#PTSerifCaptionItalic') format('svg');
   font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-Bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/OpenSans-BoldItalic-webfont.woff') format('woff');
-  font-weight: bold;
   font-style: italic;
 }
 /*  TYPOGRAPHIC FONT SCALE (DO NOT EDIT) ----------------------------------------- */
@@ -145,7 +127,7 @@ body {
   font-weight: normal;
   font-size: 100%;
   line-height: 1.6;
-  font-family: "PTSerif", Georgia, Times, serif;
+  font-family: "PTSerif", Georgia, serif;
   text-rendering: optimizeLegibility;
 }
 ul,
@@ -192,7 +174,7 @@ hgroup {
 blockquote {
   text-align: left;
   font-style: italic;
-  font-family: "PTSerifCaption", Georgia, Times, serif;
+  font-family: "PTSerifCaption", Times, serif;
 }
 blockquote:before,
 blockquote:after,
@@ -217,37 +199,37 @@ q {
     */
 .h0 {
   margin: 0.5em 0;
-  font: normal normal normal 2.9699999999999998em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 2.9699999999999998em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1,
 .h1 {
   margin: 0.5em 0;
-  font: normal normal normal 1.9799999999999998em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 1.9799999999999998em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h2,
 .h2 {
   margin: 0.5em 0;
-  font: normal normal normal 1.7325em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 1.7325em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h3,
 .h3 {
   margin: 0.5em 0;
-  font: normal normal normal 1.4849999999999999em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 1.4849999999999999em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h4,
 .h4 {
   margin: 0.5em 0;
-  font: normal normal normal 1.1549999999999998em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 1.1549999999999998em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h5,
 .h5 {
   margin: 0.5em 0;
-  font: normal normal normal 0.9899999999999999em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.9899999999999999em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h6,
 .h6 {
   margin: 0.5em 0;
-  font: normal normal normal 0.9075em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.9075em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /*  Heading groups ------------------------------------------------------------ */
 hgroup .h0,
@@ -1165,21 +1147,21 @@ body:before {
   height: 6em;
   overflow: hidden;
   background: #d8ddde;
-  background-color: #e3e7e7;
-  background-image: -webkit-linear-gradient(top, #e3e7e7 0%, #cad1d2 100%);
-  background-image: -moz-linear-gradient(top, #e3e7e7 0%, #cad1d2 100%);
+  background-color: #eef0f1;
+  background-image: -webkit-linear-gradient(top, #eef0f1 0%, #cad1d2 100%);
+  background-image: -moz-linear-gradient(top, #eef0f1 0%, #cad1d2 100%);
   /* firefox */
 
-  background-image: -ms-linear-gradient(top, #e3e7e7 0%, #cad1d2 100%);
+  background-image: -ms-linear-gradient(top, #eef0f1 0%, #cad1d2 100%);
   /* ie10 */
 
-  background-image: -o-linear-gradient(top, #e3e7e7 0%, #cad1d2 100%);
+  background-image: -o-linear-gradient(top, #eef0f1 0%, #cad1d2 100%);
   /* opera */
 
-  background-image: linear-gradient(top, #e3e7e7 0%, #cad1d2 100%);
+  background-image: linear-gradient(top, #eef0f1 0%, #cad1d2 100%);
   /* w3c */
 
-  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr=#e3e7e7 , EndColorStr=#cad1d2,GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.Gradient( StartColorStr=#eef0f1 , EndColorStr=#cad1d2,GradientType=0 );
   /* ie */
 
 }
@@ -1195,7 +1177,6 @@ body:before {
   height: 6em;
   font-size: 1em;
   line-height: normal;
-  background-color: #3c4648;
   background-color: #546163;
   background-image: -webkit-linear-gradient(top, #546163 0%, #3c4648 100%);
   background-image: -moz-linear-gradient(top, #546163 0%, #3c4648 100%);
@@ -1227,6 +1208,13 @@ body:before {
     background-size: 180px;
   }
 }
+.site:not(.homepage) #masthead .logo {
+  -webkit-box-shadow: inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5);
+  -ms-box-shadow: inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5);
+  -o-box-shadow: inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: inset -2px -2px 4px 0 rgba(0, 0, 0, 0.5);
+}
 #masthead nav {
   text-shadow: 0 1px 1px #ffffff;
 }
@@ -1245,7 +1233,7 @@ body:before {
 #masthead .menu a {
   display: inline-block;
   padding: 1em 16.666666666666668px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #252b2c;
 }
 #masthead .menu a:hover {
@@ -1282,23 +1270,15 @@ body:before {
   box-sizing: border-box;
   display: inline-block;
   padding: 1em;
-  margin-top: 0;
   float: left;
   width: 75%;
   max-width: 38em;
   overflow: visible;
 }
-#content article h2,
-#content article h3,
-#content article h4,
-#content article h5,
-#content article h6 {
-  margin-top: 1.5em;
-}
 #content article a:hover {
   text-decoration: underline;
 }
-.childpage #content article p img {
+#content article p img {
   float: right;
 }
 #content blockquote:before {
@@ -1308,14 +1288,14 @@ body:before {
   float: left;
   font-size: 3em;
   line-height: 1;
-  font-family: "PTSerifCaption", Georgia, Times, serif;
+  font-family: "PTSerifCaption", Times, serif;
   color: #b7d9ff;
 }
 #content aside {
   float: left;
   padding: 1.5em 0;
   width: 25%;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   *zoom: 1;
 }
 #content aside:before,
@@ -1329,7 +1309,7 @@ body:before {
 }
 #content aside h3 {
   margin: 0.5em 0;
-  font: normal normal normal 1.1549999999999998em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 1.1549999999999998em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 2em 0 0;
   padding: 0 16.666666666666668px;
   text-align: right;
@@ -1421,7 +1401,7 @@ body:before {
 }
 #miscellaneous li a {
   position: relative;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #ffffff;
 }
 #miscellaneous li a:before {
@@ -1451,12 +1431,12 @@ body:before {
   margin-bottom: 0;
   clear: both;
   font-size: 0.825em;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #859598;
 }
 #miscellaneous span[class^="link-"] {
   font-size: 0.825em;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #miscellaneous span[class^="link-"] a {
   color: #859598;
@@ -1513,7 +1493,7 @@ body:before {
   content: " ";
   width: 33.33%;
   height: 26em;
-  background: transparent url(/styles/images/header-home.jpg) no-repeat center top;
+  background: transparent url(/images/header-home.jpg) no-repeat center top;
   background-size: cover;
 }
 .homepage #masthead dt {
@@ -1527,7 +1507,7 @@ body:before {
   font-weight: normal;
   font-size: 36px;
   line-height: 0.75;
-  font-family: "PTSerifCaption", Georgia, Times, serif;
+  font-family: "PTSerifCaption", Times, serif;
 }
 .homepage #masthead dt a {
   -webkit-transition: all 0.2s linear;
@@ -1571,7 +1551,7 @@ body:before {
   padding: 14em 0 0 0;
   height: 26em;
   font-style: normal;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
 }
 .homepage #masthead dd:before {
@@ -1596,15 +1576,15 @@ body:before {
   column-gap: 33.333333333333336px;
 }
 .homepage #masthead #understand:before {
-  background: transparent url(/styles/images/header-understand.jpg) no-repeat 50% 70%;
+  background: transparent url(/images/header-understand.jpg) no-repeat 50% 70%;
   background-size: cover;
 }
 .homepage #masthead #build:before {
-  background: transparent url(/styles/images/header-build.jpg) no-repeat right bottom;
+  background: transparent url(/images/header-build.jpg) no-repeat right bottom;
   background-size: cover;
 }
 .homepage #masthead #deliver:before {
-  background: transparent url(/styles/images/header-deliver.jpg) no-repeat center top;
+  background: transparent url(/images/header-deliver.jpg) no-repeat center top;
   background-size: cover;
 }
 .homepage #masthead dd:nth-of-type(1) {
@@ -1656,7 +1636,7 @@ body:before {
   width: 33.33%;
   height: 100%;
   font-size: 0.8em;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #dbecff;
 }
 .homepage #twitter-feed:before {
@@ -1767,7 +1747,7 @@ body:before {
 }
 .homepage #references dt {
   margin: 0.5em 0;
-  font: normal normal normal 0.9899999999999999em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+  font: normal normal normal 0.9899999999999999em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   position: absolute;
   top: 0;
@@ -1793,7 +1773,7 @@ body:before {
   list-style: none;
   font-style: normal;
   font-size: 0.825em;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #6b7c7f;
   -webkit-box-sizing: border-box;
   /* content-box */
@@ -1858,7 +1838,7 @@ body:before {
     content: "Google Maps";
     display: block;
     margin: 0.5em 0;
-    font: normal normal normal 1.1549999999999998em/1.16 "OpenSans", Helvetica, Arial, sans-serif;
+    font: normal normal normal 1.1549999999999998em/1.16 "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-top: 0.5em;
     color: #cad1d2;
   }
@@ -1867,19 +1847,6 @@ body:before {
 .blog #content aside {
   font-size: 0.9em;
 }
-.blog .chzn-container,
-.blog #content aside select {
-  clear: both;
-  float: right;
-  display: block;
-  margin: 1.4em 16.666666666666668px;
-  width: 86%;
-  font-size: 0.9em;
-  text-align: left;
-}
-.blog .chzn-container .chzn-results .active-result {
-  text-align: left;
-}
 .blog #content aside li {
   line-height: 1.3;
 }
@@ -1887,98 +1854,7 @@ body:before {
   padding-top: 0.3333333333333333em;
   padding-bottom: 0.3333333333333333em;
 }
-.blog #masthead {
-  background: #477d71 none;
-  height: 4em;
-}
-.blog #masthead .logo {
-  height: 4em;
-}
-.blog #masthead .logo a {
-  height: 4em;
-}
-.blog #masthead .menu {
-  margin: 0;
-}
-.blog #masthead nav {
-  font-size: 0.9em;
-  line-height: 1;
-  text-shadow: none;
-}
-.blog #masthead nav a[href] {
-  padding: 0;
-  color: #252b2c;
-}
-.blog #content {
-  position: relative;
-  color: #cad1d2;
-  background-color: transparent;
-}
-.blog #content .posts {
-  padding-top: 13.5em;
-}
-.blog #content .posts .intro {
-  margin: 1em 0;
-  padding: 1em 33.333333333333336px;
-  -webkit-box-sizing: border-box;
-  /* content-box */
-
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 1em;
-  height: 11.5em;
-  width: 75%;
-  position: absolute;
-  margin: 0 -2.1em;
-  top: 0;
-  height: 14.4em;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
-  background-color: #31393a;
-}
-.blog #content .posts .intro p {
-  max-width: 38em;
-}
-.blog #content .tagged .posts {
-  padding-top: 0;
-}
-.blog .posts h3 a[href] {
-  color: #a0adb0;
-}
-.blog .posts h3 i {
-  font-size: 0.9em;
-  color: #2b4c45;
-}
-.blog #content .level {
-  background-color: #252b2c;
-  background-image: url(/styles/images/blog-background.png);
-}
-.blog #miscellaneous {
-  background: #000;
-  background-color: #3c4648;
-  background-image: -webkit-linear-gradient(top, #3c4648 0%, #252b2c 100%);
-  background-image: -moz-linear-gradient(top, #3c4648 0%, #252b2c 100%);
-  /* firefox */
-
-  background-image: -ms-linear-gradient(top, #3c4648 0%, #252b2c 100%);
-  /* ie10 */
-
-  background-image: -o-linear-gradient(top, #3c4648 0%, #252b2c 100%);
-  /* opera */
-
-  background-image: linear-gradient(top, #3c4648 0%, #252b2c 100%);
-  /* w3c */
-
-}
-@media screen and (color) {
-  #masthead .logo a {
-    background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
-    background-size: 180px;
-  }
-}
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   body:before {
     content: "SMALL";
   }
@@ -2025,7 +1901,7 @@ body:before {
     height: auto;
     font-size: 1em;
     line-height: 0;
-    background: transparent url(/styles/images/header-home.jpg) no-repeat 50% 0%;
+    background: transparent url(/images/header-home.jpg) no-repeat 50% 0%;
     background-size: cover;
   }
   .site #masthead .logo a {
@@ -2187,67 +2063,6 @@ body:before {
     float: none;
     width: 100%;
   }
-  .site #content .editorial:before,
-  .site #content .references:before,
-  .site #content .services:before,
-  .site #content .about:before,
-  .site #content .contact:before {
-    content: none;
-  }
-}
-.references,
-.contact,
-.about,
-.services {
-  position: relative;
-}
-.references ul,
-.contact ul,
-.about ul,
-.services ul {
-  margin-top: 13em;
-}
-.blog #content aside {
-  position: relative;
-}
-.blog #content aside h3 {
-  margin-top: 14em;
-}
-.blog #content aside h3 ~ h3 {
-  margin-top: 0;
-}
-.editorial:before,
-.references:before,
-.contact:before,
-.about:before,
-.services:before {
-  position: absolute;
-  top: 0;
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 14em;
-}
-.editorial:before {
-  height: 16em;
-  background: transparent url(/styles/images/stock-photo-14488743-give-business-a-boing.jpg) no-repeat center center;
-  background-size: cover;
-}
-.references:before {
-  background: transparent url(/styles/images/stock-photo-2330803-alphabetic-organizer.jpg) no-repeat center center;
-  background-size: cover;
-}
-.services:before {
-  background: transparent url(/styles/images/iStock_000003134043XSmall.jpg) no-repeat center center;
-  background-size: cover;
-}
-.about:before {
-  background: transparent url(/styles/images/header-serverroom.jpg) no-repeat 40% 50%;
-  background-size: cover;
-}
-.contact:before {
-  background: transparent url(/styles/images/lunatech-terrace.jpg) no-repeat 40% 50%;
-  background-size: cover;
 }
 .box {
   display: inline-block;
