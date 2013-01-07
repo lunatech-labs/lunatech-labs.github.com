@@ -1,25 +1,29 @@
 /*  ###########################################################################
     Author:     Lunatech Research
-    date:       August 2011
     ########################################################################### */
     
-//  Edit the lib file to match your projects design;
-    @import "lib.less";
-
-//  These base files contain patterns that will most likely not need editing.    
-    @import "base.less";
-    @import "forms.less";
-    @import "icon-characters.less";
-
     
-//  Add your project LESS files below. 
-//  The files below are used for this project so feel free to remove, edit or replace to your hearts content. 
+//  Edit the lib files to match your projects design;
+    @import "FEP-layout";
+    @import "FEP-typography";
+    @import "FEP-colour";
+    @import "FEP-mixins";
 
-    @import "site.less";
-    @import "navigation.less";
-    @import "buttons-icons.less";
-    @import "aside.less";
-    @import "promotion.less";
-    //@import "adaptive-layout.less";
+//  These base files contain patterns that usually do not need editing.    
+    @import "FEP-base";
+    @import "FEP-forms";
+    
+    
+//  Add your own project LESS files below. 
 
-    @import "pygments.less";
+//  Library files
+    @import "font-awesome";
+    @import "/styles/css/chosen.css";
+    //@import "FEP-datatable"; // Custom DataTable LESS file
+    
+    
+//  Custom styles (project based)
+    @import "app";
+    //@import "boxes";
+    @import "ui";
+    //@import "adaptive-layout";

@@ -1,0 +1,108 @@
+/*  ###########################################################################
+    Author:     Lunatech Research
+    ########################################################################### */
+    
+    
+        
+/*  Font elements ------------------------------------------------------------- */
+
+    @font-root:             "../fonts/";
+    
+    @font-face {
+        font-family: 'PTSerif';
+        src: url('@{font-root}PTF55F-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'PTSerif';
+        src: url('@{font-root}PTF56F-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    @font-face {
+        font-family: 'PTSerif';
+        src: url('@{font-root}PTF75F-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'PTSerif';
+        src: url('@{font-root}PTF76F-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'PTSerifCaption';
+        src: url('@{font-root}PTZ55F-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    
+    }
+    
+    @font-face {
+        font-family: 'PTSerifCaption';
+        src: url('@{font-root}PTZ56F-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    
+    
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('@{font-root}OpenSans-Regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('@{font-root}OpenSans-Italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('@{font-root}OpenSans-Bold-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('@{font-root}OpenSans-BoldItalic-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    @body-scale:            100%;          // Used on the body element
+    @transport:             1.6;           // For line height (no units!)
+    @interline:             1em;           // Interline / leading  http://en.wikipedia.org/wiki/Interline_spacing
+    @typeface:              "PTSerif", Georgia, Times, serif;
+    @typeface-header:       "OpenSans", Helvetica, Arial, sans-serif;
+    @typeface-alt:          "PTSerifCaption", Georgia, Times, serif;
+    
+    @fontsize-adjust:       0.825;
+    @header-style:          normal;        // normal, inherit, oblique, italic
+    @header-variant:        normal;        // normal, small-caps
+    @header-weight:         normal;
+    @header-lineheight:     @transport * (@fontsize-adjust - 0.1);
+    
+
+/*  TYPOGRAPHIC FONT SCALE (DO NOT EDIT) ----------------------------------------- */
+    
+    @nonpareil:             0.6em;
+    @minion:                0.7em;
+    @brevier:               0.8em; 
+    @galliard:              0.9em; 
+    @garamond:                1em; 
+    @small-pica:            1.1em; 
+    @pica:                  1.2em; 
+    @augustin:              1.4em; 
+    @great-primer:          1.8em; 
+    @double-pica:           2.1em; 
+    @two-line-pica:         2.4em; 
+    @double-great-primer:   3.6em; 
+
+

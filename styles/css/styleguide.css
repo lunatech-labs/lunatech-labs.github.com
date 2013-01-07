@@ -1,4 +1,3 @@
-@import "/styles/css/chosen.css";
 /*  ###########################################################################
     Author:     Lunatech Research
     ########################################################################### */
@@ -1281,6 +1280,8 @@ body:before {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
   margin-top: 0;
   float: left;
   width: 75%;
@@ -1445,6 +1446,8 @@ body:before {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
   margin-bottom: 0;
   clear: both;
   font-size: 0.825em;
@@ -1559,6 +1562,8 @@ body:before {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
   clear: both;
   position: relative;
   display: block;
@@ -1635,6 +1640,8 @@ body:before {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
   right: auto;
   float: left;
   margin-top: 0;
@@ -1920,6 +1927,8 @@ body:before {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
   height: 11.5em;
   width: 75%;
   position: absolute;
@@ -2147,43 +2156,6 @@ body:before {
   }
   .site #references .link-reference a {
     position: static;
-    margin-left: 0.5em;
-    border-radius:  0.25em;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    -ms-background-clip: padding-box;
-    -o-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #bcc5c7;
-    outline: none;
-    padding: 0.35em 16.666666666666668px;
-    font-size: 1em;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-color: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-    background-image: -moz-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-    /* firefox */
-  
-    background-image: -ms-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-    /* ie10 */
-  
-    background-image: -o-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-    /* opera */
-  
-    background-image: linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-    /* w3c */
-  
-    -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-    -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-    -ms-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-    -o-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-    text-shadow: 0 1px 1px #ffffff;
-    cursor: pointer;
     margin-bottom: 1em;
     font-size: 0.9em;
   }
@@ -2192,34 +2164,6 @@ body:before {
     /* keeps button heights with and without icons the same */
   
     line-height: .9em;
-  }
-  .site #references .link-reference a:before {
-    margin-right: 0.33em;
-    font-size: 0.9em;
-  }
-  .site #references .link-reference a:hover {
-    color: #ffffff;
-    border-color: #2b4c45;
-    background-color: #477d71;
-    background-image: -webkit-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-    background-image: -moz-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-    /* firefox */
-  
-    background-image: -ms-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-    /* ie10 */
-  
-    background-image: -o-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-    /* opera */
-  
-    background-image: linear-gradient(top, #477d71 0%, #2b4c45 100%);
-    /* w3c */
-  
-    -webkit-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-    -ms-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-    -o-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-    box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-    text-shadow: 0 -1px 1px #3c4648;
   }
   .site #content aside {
     position: static;
@@ -2305,235 +2249,43 @@ body:before {
   background: transparent url(/styles/images/lunatech-terrace.jpg) no-repeat 40% 50%;
   background-size: cover;
 }
-/*  ###########################################################################
-    Author:     Lunatech Research
-    ########################################################################### */
-/*  BUTTONS ------------------------------------------------------------------- */
-.btn {
-  margin-left: 0.5em;
-  border-radius:  0.25em;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  -ms-background-clip: padding-box;
-  -o-background-clip: padding-box;
-  background-clip: padding-box;
-  border: 1px solid #bcc5c7;
-  outline: none;
-  padding: 0.35em 16.666666666666668px;
-  font-size: 1em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background-color: #ffffff;
-  background-image: -webkit-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-  background-image: -moz-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-  /* firefox */
-
-  background-image: -ms-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-  /* ie10 */
-
-  background-image: -o-linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-  /* opera */
-
-  background-image: linear-gradient(top, #ffffff 0%, #d8ddde 100%);
-  /* w3c */
-
-  -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-  -ms-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-  -o-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.6);
-  text-shadow: 0 1px 1px #ffffff;
-  cursor: pointer;
-}
-.btn:before {
-  margin-right: 0.33em;
-  font-size: 0.9em;
-}
-.btn:hover {
-  color: #ffffff;
-  border-color: #2b4c45;
-  background-color: #477d71;
-  background-image: -webkit-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-  background-image: -moz-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-  /* firefox */
-
-  background-image: -ms-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-  /* ie10 */
-
-  background-image: -o-linear-gradient(top, #477d71 0%, #2b4c45 100%);
-  /* opera */
-
-  background-image: linear-gradient(top, #477d71 0%, #2b4c45 100%);
-  /* w3c */
-
-  -webkit-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-  -ms-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-  -o-box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 1px 1px #2b4c45, 0 1px 3px 0 rgba(0, 0, 0, 0.8);
-  text-shadow: 0 -1px 1px #3c4648;
-}
-.btn.default {
-  color: #ffffff;
-  border-color: #3a72b0;
-  background-color: #5098e6;
-  background-image: -webkit-linear-gradient(top, #5098e6 0%, #2e5989 100%);
-  background-image: -moz-linear-gradient(top, #5098e6 0%, #2e5989 100%);
-  /* firefox */
-
-  background-image: -ms-linear-gradient(top, #5098e6 0%, #2e5989 100%);
-  /* ie10 */
-
-  background-image: -o-linear-gradient(top, #5098e6 0%, #2e5989 100%);
-  /* opera */
-
-  background-image: linear-gradient(top, #5098e6 0%, #2e5989 100%);
-  /* w3c */
-
-  -webkit-box-shadow: 0 0 1px 1px #3a72b0, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 1px 1px #3a72b0, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -ms-box-shadow: 0 0 1px 1px #3a72b0, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -o-box-shadow: 0 0 1px 1px #3a72b0, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 1px 1px #3a72b0, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  text-shadow: 0 -1px 1px #3a72b0;
-}
-.btn.default:hover {
-  border-color: #214063;
-  -webkit-box-shadow: 0 0 1px 1px #214063, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 1px 1px #214063, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -ms-box-shadow: 0 0 1px 1px #214063, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  -o-box-shadow: 0 0 1px 1px #214063, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 1px 1px #214063, 0 1px 3px 1px rgba(0, 0, 0, 0.8);
-  background-color: #1d71cd;
-  background-image: -webkit-linear-gradient(top, #1d71cd 0%, #1b3450 100%);
-  background-image: -moz-linear-gradient(top, #1d71cd 0%, #1b3450 100%);
-  /* firefox */
-
-  background-image: -ms-linear-gradient(top, #1d71cd 0%, #1b3450 100%);
-  /* ie10 */
-
-  background-image: -o-linear-gradient(top, #1d71cd 0%, #1b3450 100%);
-  /* opera */
-
-  background-image: linear-gradient(top, #1d71cd 0%, #1b3450 100%);
-  /* w3c */
-
-}
-.buttons .seperate {
-  float: left;
-  margin-right: 0.5em;
-  margin-left: 0;
-  overflow: hidden;
-}
-@media screen and (color) {
-  .btn {
-    border: 0;
-  }
-}
-/*  Accordion */
-#accordion {
-  float: left;
-  margin-top: 1em;
-  width: 60%;
-}
-#accordion .block {
-  display: block;
-}
-/*  Tabs */
-.tabs {
-  position: relative;
-  float: right;
-  display: block;
-  border-radius:  33.333333333333336px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  -ms-background-clip: padding-box;
-  -o-background-clip: padding-box;
-  background-clip: padding-box;
-  width: 66.66%;
-  -webkit-box-sizing: border-box;
-  /* content-box */
-
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.tabs > ul {
-  margin: 0px -3px;
-  padding: 0 3px;
-  display: block;
-  height: 2.55em;
-  overflow: hidden;
-}
-.tabs > ul li {
-  float: left;
-  display: block;
-}
-.tabs > ul a {
+.box {
   display: inline-block;
-  padding: 0.5em 33.333333333333336px;
-  color: #252b2c;
-  text-shadow: 0 1px 0 #ffffff;
-  cursor: pointer;
+  padding: 1em;
 }
-.tabs > ul .active {
-  position: relative;
-  bottom: -1px;
-  z-index: 2;
-  border-top-left-radius:  33.333333333333336px;
-  border-top-right-radius:  33.333333333333336px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  -ms-background-clip: padding-box;
-  -o-background-clip: padding-box;
-  background-clip: padding-box;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
+.colour:nth-child(2) {
+  background: #252b2c;
 }
-.tabs > div[id*='tab'] {
-  position: absolute;
-  display: none;
-  border-bottom-right-radius:  33.333333333333336px;
-  border-bottom-left-radius:  33.333333333333336px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  -ms-background-clip: padding-box;
-  -o-background-clip: padding-box;
-  background-clip: padding-box;
-  padding: 1em 2em;
-  float: left;
-  width: 100%;
-  background: #ffffff;
-  -webkit-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-sizing: border-box;
-  /* content-box */
-
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
+.colour:nth-child(3) {
+  background: #3c4648;
 }
-.tabs > div:target {
-  display: block;
+.colour:nth-child(4) {
+  background: #546163;
 }
-.tabs > div > :last-child:after {
-  clear: both;
-  display: block;
-  margin-bottom: -1.4em;
-  content: ".";
-  visibility: hidden;
-  height: 0;
-  line-height: 0;
+.colour:nth-child(5) {
+  background: #6b7c7f;
+}
+.colour:nth-child(6) {
+  background: #859598;
+}
+.colour:nth-child(7) {
+  background: #a0adb0;
+}
+.colour:nth-child(8) {
+  background: #bcc5c7;
+}
+.colour:nth-child(9) {
+  background: #cad1d2;
+}
+.colour:nth-child(10) {
+  background: #d8ddde;
+}
+.colour:nth-child(11) {
+  background: #eef0f1;
+}
+.black {
+  background: black;
+}
+.white {
+  background: white;
 }
