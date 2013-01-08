@@ -2,7 +2,6 @@
     //  Tag Selectors 
     var fepTagSelectors = function($fepElement){
         var loc = location.pathname;
-        console.log(loc);
         $("option",$fepElement).each(function(){
             if (loc === ($(this).data('link'))){
                 $(this).prop('selected',true);

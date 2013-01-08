@@ -40,23 +40,33 @@
 				{% for category in page.categories %}
 					{% case category %}
 						{% when 'about' %}
-							<h3>More about Lunatech</h3>
 							<ul>
 							{% for article in site.categories.about reversed %}
 								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'jobs' %}
-							<h3>Vacancies</h3>
 							<ul>
 							{% for article in site.categories.jobs reversed %}
 								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'services' %}
-							<h3>Lunatech Services</h3>
 							<ul>
 							{% for article in site.categories.services reversed %}
+								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+							{% endfor %}
+							</ul>
+						{% when 'contact' %}
+							<ul>
+    							<li><a href="/contact/">Contact Form</a></li>
+							{% for article in site.categories.contact reversed %}
+								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+							{% endfor %}
+							</ul>
+						{% when 'references' %}
+							<ul>
+							{% for article in site.categories.references reversed %}
 								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
 							{% endfor %}
 							</ul>
@@ -65,9 +75,13 @@
             </aside>
 	        <article class="">
                 <h1>{{ page.title }}</h1>
+	            
+	            {% if page.summary %}
 	            <section class="summary">
 		            {{ page.summary | markdownify }}
 	            </section>
+	            {% endif %}
+	            
 	            <section class="bodytext">
 					{{ page.sidebar | markdownify }}
 	            
