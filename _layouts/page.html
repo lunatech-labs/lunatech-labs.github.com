@@ -62,7 +62,7 @@
 							</ul>
 						{% when 'contact' %}
 							<ul>
-    							<li{% if page.title ==  'Contact Form'%} class="active"{% endif %}><a href="/contact/">Contact Form</a></li>
+    							<li{% if page.title ==  'Contact'%} class="active"{% endif %}><a href="/contact/">Contact</a></li>
 							{% for article in site.categories.contact reversed %}
 								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}

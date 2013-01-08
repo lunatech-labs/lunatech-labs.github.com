@@ -1742,6 +1742,9 @@ body:before {
 .homepage #content #introduction {
   margin-left: 33.33%;
 }
+.homepage #content #information h3 {
+  margin-top: 0.8em;
+}
 .homepage #content #information img {
   float: left;
   margin-left: -1em;
