@@ -40,8 +40,8 @@
         height: @topbar-height;
         overflow: hidden;
         background: @grey1;
-        .gradient(@grey0,@grey2);
-        .ie-gradient(@grey0,@grey2);
+        .gradient(darken(@grey0,4%),@grey2);
+        .ie-gradient(darken(@grey0,4%),@grey2);
     }
     #masthead .level {
         padding: 0;
@@ -55,6 +55,7 @@
         height: @topbar-height;
         font-size: 1em;
         line-height: normal;
+        background-color: @grey8;
         .gradient(@grey7,@grey8);
         .ie-gradient(@grey7,@grey8);
         a {
@@ -72,7 +73,7 @@
         }
     }
     .site:not(.homepage) #masthead .logo {
-        .box-shadow(inset -2px -2px 4px 0 rgba(0,0,0,0.5));
+        //.box-shadow(inset -2px -2px 4px 0 rgba(0,0,0,0.5));
     }
     
     
@@ -122,7 +123,6 @@
         overflow: hidden;
     }
     
-
     #content hgroup,
     #content section{
         margin:@interline*2 0 @interline *2;
@@ -130,18 +130,27 @@
     #content hgroup h5 {
         font-size: @brevier;
     }
+    
     #content article{
         .box;
+        margin-top: 0;
         float: left;
         width: 75%;
         max-width: @text-block;
         overflow: visible;
     }
+    
+    #content article {
+        h2, h3, h4, h5,h6 {
+            margin-top: @interline * 1.5;
+        }
+    }
+    
     #content article a:hover {
         text-decoration: underline;
     }
     
-    #content article p img {
+    .childpage #content article p img {
         float: right;
     }
     #content blockquote:before {
@@ -311,6 +320,19 @@
         #content aside{
             font-size: 0.9em;
         }
+        .chzn-container,
+        #content aside select {
+            clear: both;
+            float: right;
+            display: block;
+            margin: @em @block/2;
+            width: 86%;
+            font-size: 0.9em;
+            text-align: left;
+        }
+        .chzn-container .chzn-results .active-result{
+            text-align: left;
+        }
         #content aside li {
             line-height: 1.3;
             }
@@ -318,21 +340,136 @@
             padding-top: @interline/3;
             padding-bottom: @interline/3;
         }
+        #masthead {
+            background: @green1 none;
+            height: @topbar-height/1.5;
+        }
+        #masthead .logo {
+            height: @topbar-height/1.5;
+            a {
+                height: @topbar-height/1.5;
+            }
+        }
+        #masthead .menu {
+            margin: 0;
+        }
+        #masthead nav {
+            font-size: 0.9em;
+            line-height: 1;
+            text-shadow: none;
+            i, a[href] {
+                padding: 0;
+                color: @light-color;
+            }
+        }
+        #content {
+            position: relative;
+            color: @grey2;
+            background-color: transparent;
+        }
+        #content .posts {
+            padding-top: 13.5em;
+            .intro {
+                .box;
+                height: 11.5em;
+                width: 75%;
+                position: absolute;
+                margin: 0 -2.1em;
+                top: 0;
+                height: 14.4em;
+                font-family: @typeface-header;
+                background-color: darken(@grey8,5%);
+                p {
+                    max-width: @text-block;
+                }
+            }
+        }
+        #content .tagged .posts {
+            padding-top: 0;
+        }
+        .posts h3 a[href] {
+            color: @grey4;
+        }
+        .posts h3 i {
+            font-size: 0.9em;
+            color: @green2;
+        }
+        #content .level {
+            background-color: @grey9;
+            background-image: url(/styles/images/blog-background.png);
+        }
+        #miscellaneous {
+            background: #000;
+            .gradient(@grey8,@grey9);
+        }
+    }
+
+    @media screen and (color) {
+        #masthead .logo a{
+            background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
+            background-size: 180px;
+        }
     }
     
     
     
-    
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 740px) {
         body:before {
             content:"SMALL";
         }
         @import "small-device";
     }
-    
-    
-
-    
+    .references,
+    .contact,
+    .about,
+    .services {
+        position: relative;
+        ul {
+            margin-top: 13em;
+        }
+    }
+    .blog #content aside{
+        position: relative;
+        h3 {
+            margin-top: 14em;
+        }
+        h3 ~ h3 {
+            margin-top: 0;
+        }
+    }
+    .editorial:before,
+    .references:before,
+    .contact:before,
+    .about:before,
+    .services:before {
+        position: absolute;
+        top: 0;
+        content: " ";
+        display: block;
+        width: 100%;
+        height: 14em;
+    }
+    .editorial:before {
+        height: 16em;
+        background: transparent url(/styles/images/stock-photo-14488743-give-business-a-boing.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .references:before {
+        background: transparent url(/styles/images/stock-photo-2330803-alphabetic-organizer.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .services:before {
+        background: transparent url(/styles/images/iStock_000003134043XSmall.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .about:before {
+        background: transparent url(/styles/images/header-serverroom.jpg) no-repeat 40% 50%;
+        background-size: cover;
+    }
+    .contact:before {
+        background: transparent url(/styles/images/lunatech-terrace.jpg) no-repeat 40% 50%;
+        background-size: cover;
+    }
     
 
     

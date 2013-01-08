@@ -11,6 +11,7 @@
             "keepinview": "keepinview-min",
             "tweet": "jquery.tweet-min",
             "wufoo": "wufoo-min",
+            "chosen": "chosen.jquery-min",
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min"
         }
@@ -36,6 +37,11 @@
                     elem: $(".tabs"),
                     amd:  ['fep-functions'], 
                     func: 'fepTabs' 
+                },
+                {   // Tags
+                    elem: $("#tagselector"),
+                    amd:  ['fep-functions'], 
+                    func: 'fepTagSelectors' 
                 },
                 {   // Homepage header
                     elem: $(".homepage #masthead dl"),

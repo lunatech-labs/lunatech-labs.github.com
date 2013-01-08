@@ -1,4 +1,23 @@
 
+    //  Tag Selectors 
+    var fepTagSelectors = function($fepElement){
+        var loc = location.pathname;
+        console.log(loc);
+        $("option",$fepElement).each(function(){
+            if (loc === ($(this).data('link'))){
+                $(this).prop('selected',true);
+            }
+        });
+        $fepElement.change(function(e){
+            var link = $("option:selected",this).data('link');
+            if (link) {
+                location.pathname = link;
+            } else {
+                location.href = "/blog"
+            }
+        });
+    }
+    
     //  KEEP IN VIEW 
     var fepKeepInView = function($fepElements){
         $fepElements.keepInView({
@@ -35,7 +54,7 @@
     }
     
     
-    //  KEEP IN VIEW 
+    //  Promo viewer 
     var fepHeaderPromo = function($fepElements){
 
         var $label = getComputedStyle(document.body, '::before')['content'];

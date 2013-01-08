@@ -24,11 +24,11 @@
 	        <nav>
 				<ul class="menu">
 	                <li class="home"><a href="/">Home</a></li>
-	                <li class="services{% if selected == 'services' %} active{% endif %}"><a href="/services">Services</a></li>
-	                <li class="archives"><a href="/archives/">Editorials</a></li>
-	                <li class="about{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
-	            	<li class="contact{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
-	            	<li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li>
+	                <li class="{% if selected == 'services' %} active{% endif %}"><a href="/services">Services</a></li>
+	                <!--li class="archives"><a href="/archives/">Editorials</a></li-->
+	                <li class="{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
+	            	<li class="{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
+	            	<!--li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li-->
 	            </ul>
 	        </nav>
 		</div>
@@ -63,7 +63,7 @@
 					{% endcase %}
 				{% endfor %}
             </aside>
-	        <article class="{{ page.categories }}">
+	        <article class="">
                 <h1>{{ page.title }}</h1>
 	            <section class="summary">
 		            {{ page.summary | markdownify }}
