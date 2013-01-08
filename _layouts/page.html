@@ -9,7 +9,7 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script type="text/javascript" data-main="scripts/minified/init-min" src="scripts/minified/require-min.js"></script>
+	<script type="text/javascript" data-main="scripts/minified/init-min" src="/scripts/minified/require-min.js"></script>
 </head>
 <body>
         
@@ -41,52 +41,54 @@
 					{% case category %}
 						{% when 'about' %}
 							<ul>
+    							<li><a href="/about/">About Lunatech</a></li>
 							{% for article in site.categories.about reversed %}
-								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+								<li><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'jobs' %}
 							<ul>
 							{% for article in site.categories.jobs reversed %}
-								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+								<li><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'services' %}
 							<ul>
+    							<li><a href="/services/">Project delivery</a></li>
 							{% for article in site.categories.services reversed %}
-								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+								<li><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'contact' %}
 							<ul>
     							<li><a href="/contact/">Contact Form</a></li>
 							{% for article in site.categories.contact reversed %}
-								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+								<li><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}
 							</ul>
 						{% when 'references' %}
 							<ul>
 							{% for article in site.categories.references reversed %}
-								<li><a href="/{{ article.url | replace:'.html','' }}">{{ article.title }}</a></li>
+								<li><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
 							{% endfor %}
 							</ul>
 					{% endcase %}
 				{% endfor %}
+				<div class="box">
+				{{ page.sidebar | markdownify }}
+				</div>
             </aside>
 	        <article class="">
                 <h1>{{ page.title }}</h1>
 	            
 	            {% if page.summary %}
-	            <section class="summary">
+	            <div class="summary">
 		            {{ page.summary | markdownify }}
-	            </section>
+	            </div>
 	            {% endif %}
 	            
-	            <section class="bodytext">
-					{{ page.sidebar | markdownify }}
-	            
-					{{ content }}
-	            </section>
+				{{ content }}
+				
 	        </article>
 		</div>
 	</section>
