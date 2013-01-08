@@ -2137,6 +2137,18 @@ body:before {
   .site #content .level {
     background: none;
   }
+  .site #content .editorial + .posts {
+    padding-top: 0;
+  }
+  .site #content .editorial + .posts .intro {
+    position: static;
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  .site #content .editorial + .posts .intro p {
+    max-width: none;
+  }
   .site #references .level {
     margin: 0 ;
     padding: 0;
@@ -2176,6 +2188,15 @@ body:before {
     padding: 1em;
     width: 100%;
     text-align: left;
+  }
+  .site #content .editorial h3,
+  .site #content .editorial #tagselector {
+    float: none;
+    margin-top: 1em;
+    margin-left: 0;
+    padding: 0 0 1em;
+    text-align: left;
+    width: auto;
   }
   .site #content .contact + article iframe {
     width: 100% !important;

@@ -143,6 +143,18 @@
         #content .level {
             background: none;
         }
+        #content .editorial + .posts {
+            padding-top: 0;
+            .intro {
+                position: static;
+                height: auto;
+                width: auto;
+                margin: 0;
+                p {
+                    max-width: none;
+                }
+            }
+        }
         #references .level {
             margin: 0 ;
             padding: 0;
@@ -178,6 +190,16 @@
             width: 100%;
             text-align: left;
         }
+        #content .editorial h3,
+        #content .editorial #tagselector {
+            float: none;
+            margin-top: @interline;
+            margin-left: 0;
+            padding: 0 0 @interline;
+            text-align: left;
+            width: auto;
+            }
+
         #content .contact + article iframe {
             width: 100% !important;
         }
