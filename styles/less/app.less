@@ -14,7 +14,7 @@
     
     body {
         color: @text-color;
-        background: @grey8;
+        background-color: @light-color;
         &:before {
             display: none;
         }
@@ -317,6 +317,11 @@
 /* BLOG Overrides */
 
     .blog {
+        
+        @blog-color: #004658;
+        
+        background-color: darken(@lightBlue,5%);
+
         #content aside{
             font-size: 0.9em;
         }
@@ -339,13 +344,19 @@
         #content aside li a{
             padding-top: @interline/3;
             padding-bottom: @interline/3;
+            color: fadeout(@blog-color,40%);
         }
         #masthead {
-            background: @green1 none;
+            background: @blog-color none;
+            .gradient(lighten(@blog-color,5%),@blog-color);
+            .ie-gradient(lighten(@blog-color,5%),@blog-color);
             height: @topbar-height/1.5;
         }
         #masthead .logo {
             height: @topbar-height/1.5;
+            background: @blog-color none;
+            .gradient(@blog-color,@grey9);
+            .ie-gradient(@blog-color,@grey9);
             a {
                 height: @topbar-height/1.5;
             }
@@ -359,26 +370,26 @@
             text-shadow: none;
             i, a[href] {
                 padding: 0;
-                color: @light-color;
+                color: #fdf9d6;
             }
         }
         #content {
             position: relative;
-            color: @grey2;
             background-color: transparent;
         }
         #content .posts {
             padding-top: 13.5em;
             .intro {
                 .box;
+                border-bottom: @l solid @grey1;
                 height: 11.5em;
                 width: 75%;
                 position: absolute;
-                margin: 0 -2.1em;
+                margin: 0 -2.05em;
                 top: 0;
                 height: 14.4em;
                 font-family: @typeface-header;
-                background-color: darken(@grey8,5%);
+                background-color: @grey0;
                 p {
                     max-width: @text-block;
                 }
@@ -394,19 +405,22 @@
             padding-top: 0;
         }
         .posts h3 a[href] {
-            color: @grey4;
+            color: @blog-color;
+        }
+        .posts h3 {
+            margin-bottom: -(@interline/2);
         }
         .posts h3 i {
             font-size: 0.9em;
-            color: @green2;
+            color: @blog-color;
         }
         #content .level {
-            background-color: @grey9;
+            background-color: darken(@lightBlue,2%);
             background-image: url(/styles/images/blog-background.png);
         }
         #miscellaneous {
-            background: #000;
-            .gradient(@grey8,@grey9);
+            //background: #000;
+            //.gradient(@grey8,@grey9);
         }
     }
 
