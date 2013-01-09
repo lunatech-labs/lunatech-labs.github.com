@@ -1945,6 +1945,13 @@ body:before {
 .blog #content .posts .intro p {
   max-width: 38em;
 }
+.blog #content .posts .byline {
+  margin: -1em 0 1.4em;
+  font-size: 0.9em;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  opacity: 0.5;
+  filter: Alpha(Opacity=50);
+}
 .blog #content .tagged .posts {
   padding-top: 0;
 }
