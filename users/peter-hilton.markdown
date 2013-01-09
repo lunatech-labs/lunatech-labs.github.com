@@ -7,7 +7,7 @@ summary: Peter Hilton is a senior solution architect and Operations Director at 
 
 Peter is currently writing [Play for Scala](http://bit.ly/playforscala) - a book for Manning Publications, with co-authors and Lunatech colleagues Erik Bakker and Francisco Canedo. Since 2010, Peter has been a committer on the Play framework open-source project.
 
-Peter recently presented Play at Java conferences in Norway (JavaZone 2011) and Sweden (Jfokus 2012). In 2012, Peter will present Play at conferences in Poland (Geecon) and the Netherlands (GOTO Amsterdam).
+In 2012, Peter presented Play at several conferences - Jfokus (Sweden), Geecon (Poland), GOTO Amsterdam, JAX London, Topconf (Estonia) and Øredev (Sweden). In previous years, Peter has presented at JavaZone (Norway), JFall (the Netherlands) and Devoxx (Belgium).
 
 <p><a href="https://plus.google.com/107170847819841716154/">Google+</a>&nbsp;
 <img src="images//linkedin.png" alt="LinkedIn" align="middle">&nbsp;<a href="http://nl.linkedin.com/in/peterhilton">LinkedIn profile</a>
@@ -22,6 +22,12 @@ Peter recently presented Play at Java conferences in Norway (JavaZone 2011) and 
 
 ## Conference speaking engagements
 
+[ ![Øredev](images/oredev-logo.gif) ](http://oredev.org/)
+
+[ ![TopConf](images/topconf-logo.png) ](http://topconf.com/)
+
+[ ![JAX London](images/jaxlondon-logo.png) ](http://jaxlondon.com/)
+
 [ ![GOTO Amsterdam](images/gotoamst-2012.jpg) ](http://gotocon.com/amsterdam-2012/)
 
 [ ![geecon](images/geecon-2012.png) ](http://2012.geecon.org/)
@@ -29,3 +35,8 @@ Peter recently presented Play at Java conferences in Norway (JavaZone 2011) and 
 [ ![JFokus 2012](images/jfokus-2012.jpg) ](http://www.jfokus.se/)
 
 [ ![JavaZone 2011](images/javazone-2011.png) ](http://jz11.java.no/)
+
+[ ![Devoxx](images/devoxx-2008-logo.jpg) ](http://www.devoxx.com/display/JV08/Home)
+
+![JavaPolis](images/javapolis-logo.png)
+
