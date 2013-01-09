@@ -3,9 +3,10 @@ layout: page
 path_prefix: ../
 depth: 1
 title: Play framework support services
-categories: [technology]
-summary: Lunatech provides consultancy, training and support, to help you with your Play projects.
+categories: services
 ---
+
+Lunatech provides consultancy, training and support, to help you with your Play projects.
 
 ## Consultancy
 
@@ -17,9 +18,9 @@ We can also assist you in making sure Play fits the way you work. If you also wa
 
 ## Technical training
 
-Play offers flexibility and agility in the Java world. The goal of this training course is to teach your development team how to exploit this flexibility and agility. They will be studying best practices and how to become agile and flexible.
+Play offers flexibility and agility in the Java world. The goal of our Play 1.x training course is to teach your development team how to exploit this flexibility and agility. They will be studying best practices and how to become agile and flexible. This intermediate-level two-day training course targets developers and architects who want to learn more about the specifics and internals of the framework. Java and web development knowledge is a pre-requisite.
 
-This intermediate-level two-day training course targets developers and architects who want to learn more about the specifics and internals of the framework. Java and web development knowledge is a pre-requisite.
+A Play 2 course is expected to be available in April 2013.
 
 [Learn More](play-framework-technical-training)
 

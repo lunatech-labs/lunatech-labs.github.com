@@ -3,26 +3,34 @@ layout: page
 path_prefix: ../
 title: Play Framework Technical Training
 level: top
-summary: This Play 1.2.x course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises.
-sidebar: |
-    ### Course details
-    
-    **Price**  
-    €1500 per attendee for 2 days  
-    _(group discounts available)_
-    
-    **Location**  
-    On-site, or at our location in Rotterdam, the Netherlands.
-    
-    **More information**  
-    [contact us](/contact)
+categories: services
 ---
+
+This Play 1.2.x course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises.
+
+A Play 2 course is expected to be available in April 2013.
+
+
+### Course overview
 
 The course consists of two days of mixed sessions: the first day covers the the Play framework foundation while the second day covers the advanced techniques. During the course, practical exercises will be performed by the attendees. The course will be given in English. We will adapt the course to the level of the attendees, where possible.
 
 The course is designed and written by Peter Hilton, a Play framework committer since 2010, and incorporates a deep level of understanding of the framework, as well as Lunatech’s significant practical experience of using Play on commercial development projects.
 
 The course is aimed at experienced Java developers. Attendees are expected to have Java web development experience and a working knowledge of web application development. The course can be adjusted to cater for attendees who are new to Java or web development.
+
+### Course details
+
+**Price**  
+€1500 per attendee for 2 days  
+_(group discounts available)_
+
+**Location**  
+On-site, or at our location in Rotterdam, the Netherlands.
+
+**More information**  
+[contact us](/contact)
+
 
 ## Course outline
 
