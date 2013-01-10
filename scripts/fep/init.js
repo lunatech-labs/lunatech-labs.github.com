@@ -10,8 +10,6 @@
             "jquery": "jquery-1.8.2-min",
             "keepinview": "keepinview-min",
             "tweet": "jquery.tweet-min",
-/*             "wufoo": "wufoo-min", */
-            "chosen": "chosen.jquery-min",
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min",
             "disqus-count": "http://lunatech.disqus.com/count",
@@ -55,11 +53,13 @@
                     amd:  ['fep-functions'], 
                     func: 'fepBlockLink' 
                 },
+/*
                 {   // Disqus comment link 
                     elem: $(".byline"),
                     amd:  ['disqus-count'], 
                     func: false 
                 },
+*/
                 {   // Disqus comment form 
                     elem: $("#disqus_thread"),
                     amd:  ['disqus-embed'], 
