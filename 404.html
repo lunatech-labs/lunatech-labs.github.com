@@ -1,19 +1,32 @@
 ---
 layout: page
-title: Not found
 ---
-			<p>The requested page could not be found - we probably broke a link. Sorry about that.</p>
-            <article class="article-box" style="width:100%">
-                <section class="panelled">
-                    <h3>All pages</h3>
-	            	{% for page in site.posts %}
-	            		<p><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></p>
-	            	{% endfor %}
-                </section>
-                <section class="panelled">
-                    <h3>Lunatech services</h3>
-	            	{% for page in site.categories.services %}
-	            		<p><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></p>
-	            	{% endfor %}
-                </section>
-            </article>
+			<hgroup>
+    			<h1>The requested page could not be found</h1>
+    			<h4>We probably broke a link. Sorry about that.</h4>
+			</hgroup>
+			
+            <h3>All pages</h3>
+            <ul>
+        	{% for page in site.posts %}
+        		<li><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></li>
+        	{% endfor %}
+            </ul>
+            <h3>Lunatech services</h3>
+        	<ul>
+        	{% for page in site.categories.services %}
+        		<li><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></li>
+        	{% endfor %}
+        	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
