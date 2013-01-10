@@ -1,17 +1,11 @@
+---
+title: Home
+---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Lunatech</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="alternate" type="application/atom+xml" title="ATOM" href="/archives/atom.xml" />
-        <link rel="stylesheet" type="text/css" href="/styles/css/main.css" media="screen" />
-        <!--[if lt IE 9]>
-        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
-        <script type="text/javascript" data-main="scripts/minified/init-min" src="scripts/minified/require-min.js"></script>
-    </head>
+
+    {% include head.html %}
+    
     <body>
         
         <div class="site homepage">
@@ -40,7 +34,6 @@
                     </dl>
                 </div>
             </header>
-                    
             <section id="content">
                 <div class="box level">
                     <article id="introduction">
@@ -97,57 +90,7 @@
                     </dl>
                 </div>
             </section>
-            
-            
-            <footer id="miscellaneous">
-                <div class="box level">
-                    <ul>
-                        <li class="box">
-                            <h4>Lunatech Sites</h4>
-                            <ul>
-                                <li><a href="http://lunatech-ventures.com/">Lunatech Ventures</a></li>
-                                <li><a href="/archives/">Lunatech Blog</a></li>
-                                <li>&nbsp;</li>
-                                <li><a href="http://minotovideo.com/">Minoto Video</a></li>
-                            </ul>
-                        </li>
-                        <li class="box">
-                            <h4>Miscellaneous</h4>
-                            <ul>
-                                <li><a href="/about/jobs">Jobs</a></li>
-                                <li><a href="">Partners</a></li>
-                                <li><a href="/services/consultancy.html">Technology</a></li>
-                                <li>&nbsp;</li>
-                                <li><a href="http://twitter.com/LunatechLabs"><i class="icon-twitter"></i> Twitter</a></li>
-                                <li><a href="https://www.facebook.com/LunatechLabs"><i class="icon-facebook"></i> Facebook</a></li>
-                            </ul>
-                        </li>
-                        <li class="box">
-                            <ul>
-                                <li>
-                                <img src="/images/rotterdam-map.png" alt="rotterdam-map" width="211" height="151" />
-                                <span class="link-googlemaps"><i class="icon-map-marker"></i> <a href="https://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Heemraadssingel+70,+Nieuwe+Westen,+Rotterdam,+The+Netherlands&amp;aq=0&amp;oq=Heemraadssingel+70,+Nieuwe+Westen,+Rotterdam,+the%C2%A7&amp;sll=51.919587,4.456048&amp;sspn=0.007405,0.012231&amp;g=Heemraadssingel+70,+Nieuwe+Westen,+Rotterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Heemraadssingel+70,+3021+DD+Delfshaven,+Rotterdam,+Zuid-Holland&amp;ll=51.919587,4.456048&amp;spn=0.002644,0.004876&amp;t=m&amp;z=6" style="">View Larger Map</a></span></li>
-                            </ul>
-                        </li>
-                        <li class="box">
-                            <dl>
-                                <dt><h4><i class="icon-envelope-alt"></i> Address</h4></dt>
-                                <dd class="vcard">
-                                    <div class="adr">
-                                        <div class="street-address">Heemraadssingel 70,</div>
-                                        <span class="postal-code">3021 DD</span>
-                                        <span class="locality">Rotterdam</span>,
-                                        <div class="country-name">The Netherlands</div>
-                                        <div class="tel">+31-10-750 2600</div>
-                                    </div>
-                                </dd>
-                            </dl>
-                        </li>
-
-                    </ul>
-                    <p id="copyright">Copyright &copy; 1993 - 2013, Lunatech. All rights reserved.</p>
-                </div>
-            </footer>
+            {% include footer.html %}
         </div>        
     </body>
 </html>

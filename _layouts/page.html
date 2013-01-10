@@ -1,99 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>{{ page.title }} - Lunatech</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="alternate" type="application/atom+xml" title="ATOM" href="/archives/atom.xml" />
-	<link rel="stylesheet" type="text/css" href="/styles/css/main.css" media="screen" />
-	<!--[if lt IE 9]>
-	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<script type="text/javascript" data-main="/scripts/minified/init-min" src="/scripts/minified/require-min.js"></script>
-</head>
-<body>
-        
-    <div class="site childpage">
-
-	<header id="masthead">
-		<div class="box level">
-			<div class="logo"><a href="/">Lunatech</a></div>
-			{% for c in page.categories %}
-				{% assign selected = c %}
-			{% endfor %}
-	        <nav>
-				<ul class="menu">
-	                <li class="home"><a href="/">Home</a></li>
-	                <li class="{% if selected == 'services' %} active{% endif %}"><a href="/services">Services</a></li>
-	                <li class="{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
-	            	<li class="{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
-	            	<!--li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li-->
-	            </ul>
-	        </nav>
-		</div>
-	</header>
-        
-	<section id="content">
-		<div class="box level">
-            <aside class="{{ page.categories }}">			
-				{% for category in page.categories %}
-					{% case category %}
-						{% when 'about' %}
-							<ul>
-    							<li{% if page.title ==  'About Lunatech'%} class="active"{% endif %}><a href="/about/">About Lunatech</a></li>
-							{% for article in site.categories.about reversed %}
-							    {% assign linkname = article.title %}
-								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-							{% endfor %}
-							</ul>
-						{% when 'jobs' %}
-							<ul>
-							{% for article in site.categories.jobs reversed %}
-								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-							{% endfor %}
-							</ul>
-						{% when 'services' %}
-							<ul>
-    							<li{% if page.title ==  'Project delivery'%} class="active"{% endif %}><a href="/services/">Project delivery</a></li>
-							{% for article in site.categories.services reversed %}
-								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-							{% endfor %}
-							</ul>
-						{% when 'contact' %}
-							<ul>
-    							<li{% if page.title ==  'Contact'%} class="active"{% endif %}><a href="/contact/">Contact</a></li>
-							{% for article in site.categories.contact reversed %}
-								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-							{% endfor %}
-							</ul>
-						{% when 'references' %}
-							<ul>
-							{% for article in site.categories.references reversed %}
-								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-							{% endfor %}
-							</ul>
-					{% endcase %}
-				{% endfor %}
-				<div class="box">
-				{{ page.sidebar | markdownify }}
-				</div>
-            </aside>
-	        <article class="">
-                <h1>{{ page.title }}</h1>
-	            
-	            {% if page.summary %}
-	            <div class="summary">
-		            {{ page.summary | markdownify }}
-	            </div>
-	            {% endif %}
-	            
-				{{ content }}
-				
-	        </article>
-		</div>
-	</section>
-	{% include footer.html %}
-        
-</body>
+    {% include head.html %}
+    <body>
+            
+        <div class="site childpage">
+    
+        	<header id="masthead">
+        		<div class="box level">
+        			<div class="logo"><a href="/">Lunatech</a></div>
+        			{% for c in page.categories %}
+        				{% assign selected = c %}
+        			{% endfor %}
+        	        <nav>
+        				<ul class="menu">
+        	                <li class="home"><a href="/">Home</a></li>
+        	                <li class="{% if selected == 'services' %} active{% endif %}"><a href="/services">Services</a></li>
+        	                <li class="{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
+        	            	<li class="{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
+        	            	<!--li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li-->
+        	            </ul>
+        	        </nav>
+        		</div>
+        	</header>
+                
+        	<section id="content">
+        		<div class="box level">
+                    <aside class="{{ page.categories }}">			
+        				{% for category in page.categories %}
+        					{% case category %}
+        						{% when 'about' %}
+        							<ul>
+            							<li{% if page.title ==  'About Lunatech'%} class="active"{% endif %}><a href="/about/">About Lunatech</a></li>
+        							{% for article in site.categories.about reversed %}
+        							    {% assign linkname = article.title %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        						{% when 'jobs' %}
+        							<ul>
+        							{% for article in site.categories.jobs reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        						{% when 'services' %}
+        							<ul>
+            							<li{% if page.title ==  'Project delivery'%} class="active"{% endif %}><a href="/services/">Project delivery</a></li>
+        							{% for article in site.categories.services reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        						{% when 'contact' %}
+        							<ul>
+            							<li{% if page.title ==  'Contact'%} class="active"{% endif %}><a href="/contact/">Contact</a></li>
+        							{% for article in site.categories.contact reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        						{% when 'references' %}
+        							<ul>
+        							{% for article in site.categories.references reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        					{% endcase %}
+        				{% endfor %}
+        				<div class="box">
+        				{{ page.sidebar | markdownify }}
+        				</div>
+                    </aside>
+        	        <article class="">
+                        <h1>{{ page.title }}</h1>
+        	            
+        	            {% if page.summary %}
+        	            <div class="summary">
+        		            {{ page.summary | markdownify }}
+        	            </div>
+        	            {% endif %}
+        	            
+        				{{ content }}
+        				
+        	        </article>
+        		</div>
+        	</section>
+        	{% include footer.html %}
+        </div>
+    </body>
 </html>
