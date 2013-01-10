@@ -13,7 +13,9 @@
 /*             "wufoo": "wufoo-min", */
             "chosen": "chosen.jquery-min",
             "easing": "jquery.easing.1.3-min",
-            "fep-functions": "fep-functions-min"
+            "fep-functions": "fep-functions-min",
+            "disqus-count": "http://lunatech.disqus.com/count",
+            "disqus-embed": "http://lunatech.disqus.com/embed"
         }
     });
     
@@ -53,13 +55,16 @@
                     amd:  ['fep-functions'], 
                     func: 'fepBlockLink' 
                 },
-/*
-                {   // Wufoo forms
-                    elem: $(".wufoo"),
-                    amd:  ['wufoo'], 
+                {   // Disqus comment link 
+                    elem: $(".byline"),
+                    amd:  ['disqus-count'], 
                     func: false 
                 },
-*/
+                {   // Disqus comment form 
+                    elem: $("#disqus_thread"),
+                    amd:  ['disqus-embed'], 
+                    func: false 
+                },
                 
                 {   // Twitter
                     elem: $("#twitter-feed"),
