@@ -6,14 +6,14 @@ title: Not found
             <article class="article-box" style="width:100%">
                 <section class="panelled">
                     <h3>All pages</h3>
-	            	{% for article in site.posts %}
-	            		<p><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            	{% for page in site.posts %}
+	            		<p><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></p>
 	            	{% endfor %}
                 </section>
                 <section class="panelled">
                     <h3>Lunatech services</h3>
-	            	{% for article in site.categories.services %}
-	            		<p><a href="{{ article.url | replace:'.html','' }}">{{ article.title }}</a></p>
+	            	{% for page in site.categories.services %}
+	            		<p><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></p>
 	            	{% endfor %}
                 </section>
             </article>
