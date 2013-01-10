@@ -127,8 +127,14 @@
     #content section{
         margin:@interline*2 0 @interline *2;
     }
-    #content hgroup h5 {
-        font-size: @brevier;
+    #content hgroup  {
+        h5 {
+            font-size: @brevier;
+        }
+        [class^="icon-"]:before {
+            margin-left: @em/3;
+            color: @grey3;
+        }
     }
     
     #content article{
@@ -399,6 +405,9 @@
                 font-size: @galliard;
                 font-family: @typeface-header;
                 .opacity(0.5);
+            }
+            [class^="icon-"]:before {
+                color: @grey5;
             }
         }
         #content .tagged .posts {
