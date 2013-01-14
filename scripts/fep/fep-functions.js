@@ -61,31 +61,38 @@
 
         var dd = new Array();
         var counter = 0;
+        
+        // Set reoccuring interval
         var timer = setInterval(function(){triggerNextslide()},8000);
+            
         // get css generated label for active media query
         $("dd",$fepElements).each(function(){
             $(this).data('top',$(this).offset().top);
             dd.push($(this));
         });
+        
+        // Run shorter animation only once:
+        setTimeout(triggerNextslide, 1000);
+            
         $($fepElements).on('click nextslide','dt a',function(e){    
             e.preventDefault();
             if(e.type==='click') { 
                 clearTimeout(timer);
-                //counter = $dd.index('dd');
-            }
+            } 
             var $dt = $(this).closest('dt');
             var $dd = $dt.next('dd');
-            if($dt.is('.active')){
-                $dt.removeClass('active');
-                $(e.delegateTarget).animate({
-                    scrollTop: 0
-                }, 800, "easeOutQuart");
-            } else {
+            function animateSlide(){
                 $(e.delegateTarget).animate({
                     scrollTop: $dd.data('top')
                 }, 800, "easeOutQuart");
                 $("dt",e.delegateTarget).removeClass('active');
                 $dt.addClass('active');
+            }
+            if($dt.is('.active')){
+                $dt.removeClass('active');
+                animateSlide();
+            } else {
+                animateSlide();
             }
         });
         function triggerNextslide(){
@@ -99,6 +106,8 @@
         }        
     }
     
+    
+
     //  BLOCK LINKS 
     var fepBlockLink = function($fepElements){
         $fepElements.each(function(index,domElem){
