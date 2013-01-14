@@ -6,7 +6,7 @@ title: Play framework support services
 categories: services
 ---
 
-Lunatech provides consultancy, training and support, to help you with your Play projects.
+Lunatech is a [Typesafe consultancy partner](http://typesafe.com/company/partners), and provides consultancy and training to help you with your Play projects.
 
 ## Consultancy
 
@@ -23,12 +23,6 @@ Play offers flexibility and agility in the Java world. The goal of our Play 1.x 
 A Play 2 course is expected to be available in April 2013.
 
 [Learn More](play-framework-technical-training)
-
-## Support
-
-We can provide expert developer support for the Play framework, with an SLA for developer questions, framework bug fixing and enhancements. Contact us for more information.
-
-We can develop custom Play modules, as well as enhancements to the framework itself. We have already contributed several of the Play modules that are available on playframework.org.
 
 ## Books
 
