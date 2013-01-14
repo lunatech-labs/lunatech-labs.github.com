@@ -52,6 +52,7 @@
         							</ul>
         						{% when 'ventures' %}
         							<ul>
+            							<li{% if page.title ==  'We are seed investors'%} class="active"{% endif %}><a href="/ventures/">Ventures</a></li>
         							{% for article in site.categories.ventures reversed %}
         								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}

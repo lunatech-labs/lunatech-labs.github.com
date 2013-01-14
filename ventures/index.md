@@ -9,8 +9,8 @@ categories: ventures
 <table>
     <thead>
         <tr>
-            <th>YOUR VENTURE</th>
-            <th>OUR APPROACH</th>
+            <th>Your venture</th>
+            <th>Our approach</th>
         </tr>
     </thead>
     <tbody>

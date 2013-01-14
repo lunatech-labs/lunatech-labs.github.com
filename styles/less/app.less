@@ -470,6 +470,9 @@
     
     #content .fullwidth {
         max-width: 75%;
+        table {
+            margin-top: @interline * 2;
+        }
         th {
             font-family: @typeface-header;
             font-weight: normal;
@@ -477,7 +480,11 @@
             color: @red1;
         }
         th, td {
-            padding: 0 @em 0 0;
+            border-bottom: @l solid @grey0;
+            padding:@interline @block @interline 0;
+        }
+        h3 {
+            margin: 0;
         }
     }
 
