@@ -15,6 +15,7 @@
         				<ul class="menu">
         	                <li class="home"><a href="/">Home</a></li>
         	                <li class="{% if selected == 'services' %} active{% endif %}"><a href="/services">Services</a></li>
+        	                <li class="{% if selected == 'ventures' %} active{% endif %}"><a href="/ventures">Ventures</a></li>
         	                <li class="{% if selected == 'about' %} active{% endif %}"><a href="/about">About</a></li>
         	            	<li class="{% if selected == 'contact' %} active{% endif %}"><a href="/contact">Contact</a></li>
         	            	<!--li class="jobs{% if selected == 'jobs' %} active{% endif %}"><a href="/jobs">Jobs</a></li-->
@@ -46,6 +47,12 @@
         							<ul>
             							<li{% if page.title ==  'Project delivery'%} class="active"{% endif %}><a href="/services/">Project delivery</a></li>
         							{% for article in site.categories.services reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
+        							</ul>
+        						{% when 'ventures' %}
+        							<ul>
+        							{% for article in site.categories.ventures reversed %}
         								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
