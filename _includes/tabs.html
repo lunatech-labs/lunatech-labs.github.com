@@ -1,0 +1,18 @@
+{% if page.tabs == 'jobs' %}{% assign tabs = site.categories.jobs %}{% endif %}
+
+<section class="tabs">
+
+    <ul>
+        {% for article in tabs reversed %}
+        <li><a href="#tab-{{forloop.index}}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        {% endfor %}
+    </ul>
+    {% for article in tabs reversed %}
+    <div id="tab-{{forloop.index}}" class="clearfix">
+        <!-- a href="/{{ article.url | replace:'.html','' }}" rel='external'><i class="icon-external-link"></i></a-->
+        <h2>{{article.title}} </h2>
+        {{article.content}}
+    </div>
+    {% endfor %}
+    
+</section>

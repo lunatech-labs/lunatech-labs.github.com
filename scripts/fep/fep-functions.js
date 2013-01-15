@@ -27,7 +27,7 @@
     // TABS
     var fepTabs = function($fepElements){
         $("ul li:first",$fepElements).addClass('active');
-        $($fepElements).on("click","a",function(event){
+        $($fepElements).on("click","ul a",function(event){
             event.preventDefault();
             $("li",$fepElements).removeClass("active");
             $(this).closest('li').addClass("active");

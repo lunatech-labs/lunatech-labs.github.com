@@ -74,51 +74,46 @@
     
     .tabs {
         position: relative;
-        float: right;
-        display: block;
-        //padding: 1em;
-        .border-radius(all);
-        width: 66.66%;
-        .box-sizing(border-box);
+        overflow: visible;
         }
     .tabs > ul {
-        margin: 0px -3px;
-        padding: 0 3px;
+        margin: 0;
+        border-bottom: @l solid @grey1;
+        padding: 0;
         display: block;
-        height: 2.55em;
-        overflow: hidden;
-        //.gradient(@grey2,@grey1);
-        //.box-shadow(inset 0 1px 3px 1px rgba(0,0,0,0.3));
+        width: 133%;
+
         }
     .tabs > ul li {
-        float: left;
-        display: block;
+        position: relative;
+        bottom: -(@l);
+        display: inline-block;
+        border: @l solid transparent;
+        font-size: @galliard;
+        font-family: @typeface-header;
     }
     .tabs > ul a {
         display: inline-block;
-        padding: @interline/2 @block;
+        padding: @interline/2 @block/4 @interline/2;
         color: @text-color;
-        text-shadow: 0 1px 0 @light-color;
         cursor: pointer;
     }
     .tabs > ul .active{
-        position: relative;
-        bottom: -1px;
         z-index: 2;
-        .border-radius(top);
-        background-color: @light-color;
-        .box-shadow(0 1px 3px 1px rgba(0,0,0,0.2));
+        border-color: @grey1;
+        border-bottom-color: @light-color;
+        .border-radius(top, @interline/2);
     }
     .tabs > div[id*='tab'] {
-        position: absolute;
         display: none;
-        .border-radius(bottom);
-        padding: 1em 2em;
-        float: left;
         width: 100%;
-        background: @light-color;
-        .box-shadow(0 1px 3px 1px rgba(0,0,0,0.2));
-        .box-sizing(border-box);
+        [rel=external] {
+            position: absolute;
+            right: @block;
+            top: @em * 3;
+            z-index: 42;
+            font-size: @galliard;
+        }
     }
     .tabs > div:target {
         display: block;

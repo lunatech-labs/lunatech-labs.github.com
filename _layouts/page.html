@@ -86,7 +86,9 @@
         	            {% endif %}
         	            
         				{{ content }}
-        				
+        				{% if page.tabs %}
+        				{% include tabs.html %}    
+        				{% endif %}
         	        </article>
         		</div>
         	</section>
