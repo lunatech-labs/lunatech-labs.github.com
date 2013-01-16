@@ -7,6 +7,9 @@ categories: services
                     
 We believe technology does make a difference in creating successful software. Therefore Lunatech prides itself in being technologically innovative. We have smiling and friendly developers that can extend your in-house development team or that run projects by themselves.
 
+
+**Java EE** - Java Platform, Enterprise Edition - has been Lunatech’s application development platform for more than a decade. Over the years, Java EE has enabled dependable cross-platform production environments running software developed using a rich ecosystem of application development frameworks.
+
 ![Play](images/play.png)
 
 The **Play framework** represents a new approach to building Java web applications that challenges Java EE’s conventions and complexity, reducing time needed to build scalable web applications. Play! offers many of PHP’s advantages, while using the Java language and offering full access to the stability of established Java libraries. We are active contributors to the framework, offering a high level of expertise. [Read More…](play-framework-support-services)
@@ -14,6 +17,10 @@ The **Play framework** represents a new approach to building Java web applicatio
 ![jBPM](images/drools-jbpm.png)
 
 For modeling and automating complex business processes we use **Drools** (JBoss Rules) or **jBPM** (JBoss Business Process Management). Each of these frameworks provides powerful tools that enable IT projects to manage the business logic embedded in software applications, making it possible to develop, test and maintain the software more effectively at lower cost. [Read More…](jboss-rules-implementation)
+
+![Spring](images/spring.png)
+
+**Spring Framework** is a widely-used framework for Java-based enterprise development, providing flexible dependency injection and a powerful toolbox for common cross-cutting concerns. Whether you have an existing application or are looking to start a new project using Spring, we have the knowledge to satisfy your technology needs.
 
 ![Scala](images/scala.png)
 
