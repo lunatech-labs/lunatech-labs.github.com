@@ -403,9 +403,13 @@
         
         #masthead .menu {
             position: absolute;
-            right: @block;
+            right: 0;
             z-index: 42;
             margin: 0;
+            border-bottom: @l solid @lightBlue;
+            padding-right: @block;
+            width: 75%;
+            .box-sizing(border-box);
         }
         #masthead nav {
             position: relative;
@@ -420,6 +424,9 @@
         #content {
             position: relative;
             background-color: transparent;
+            hgroup {
+                margin-top: 3.5em;
+            }
         }
         #content .posts {
             padding-top: 13.5em;
