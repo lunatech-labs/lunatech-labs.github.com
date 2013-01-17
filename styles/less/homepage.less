@@ -16,10 +16,20 @@
         filter: 0;
     }
     @media screen and (color) {
+        #masthead .logo{
+            height: 14em;
+            text-align: center
+        }
         #masthead .logo a{
-            background-size: 260px;
+            top: 1em;
+            border: @l*3 solid @light-color;
+            width: 9em;
+            height: 9em;
+            background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
+            background-size: 13em;
         }
     }
+
     #masthead nav {
         position: absolute;
         right: 0;

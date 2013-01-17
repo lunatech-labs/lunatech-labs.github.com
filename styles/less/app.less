@@ -67,9 +67,20 @@
         }
     }
     @media screen and (color) {
+        #masthead .logo{
+            height: 14em;
+            text-align: center
+        }
         #masthead .logo a{
+            position: relative;
+            display: inline-block;
+            top: -1em;
+            .border-radius(all, 50%);
+            border: 0 solid @grey3;
+            width: 8em;
+            height: 8em;
             background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
-            background-size: 180px;
+            background-size: 13em;
         }
     }
     .site:not(.homepage) #masthead .logo {
@@ -327,6 +338,7 @@
         @blog-color: #004658;
         
         background-color: darken(@lightBlue,5%);
+        background-color: @light-color;
 
         #content aside{
             font-size: 0.9em;
@@ -362,30 +374,46 @@
             color: fadeout(@blog-color,40%);
         }
         #masthead {
-            background: @blog-color none;
-            .gradient(lighten(@blog-color,5%),@blog-color);
-            .ie-gradient(lighten(@blog-color,5%),@blog-color);
-            height: @topbar-height/1.5;
+            position: absolute;
+            //background: @blog-color none;
+            //.gradient(lighten(@blog-color,5%),@blog-color);
+            //.ie-gradient(lighten(@blog-color,5%),@blog-color);
+            //height: @topbar-height/1.5;
+            background: none;
+            overflow: visible;
         }
-        #masthead .logo {
-            height: @topbar-height/1.5;
-            background: @blog-color none;
-            .gradient(@blog-color,@grey9);
-            .ie-gradient(@blog-color,@grey9);
-            a {
-                height: @topbar-height/1.5;
+        
+        @media screen and (color) {
+            #masthead .logo{
+                height: 14em;
+                text-align: center;
+                background: none;
+                overflow: visible;
+            }
+            #masthead .logo a{
+                top: 2.4em;
+                border: 0 solid @light-color;
+                width: 9em;
+                height: 9em;
+                background: black url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
+                background-size: 13em;
             }
         }
+        
         #masthead .menu {
+            position: absolute;
+            right: @block;
+            z-index: 42;
             margin: 0;
         }
         #masthead nav {
+            position: relative;
             font-size: 0.9em;
             line-height: 1;
             text-shadow: none;
             i, a[href] {
                 padding: 0;
-                color: #fdf9d6;
+                color: @text-color;
             }
         }
         #content {
@@ -404,9 +432,12 @@
                 top: 0;
                 height: 14.4em;
                 font-family: @typeface-header;
-                background-color: @grey0;
+                background-color: @light-color;
                 p {
                     max-width: @text-block;
+                }
+                h1 {
+                    margin-top: 2.4em;
                 }
             }
             .byline {
@@ -443,7 +474,7 @@
             color: @blog-color;
         }
         #content .level {
-            background-color: darken(@lightBlue,2%);
+            background-color: @lightBlue;
             background-image: url(/styles/images/blog-background.png);
         }
         #miscellaneous {
@@ -452,12 +483,6 @@
         }
     }
 
-    @media screen and (color) {
-        #masthead .logo a{
-            background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
-            background-size: 180px;
-        }
-    }
     
     
     
