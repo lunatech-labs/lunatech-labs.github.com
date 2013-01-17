@@ -10,7 +10,8 @@
 
  
 /*  LAYOUT */
-    @topbar-height: 6em;
+
+    @topbar-height: 5.45em;
     
     body {
         color: @text-color;
@@ -23,7 +24,6 @@
     .site .level {
         position: relative;
         margin: 0 auto;
-        //width: @max-width;
         min-width: 768px;
         max-width: @max-width;
     }
@@ -39,9 +39,7 @@
         width: 100%;
         height: @topbar-height;
         overflow: hidden;
-        background: @grey1;
-        .gradient(darken(@grey0,4%),@grey2);
-        .ie-gradient(darken(@grey0,4%),@grey2);
+        background: @light-color;
     }
     #masthead .level {
         padding: 0;
@@ -83,21 +81,18 @@
             background-size: 13em;
         }
     }
-    .site:not(.homepage) #masthead .logo {
-        //.box-shadow(inset -2px -2px 4px 0 rgba(0,0,0,0.5));
-    }
-    
     
     
 //  Navigation
     
     #masthead nav {
-        text-shadow: 0 1px 1px rgba(255,255,255,1);
+        border-bottom: @l solid @lightBlue;
     }
     #masthead .menu {
         display: block;
         margin: 0 @block/2;
         padding: 0;
+        height: (@topbar-height - 0.1em);
         text-align: right;
         list-style: none;
         line-height: 3.5;
