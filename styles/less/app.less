@@ -396,7 +396,7 @@
                 border: 0 solid @light-color;
                 width: 9em;
                 height: 9em;
-                background: black url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
+                background: darken(@blog-color,2%) url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
                 background-size: 13em;
             }
         }
@@ -425,7 +425,7 @@
             padding-top: 13.5em;
             .intro {
                 .box;
-                border-bottom: @l solid @grey1;
+                border-bottom: @l solid darken(@lightBlue,2%);
                 height: 11.5em;
                 width: 75%;
                 position: absolute;
@@ -536,7 +536,6 @@
         }
     }
     .ventures:before,
-    .editorial:before,
     .references:before,
     .contact:before,
     .about:before,
@@ -547,11 +546,6 @@
         display: block;
         width: 100%;
         height: 14em;
-    }
-    .editorial:before {
-        height: 16em;
-        background: transparent url(/styles/images/moleskine.jpg) no-repeat center center;
-        background-size: cover;
     }
     .references:before {
         background: transparent url(/styles/images/iStock_000002330803XSmall.jpg) no-repeat center center;
