@@ -49,7 +49,11 @@
             background: transparent url(/styles/images/header-home.jpg) no-repeat 50% 0%;
              background-size: cover;
             a {
+                top: 0;
+                text-align: center;
+                width: 100%;
                 display: block;
+                border: 0;
                 height: 5em;
                 text-indent: -3000px;
                 color: @light-color;
@@ -140,6 +144,10 @@
             width: 100%;
             overflow: visible;
         }
+        #content hgroup {
+            margin: 0;
+            padding: 0;
+        }
         #content .level {
             background: none;
         }
@@ -220,6 +228,7 @@
             width: 100%;
         }
         
+        #content .ventures:before,
         #content .editorial:before,
         #content .references:before,
         #content .services:before,
