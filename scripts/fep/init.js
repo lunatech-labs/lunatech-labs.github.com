@@ -7,8 +7,8 @@
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
-            "jquery": "jquery-1.8.2-min",
-            "keepinview": "keepinview-min",
+            "jquery": "jquery-1.9.0-min",
+            "validate": "jquery.validate-min",
             "tweet": "jquery.tweet-min",
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min",
@@ -37,6 +37,11 @@
                     elem: $(".tabs"),
                     amd:  ['fep-functions'], 
                     func: 'fepTabs' 
+                },
+                {   // Validation
+                    elem: $("form.validate"),
+                    amd:  ['fep-functions','validate'], 
+                    func: 'fepValidation' 
                 },
                 {   // Tags
                     elem: $("#tagselector"),

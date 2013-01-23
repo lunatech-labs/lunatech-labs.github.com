@@ -129,8 +129,14 @@
     }
     
 
-
-
+    //  VALIDATION
+    var fepValidation = function($fepElements){
+        
+        $fepElements.each(function(){
+            $(this).validate();
+        });
+        
+    }
 
 
 
