@@ -45,20 +45,22 @@ To set-up your development environment:
 * Make a local clone of this repository from [GitHub](https://github.com/lunatech-labs/lunatech-labs.github.com/) and one for [the archives](https://github.com/lunatech-labs/archives)
 * Install Jekkyll as described [above](#jekyll-basics)
 * Put the following contents in `/etc/apache2/users/<your username>.conf`, replacing `<location_of_your_clone>` with the actual location of your clones:
-    DocumentRoot "<location_of_your_clone>/lunatech-labs.github.com/_site"
-    
-    <Directory "<location_of_your_clone>/lunatech-labs.github.com/_site">
-        Options Indexes FollowSymLinks MultiViews
-        Order allow,deny
-        Allow from all
-    </Directory>
-    
-    Alias /archives <location_of_your_clone>/archives/_site
-    
-    <Directory "<location_of_your_clone>/archives/_site">
-        Options Indexes FollowSymLinks MultiViews
-        Order allow,deny
-        Allow from all
-    </Directory>
+
+        DocumentRoot "<location_of_your_clone>/lunatech-labs.github.com/_site"
+        
+        <Directory "<location_of_your_clone>/lunatech-labs.github.com/_site">
+            Options Indexes FollowSymLinks MultiViews
+            Order allow,deny
+            Allow from all
+        </Directory>
+        
+        Alias /archives <location_of_your_clone>/archives/_site
+        
+        <Directory "<location_of_your_clone>/archives/_site">
+            Options Indexes FollowSymLinks MultiViews
+            Order allow,deny
+            Allow from all
+        </Directory>
+
 * Restart Apache: `sudo apachectl restart`
 * Every time you want to see changes, regenerate the sites (in the top-level directory of the repo you want to see): `jekyll --safe --no-lsi --pygments --no-server --no-auto`
