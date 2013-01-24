@@ -42,9 +42,9 @@ See also: [Jekyll usage - basic structure](https://github.com/mojombo/jekyll/wik
 
 To set-up your development environment:
 
-* Make a local clone of this repository from [GitHub](https://github.com/lunatech-labs/lunatech-labs.github.com/) and one for [the archives](https://github.com/lunatech-labs/archives)
-* Install Jekkyll as described [above](#jekyll-basics)
-* Put the following contents in `/etc/apache2/users/<your username>.conf`, replacing `<location_of_your_clone>` with the actual location of your clones:
+1. Make a local clone of this repository from [GitHub](https://github.com/lunatech-labs/lunatech-labs.github.com/) and one for [the archives](https://github.com/lunatech-labs/archives)
+2. Install Jekyll as described [above](#jekyll-basics)
+3. Put the following contents in `/etc/apache2/users/<your username>.conf`, replacing `<location_of_your_clone>` with the actual location of your clones:
 
         DocumentRoot "<location_of_your_clone>/lunatech-labs.github.com/_site"
         
@@ -62,5 +62,7 @@ To set-up your development environment:
             Allow from all
         </Directory>
 
-* Restart Apache: `sudo apachectl restart`
-* Every time you want to see changes, regenerate the sites (in the top-level directory of the repo you want to see): `jekyll --safe --no-lsi --pygments --no-server --no-auto`
+4. Restart Apache: `sudo apachectl restart`
+
+Every time you want to see changes, regenerate the sites (in the top-level directory of the repo you want to see): 
+* $ `jekyll --safe --no-lsi --pygments --no-server --no-auto`
