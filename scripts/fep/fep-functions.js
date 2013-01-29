@@ -141,15 +141,12 @@
 
     // Non-functional Cookie blocker
     var fepCookieApproval = function($fepElements){
-        
-        var approved = cookie.get('approval') || false;
-                
+     
         var googleAnalytics = function(){
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-6087516-1']);
             _gaq.push (['_gat._anonymizeIp']);
             _gaq.push(['_trackPageview']);
-            
             (function() {
                 var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
@@ -158,36 +155,34 @@
         }
         
         if (cookie.enabled()){
+        
+            var approved = cookie('approval');
             
-            if (!approved) {
-            
-                cookie.set("approval", "off", { expires: 4242 });
-                
-            } else {
-            
-                approved = cookie.get('approval');
-                
-                var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies from Google Analytics to help us monitor and improve access to our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
-                
-                if(approved==="off"){
-                
-                    $fepElements.append(prompt);
-                    
-                    $(".dialog-cookies").on("click","button",function(e){
-                        cookie.set("approval", "on", { expires: 4242 });
-                        googleAnalytics();
-                        $(e.delegateTarget).remove();
-                    });
-                    
-                } else if (approved==="on"){
-                
-                    googleAnalytics();
-    
-                }
+            if (approved===undefined) {
+                cookie.set("approval", "off", { expires: 4242, path: "/" });
             }
+            
+            var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies from Google Analytics to help us monitor and improve access to our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+
+            $fepElements.on("click",".dialog-cookies button",function(e){
+                cookie.set("approval", "on", { expires: 4242, path: "/" });
+                googleAnalytics();
+                $(".dialog-cookies", e.delegateTarget).remove();
+            });
+            
+            if(approved==="off" || approved===undefined){
+                $fepElements.append(prompt);
+            } 
+            
+            if (approved==="on"){
+                googleAnalytics();
+            }
+
+        } else {
+            googleAnalytics();
         }
-    }
-    
+        
+    }    
     
 
 
