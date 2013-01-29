@@ -148,24 +148,25 @@
             
             if (!approved) {
             
-                cookie.set('approval', '0');
+                cookie.set("approval", "off", { expires: 90 });
                 
             } else {
             
                 approved = cookie.get('approval');
                 
-                var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use Google Analytics to help us monitor and improve our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+                var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies from Google Analytics to help us monitor and improve access to our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
                 
-                if(approved==="0"){
+                if(approved==="off"){
                 
                     $fepElements.append(prompt);
                     
                     $(".dialog-cookies").on("click","button",function(e){
-                        cookie.set("approval", "1");
+                        cookie.set("approval", "on", { expires: 90 });
+                        console.log(cookie.get('approval'));
                         location.href = location.href;
                     });
                     
-                } else if (approved==="1"){
+                } else if (approved==="on"){
                 
                     var _gaq = _gaq || [];
                     _gaq.push(['_setAccount', 'UA-6087516-1']);
