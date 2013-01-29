@@ -148,7 +148,7 @@
             
             if (!approved) {
             
-                cookie.set("approval", "off", { expires: 90 });
+                cookie.set("approval", "off", { expires: 4242 });
                 
             } else {
             
@@ -161,8 +161,7 @@
                     $fepElements.append(prompt);
                     
                     $(".dialog-cookies").on("click","button",function(e){
-                        cookie.set("approval", "on", { expires: 90 });
-                        console.log(cookie.get('approval'));
+                        cookie.set("approval", "on", { expires: 4242 });
                         location.href = location.href;
                     });
                     
