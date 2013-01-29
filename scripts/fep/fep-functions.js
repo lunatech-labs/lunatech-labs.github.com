@@ -139,6 +139,50 @@
     }
 
 
+    // Non-functional Cookie blocker
+    var fepCookieApproval = function($fepElements){
+        
+        var approved = cookie.get('approval') || false;
+        
+        if (cookie.enabled()){
+            
+            if (!approved) {
+            
+                cookie.set('approval', '0');
+                
+            } else {
+            
+                approved = cookie.get('approval');
+                
+                var prompt = '<div class="dialog-cookies"><h3>Cookie Permission</h3><p>We request your permission to use Google Analytics to help us monitor and improve our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+                
+                if(approved==="0"){
+                
+                    $fepElements.append(prompt);
+                    
+                    $(".dialog-cookies").on("click","button",function(e){
+                        cookie.set("approval", "1");
+                        $(e.delegateTarget).remove();
+                    });
+                    
+                } else if (approved==="1"){
+                
+                    var _gaq = _gaq || [];
+                    _gaq.push(['_setAccount', 'UA-6087516-1']);
+                    _gaq.push (['_gat._anonymizeIp']);
+                    _gaq.push(['_trackPageview']);
+                    
+                    (function() {
+                        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                    })();
+    
+                }
+            }
+        }
+    }
+    
 
 
 

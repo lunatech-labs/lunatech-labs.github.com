@@ -12,12 +12,13 @@
             "tweet": "jquery.tweet-min",
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min",
+            "cookie": "cookie-min",
             "disqus-count": "http://lunatech.disqus.com/count",
             "disqus-embed": "http://lunatech.disqus.com/embed"
         }
     });
     
-    require(['jquery'],function(){ 
+    require(['cookie','jquery'],function(){ 
 
         // We like javascript. Add 'js' class to use for styling
         $("html").attr('class','js'); 
@@ -33,6 +34,11 @@
             var $lazyLoadArray = [
             
                 
+                {   // Cookie loader/blocker
+                    elem: $('body'),
+                    amd:  ['fep-functions'], 
+                    func: 'fepCookieApproval' 
+                },
                 {   // Tabs
                     elem: $(".tabs"),
                     amd:  ['fep-functions'], 
@@ -115,6 +121,7 @@
                     lazyObj.lazyLoad();
                 }
             }
+            
         });
         
             

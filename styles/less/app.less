@@ -86,6 +86,34 @@
         display: none;
     }
     
+    .dialog-cookies { 
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:4242;
+        border-bottom: @l solid @grey3;
+        padding: 0.2em @block;
+        width:100%;
+        height: auto;
+        font-size: @brevier;
+        background-color: @lightBlue;
+        .box-sizing(border-box);
+        h3{
+            font-size: @garamond;
+            font-weight: bold;
+            display: inline;
+            padding-right: @em;
+        }
+        p {
+            display: inline;
+        }
+        button {
+            float: right;
+            font-weight: bold;
+        }
+    }
+    
+    
 //  Navigation
     
     #masthead nav {
