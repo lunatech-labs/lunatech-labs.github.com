@@ -18,7 +18,7 @@
         }
     });
     
-    require(['cookie','jquery'],function(){ 
+    require(['jquery'],function(){ 
 
         // We like javascript. Add 'js' class to use for styling
         $("html").attr('class','js'); 
@@ -36,7 +36,7 @@
                 
                 {   // Cookie loader/blocker
                     elem: $('body'),
-                    amd:  ['fep-functions'], 
+                    amd:  ['cookie','fep-functions'], 
                     func: 'fepCookieApproval' 
                 },
                 {   // Tabs

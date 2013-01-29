@@ -154,7 +154,7 @@
             
                 approved = cookie.get('approval');
                 
-                var prompt = '<div class="dialog-cookies"><h3>Cookie Permission</h3><p>We request your permission to use Google Analytics to help us monitor and improve our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+                var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use Google Analytics to help us monitor and improve our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
                 
                 if(approved==="0"){
                 
@@ -162,7 +162,7 @@
                     
                     $(".dialog-cookies").on("click","button",function(e){
                         cookie.set("approval", "1");
-                        $(e.delegateTarget).remove();
+                        location.href = location.href;
                     });
                     
                 } else if (approved==="1"){
