@@ -5,7 +5,7 @@ path_prefix: ../
 level: top
 title: "Front-end developer vacancy"
 short_title: "Front-end"
-summary: "we're looking for a young front-end developer to help our developers integrate design in to future websites and applications."
+summary: "We're looking for a young front-end developer to help us design and build first class web stack applications."
 ---
 
 ### Working for Lunatech
