@@ -155,31 +155,30 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         }
-        if (cookie.enabled()){
         
-            var approved = cookie('approval');
-            
-            if (approved===undefined) {
-                cookie.set("approval", "off", { expires: 4242, path: "/" });
-            }
-            
-            var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies from Google Analytics to help us monitor and improve access to our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+        $.cookie.defaults.expires = 4242;
+        $.cookie.defaults.path = '/';
+        $.cookie.defaults.domian = 'lunatech.com';
+        
+        var approved = $.cookie('approval');
 
-            $fepElements.on("click",".dialog-cookies button",function(e){
-                cookie.set("approval", "on", { expires: 4242, path: "/" });
-                googleAnalytics();
-                $(".dialog-cookies", e.delegateTarget).remove();
-            });
-            
-            if(approved==="off" || approved===undefined){
-                $fepElements.append(prompt);
-            } 
-            
-            if (approved==="on"){
-                googleAnalytics();
-            }
+        var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies from Google Analytics to help us monitor and improve access to our site. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
 
-        } else {
+        $fepElements.on("click",".dialog-cookies button",function(e){
+            $.cookie('approval', 'on');
+            googleAnalytics();
+            $(".dialog-cookies", e.delegateTarget).remove();
+        });
+        
+        if (approved===undefined) {
+            $.cookie('approval', 'off');
+        }
+
+        if(approved==="off"){
+            $fepElements.append(prompt);
+        } 
+        
+        if (approved==="on"){
             googleAnalytics();
         }
         

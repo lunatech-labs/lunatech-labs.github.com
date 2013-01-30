@@ -12,7 +12,7 @@
             "tweet": "jquery.tweet-min",
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min",
-            "cookie": "cookie-min",
+            "cookie": "jquery.cookie-min",
             "disqus-count": "http://lunatech.disqus.com/count",
             "disqus-embed": "http://lunatech.disqus.com/embed"
         }
