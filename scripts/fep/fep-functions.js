@@ -55,10 +55,12 @@
     
     //  Promo viewer 
     var fepHeaderPromo = function($fepElements){
-
-        var $label = getComputedStyle(document.body, '::before')['content'];
-        if ($label==="SMALL") { return false;}
-
+        
+        if(typeof window.getComputedStyle==='function'){
+            var $label = getComputedStyle(document.body, '::before')['content'];
+            if ($label==="SMALL") { return false;}
+        }
+        
         var dd = new Array();
         var counter = 0;
         
@@ -153,7 +155,6 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         }
-        
         if (cookie.enabled()){
         
             var approved = cookie('approval');
