@@ -10,9 +10,9 @@ summary: "We're looking for a young front-end developer to help us design and bu
 
 ### Working for Lunatech
 
-Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web)applications we're looking for a young front-end developer to help our developers integrate design in to future websites and applications. 
+Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web)applications we're looking for a young front-end developer to help our developers integrate design in to our websites and applications. 
 
-You'll be creating front-end for (mobile)websites and applications from scratch as well as adapting current projects to meet today's standards. You'll get room to grow to help us with design and creating UI widgets. 
+You'll be creating the front-end for (mobile)websites and applications from scratch as well as adapting current projects to meet today's standards. You'll get room to grow by designing and creating new user interfaces from a code and usability point of view. 
 
 
 ### What we are looking for
@@ -29,14 +29,14 @@ You'll be creating front-end for (mobile)websites and applications from scratch 
 ### What we are offering
 
 We're situated in a beautiful building on the Heemraadsingel in Rotterdam. Our colleagues from all around the world make it a very relaxed atmosphere to work in. 
-You get set up your own working environment. Most us work on MacBook Pro's, but the choice is yours.
+You get to set up your own working environment. Most us work on MacBook Pro's, but the choice is yours.
 You will get to work on projects small (fun) and large (challenging).
-Learning is encouraged and actively supported. 
+Learning is encouraged and actively supported. Being good at what you do is important to us.
 
 
 ### Send your CV 
 
-Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we look forward to hearing from you. 
+Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we're looking forward to hear from you. 
 If you have any websites to show us, including your own blog and or portfolio, please include these links in your CV.
 
 
