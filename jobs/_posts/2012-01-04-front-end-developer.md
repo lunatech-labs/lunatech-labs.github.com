@@ -5,14 +5,14 @@ path_prefix: ../
 level: top
 title: "Front-end developer vacancy"
 short_title: "Front-end"
-summary: "We're looking for a young front-end developer to help us design and build first class web stack applications."
+summary: "We’re looking for a young front-end developer to help us design and build first-class web stack applications."
 ---
 
 ### Working for Lunatech
 
-Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web)applications we're looking for a young front-end developer to help our developers integrate design in to our websites and applications. 
+Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web) applications we’re looking for a young front-end developer to help our developers integrate design in to our web sites and applications. 
 
-You'll be creating the front-end for (mobile)websites and applications from scratch as well as adapting current projects to meet today's standards. You'll get room to grow by designing and creating new user interfaces from a code and usability point of view. 
+You’ll be creating the front-end for (mobile) web sites and applications from scratch as well as adapting current projects to meet today’s standards. You’ll get room to grow by designing and creating new user interfaces from a code and usability point of view. 
 
 
 ### What we are looking for
@@ -28,25 +28,12 @@ You'll be creating the front-end for (mobile)websites and applications from scra
 
 ### What we are offering
 
-We're situated in a beautiful building on the Heemraadsingel in Rotterdam. Our colleagues from all around the world make it a very relaxed atmosphere to work in. 
-You get to set up your own working environment. Most us work on MacBook Pro's, but the choice is yours.
-You will get to work on projects small (fun) and large (challenging).
-Learning is encouraged and actively supported. Being good at what you do is important to us.
+We’re situated in a beautiful building on the Heemraadsingel in Rotterdam. Our colleagues from all around the world make it a very relaxed atmosphere to work in.
+
+You get to set up your own working environment. Most us work on MacBook Pros, but the choice is yours. You will get to work on projects small (fun) and large (challenging). Learning is encouraged and actively supported. Being good at what you do is important to us.
 
 
 ### Send your CV 
 
-Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we're looking forward to hear from you. 
-If you have any websites to show us, including your own blog and or portfolio, please include these links in your CV.
-
-
-
-
-
-
-
-
-
-
-
-
+Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we’re looking forward to hearing from you. 
+If you have any web sites to show us, including your own blog or portfolio, please include these links in your CV.
