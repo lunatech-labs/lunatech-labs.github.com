@@ -13,8 +13,7 @@
             "easing": "jquery.easing.1.3-min",
             "fep-functions": "fep-functions-min",
             "cookie": "jquery.cookie-min",
-            "disqus-count": "http://lunatech.disqus.com/count",
-            "disqus-embed": "http://lunatech.disqus.com/embed"
+            "ga": "http://www.google-analytics.com/ga",
         }
     });
     
@@ -36,7 +35,7 @@
                 
                 {   // Cookie loader/blocker
                     elem: $('body'),
-                    amd:  ['cookie','fep-functions'], 
+                    amd:  ['cookie','fep-functions','ga'], 
                     func: 'fepCookieApproval' 
                 },
                 {   // Tabs
@@ -63,20 +62,7 @@
                     elem: $(".link-reference"),
                     amd:  ['fep-functions'], 
                     func: 'fepBlockLink' 
-                },
-/*
-                {   // Disqus comment link 
-                    elem: $(".byline"),
-                    amd:  ['disqus-count'], 
-                    func: false 
-                },
-*/
-                {   // Disqus comment form 
-                    elem: $("#disqus_thread"),
-                    amd:  ['disqus-embed'], 
-                    func: false 
-                },
-                
+                },                
                 {   // Twitter
                     elem: $("#twitter-feed"),
                     amd:  ['fep-functions','tweet'], 
