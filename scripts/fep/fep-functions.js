@@ -144,23 +144,18 @@
     // Non-functional Cookie blocker
     var fepCookieApproval = function($fepElements){
      
-        var googleAnalytics = function(){
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-6087516-1']);
-            _gaq.push (['_gat._anonymizeIp']);
-            _gaq.push(['_trackPageview']);
-        }
-
         $.cookie.defaults.expires = 4242;
         $.cookie.defaults.path = '/';
         $.cookie.defaults.domian = 'lunatech.com';
         
-        var prompt = '<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies for Google Analytics to help us monitor and improve access to lunatech.com. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>';
+        var $prompt = $('<div class="dialog-cookies"><h3><i class="icon-info-sign"></i> Cookie Permission</h3><p>We request your permission to use cookies for Google Analytics to help us monitor and improve access to lunatech.com. The data collected is anonymised.</p><button id="cookieOkay">Approve</button></div>');
 
-        $fepElements.on("click",".dialog-cookies button",function(e){
+        $prompt.on("click","button",function(e){
             $.cookie('approval', 'on');
-            googleAnalytics();
-            $(".dialog-cookies", e.delegateTarget).remove();
+            $prompt.html('<div class="dialog-cookies"><h3><i class="icon-spinner icon-spin"></i> Loading Google Analytics</h3></div>');
+            require(['ga'],function(){
+                $prompt.remove();
+            });
         });
         
         if ($.cookie('approval')===undefined) {
@@ -168,11 +163,11 @@
         }
 
         if($.cookie('approval')==="off"){
-            $fepElements.append(prompt);
+            $prompt.appendTo($fepElements);
         } 
         
         if ($.cookie('approval')==="on"){
-            googleAnalytics();
+            require(['ga']);
         }
         
     }    

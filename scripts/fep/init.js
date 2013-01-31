@@ -16,7 +16,15 @@
             "ga": "http://www.google-analytics.com/ga",
         }
     });
-    
+
+
+    // GOOGLE ANALYTICS SETTINGS
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6087516-1']);
+    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_trackPageview']);
+
+
     require(['jquery'],function(){ 
 
         // We like javascript. Add 'js' class to use for styling
@@ -35,7 +43,7 @@
                 
                 {   // Cookie loader/blocker
                     elem: $('body'),
-                    amd:  ['cookie','fep-functions','ga'], 
+                    amd:  ['cookie','fep-functions'], 
                     func: 'fepCookieApproval' 
                 },
                 {   // Tabs
