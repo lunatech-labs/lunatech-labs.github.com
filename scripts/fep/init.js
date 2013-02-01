@@ -7,13 +7,13 @@
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
-            "jquery": "jquery-1.9.0-min",
-            "validate": "jquery.validate-min",
-            "tweet": "jquery.tweet-min",
-            "easing": "jquery.easing.1.3-min",
-            "fep-functions": "fep-functions-min",
-            "cookie": "jquery.cookie-min",
-            "ga": "http://www.google-analytics.com/ga",
+            "jquery":           "jquery-1.9.0-min",
+            "validate":         "jquery.validate-min",
+            "tweet":            "jquery.tweet-min",
+            "easing":           "jquery.easing.1.3-min",
+            "fep-functions":    "fep-functions-min",
+            "cookie":           "jquery.cookie-min",
+            "ga":               "http://www.google-analytics.com/ga",
         }
     });
 
@@ -21,7 +21,7 @@
     // GOOGLE ANALYTICS SETTINGS
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-6087516-1']);
-    _gaq.push (['_gat._anonymizeIp']);
+    _gaq.push(['_gat._anonymizeIp']);
     _gaq.push(['_trackPageview']);
 
 
