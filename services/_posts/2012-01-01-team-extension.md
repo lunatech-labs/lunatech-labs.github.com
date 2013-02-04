@@ -7,13 +7,6 @@ categories: services
 
 Team extension is increasing a team’s capabilities in a specific expertise. Team extension is not about simply growing the size of a team, but rather about increasing the team’s effectiveness without reducing its efficiency. This is achieved by adding an expert to an existing team, within a clear context of roles, responsibilities, process and deliverables.
 
-The expertise might be in a:
-
-* specific technology, e.g. the [Play Framework](play-framework-support-services) or [JBoss Rules](jboss-rules-implementation) (a.k.a. Drools)
-* technical role, e.g. user-experience design, web services architecture
-* software development role, e.g. [Scrum Master](interim-scrum-master), Scrum Product Owner, functional designer.
-
-Optionally, team extension can involve knowledge transfer so that the team acquires the new capability and is not dependent on an external expert in the long term.
 
 ## Goals
 
