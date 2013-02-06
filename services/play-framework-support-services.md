@@ -26,6 +26,6 @@ A Play 2 course is expected to be available in April 2013.
 
 ## Books
 
-Alternatively, buy the book! Our Play experts are sharing their knowledge in two Play framework books for Manning Publications.
+As well as development projects, several Lunatech staff have used their Play expertise to write two Play framework books for Manning Publications.
 
 [Learn More](/books)
