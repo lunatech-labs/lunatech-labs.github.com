@@ -41,11 +41,18 @@
             var $lazyLoadArray = [
             
                 
+                {   // Google Analytics
+                    elem: $('body'),
+                    amd:  ['ga'], 
+                    func: false 
+                },
+/*
                 {   // Cookie loader/blocker
                     elem: $('body'),
                     amd:  ['cookie','fep-functions'], 
                     func: 'fepCookieApproval' 
                 },
+*/
                 {   // Tabs
                     elem: $(".tabs"),
                     amd:  ['fep-functions'], 
