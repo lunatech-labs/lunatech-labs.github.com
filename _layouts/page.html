@@ -73,9 +73,11 @@
         							</ul>
         					{% endcase %}
         				{% endfor %}
+        				{% if page.sidebar %}
         				<div class="box">
         				{{ page.sidebar | markdownify }}
         				</div>
+        				{% endif %}
                     </aside>
         	        <article class="copy-{{ page.categories }} {{ page.column }}">
                         <h1>{{ page.title }}</h1>
