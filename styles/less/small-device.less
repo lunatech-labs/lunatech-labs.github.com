@@ -20,6 +20,7 @@
             height: auto;
         }
         #masthead .menu {
+            position: relative;
             margin: 0 @interline;
             text-align: left;
             list-style: none;
@@ -32,6 +33,48 @@
             padding: 0;
             text-align: left;
         }
+         #masthead .menu {
+             .home a {
+                 position: relative;
+                    width: @em;
+                    color: transparent;
+                    overflow: hidden;
+                 &:before {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                     content: "\f015";
+                     font-size: @pica;
+                     line-height: 1.8;
+                     font-family: FontAwesome;
+                     color: @light-color;
+                 }
+             }
+             .contact {
+                 position: static;
+             }
+             .contact a {
+                    width: @em;
+                    color: transparent;
+                    overflow: hidden;
+                 &:before {
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                     content: "\f0e0";
+                     font-size: @pica;
+                     line-height: 1.8;
+                     font-family: FontAwesome;
+                     color: @light-color;
+                 }
+             }
+             .home.active a:before,
+             .contact.active a:before {
+                    color: @orange1;
+             }
+         }
+         
+         
         #masthead .menu li a {
             margin: 0;
             padding: @interline/3;
