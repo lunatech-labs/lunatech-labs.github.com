@@ -9,6 +9,7 @@
         paths: {
             "jquery":           "jquery-1.9.0-min",
             "validate":         "jquery.validate-min",
+            "keepinview":       "keepinview-min",
             "tweet":            "jquery.tweet-min",
             "easing":           "jquery.easing.1.3-min",
             "fep-functions":    "fep-functions-min",
@@ -16,6 +17,9 @@
             "ga":               "http://www.google-analytics.com/ga",
         }
     });
+    
+    //  VIEWPORT SIZE
+    var $label = (typeof window.getComputedStyle==='function') ? getComputedStyle(document.body, '::before')['content'] : false;
 
 
     // GOOGLE ANALYTICS SETTINGS
@@ -63,10 +67,10 @@
                     amd:  ['fep-functions','validate'], 
                     func: 'fepValidation' 
                 },
-                {   // Tags
-                    elem: $("#tagselector"),
-                    amd:  ['fep-functions'], 
-                    func: 'fepTagSelectors' 
+                {   // keep in view
+                    elem: $("nav"),
+                    amd:  ['fep-functions','keepinview'], 
+                    func: 'fepKeepInView' 
                 },
                 {   // Homepage header
                     elem: $(".homepage #masthead dl"),

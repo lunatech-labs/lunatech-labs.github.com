@@ -19,9 +19,11 @@
     
     //  KEEP IN VIEW 
     var fepKeepInView = function($fepElements){
-        $fepElements.keepInView({
-            zindex: 42
-        });
+        if ($label==="SMALL") { 
+            $fepElements.keepInView({
+                zindex: 42
+            });
+        } 
     }
     
     // TABS
@@ -56,10 +58,7 @@
     //  Promo viewer 
     var fepHeaderPromo = function($fepElements){
         
-        if(typeof window.getComputedStyle==='function'){
-            var $label = getComputedStyle(document.body, '::before')['content'];
-            if ($label==="SMALL") { return false;}
-        }
+        if ($label==="SMALL") { return false; }
         
         var dd = new Array();
         var counter = 0;
