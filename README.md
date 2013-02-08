@@ -40,12 +40,15 @@ See also: [Jekyll usage - basic structure](https://github.com/mojombo/jekyll/wik
 
 ## Development environment
 
+These instructions tell you how to set up your OSX machine to serve your own version of lunatech.com and blog.lunatech.com. If you’re using any other OS, adapt as necessary.
+
 To set-up your development environment:
 
-1. Make a local clone of this repository from [GitHub](https://github.com/lunatech-labs/lunatech-labs.github.com/) and one for [the archives](https://github.com/lunatech-labs/archives)
+1. Make a local clone of this repository from [GitHub](https://github.com/lunatech-labs/lunatech-labs.github.com/) and one for [the archives](https://github.com/lunatech-labs/archives) or your own forks
 2. Install Jekyll as described [above](#jekyll-basics)
 3. Put the following contents in `/etc/apache2/users/<your username>.conf`, replacing `<location_of_your_clone>` with the actual location of your clones:
-
+        ServerName localhost
+        
         DocumentRoot "<location_of_your_clone>/lunatech-labs.github.com/_site"
         
         <Directory "<location_of_your_clone>/lunatech-labs.github.com/_site">
@@ -54,15 +57,23 @@ To set-up your development environment:
             Allow from all
         </Directory>
         
-        Alias /archives <location_of_your_clone>/archives/_site
+        <VirtualHost blog.lunatest.com>
+            ServerName blog.lunatest.com
         
-        <Directory "<location_of_your_clone>/archives/_site">
-            Options Indexes FollowSymLinks MultiViews
-            Order allow,deny
-            Allow from all
-        </Directory>
+            DocumentRoot "<location_of_your_clone>/archives/_site"
+        
+            <Directory "<location_of_your_clone>/archives/_site">
+                Options Indexes FollowSymLinks MultiViews
+                Order allow,deny
+                Allow from all
+            </Directory>
+        </VirtualHost>
 
-4. Restart Apache: `sudo apachectl restart`
+4. Edit `/etc/hosts` and append `blog.lunatest.com` to the line starting with `127.0.0.1`
+5. Restart Apache: `sudo apachectl restart`
+6. Point your browser to [localhost](https://localhost/) or [blog.lunatest.com](http://blog.lunatest.com/) to see the sites.
+
+If you’d rather use something that doesn’t look like a real website’s hostname, you can replace blog.lunatest.com with whatever you like (in the hosts file and Apache config) but note that Chrome forces you to type `http://` in front of it, otherwise it thinks you want to search.
 
 Every time you want to see changes, regenerate the sites (in the top-level directory of the repo you want to see): 
 * $ `jekyll --safe --no-lsi --pygments --no-server --no-auto`
