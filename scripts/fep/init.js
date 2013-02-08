@@ -45,6 +45,11 @@
             var $lazyLoadArray = [
             
                 
+                {   // Twitter
+                    elem: $("#twitter-feed"),
+                    amd:  ['fep-functions','tweet'], 
+                    func: 'fepTweet' 
+                },
                 {   // Google Analytics
                     elem: $('body'),
                     amd:  ['ga'], 
@@ -81,12 +86,7 @@
                     elem: $(".link-reference"),
                     amd:  ['fep-functions'], 
                     func: 'fepBlockLink' 
-                },                
-                {   // Twitter
-                    elem: $("#twitter-feed"),
-                    amd:  ['fep-functions','tweet'], 
-                    func: 'fepTweet' 
-                }
+                }             
                 
             ];
             
