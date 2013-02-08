@@ -105,7 +105,7 @@
                     if (func) {
                     
                         //  Constructor: 
-                        //  Create an identifier with the 'func' string and return it
+                        //  Create a new function with the 'func' string and return it
                         var lazyFunc = new Function("return "+func)();
                         
                         //  Call the Constructor and pass the target element
@@ -129,5 +129,5 @@
             
         });
         
-            
+                    
     });

@@ -28,18 +28,30 @@
     
     // TABS
     var fepTabs = function($fepElements){
-        $("ul li:first",$fepElements).addClass('active');
+        var hash = location.hash
+        var $firsttab = $("ul li:first a",$fepElements);
         $($fepElements).on("click","ul a",function(event){
             event.preventDefault();
-            $("li",$fepElements).removeClass("active");
-            $(this).closest('li').addClass("active");
-            $("div[id*='tab']",event.delegateTarget).hide();
-            $(this.hash).show(0,function(){
-                var h = $(this).outerHeight() + 120;
-                $(event.delegateTarget).css("height",h+"px");
-            });
+            location.hash=$(this).attr('href').split(/#/)[1];
+            loadTab($(this));
         });
-        $("ul li:first a",$fepElements).trigger('click');
+        function loadTab($tab){
+            $("li",$fepElements).removeClass("active");
+            $tab.closest('li').addClass("active");
+            $(".tab",$fepElements).hide();
+            $($tab.get(0).hash).show(0,function(){
+                var h = $(this).outerHeight() + 120;
+                $fepElements.css("height",h+"px");
+            });
+        }
+        if(hash) {
+            $("ul a[href='"+hash+"']",$fepElements).trigger('click');
+        } else {
+            var windowPos = $(window).scrollTop();
+            loadTab($firsttab);
+            location.hash=$firsttab.get(0).hash;
+            window.scrollTo(windowPos,0);
+        }
     }
     
     // TWEET
