@@ -33,14 +33,14 @@
         var $firsttab = $("ul li:first a",$fepElements);
         $($fepElements).on("click","ul a",function(event){
             event.preventDefault();
-            location.hash=$(this).attr('href').split(/#/)[1];
+            location.hash=$(this).attr('href');
             loadTab($(this));
         });
         function loadTab($tab){
             $("li",$fepElements).removeClass("active");
             $tab.closest('li').addClass("active");
             $(".tab",$fepElements).hide();
-            $($tab.get(0).hash).show(0,function(){
+            $($tab.attr('href')).show(0,function(){
                 var h = $(this).outerHeight() + 120;
                 $fepElements.css("height",h+"px");
             });
@@ -50,7 +50,7 @@
             $("ul a[href='"+hash+"']",$fepElements).trigger('click');
         } else {
             loadTab($firsttab);
-            location.hash=$firsttab.get(0).hash;
+            location.hash=$firsttab.attr('href');
         }
         window.onhashchange = function(){
             $("ul a[href='"+location.hash+"']",$fepElements).trigger('click');
