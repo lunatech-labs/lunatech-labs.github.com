@@ -28,7 +28,8 @@
     
     // TABS
     var fepTabs = function($fepElements){
-        var hash = location.hash
+        var windowPos = 0;
+        var hash = location.hash;
         var $firsttab = $("ul li:first a",$fepElements);
         $($fepElements).on("click","ul a",function(event){
             event.preventDefault();
@@ -43,15 +44,18 @@
                 var h = $(this).outerHeight() + 120;
                 $fepElements.css("height",h+"px");
             });
+            windowPos = $(window).scrollTop();
         }
         if(hash) {
             $("ul a[href='"+hash+"']",$fepElements).trigger('click');
         } else {
-            var windowPos = $(window).scrollTop();
             loadTab($firsttab);
             location.hash=$firsttab.get(0).hash;
-            window.scrollTo(windowPos,0);
         }
+        window.onhashchange = function(){
+            $("ul a[href='"+location.hash+"']",$fepElements).trigger('click');
+        }
+        window.scrollTo(windowPos,0);
     }
     
     // TWEET
