@@ -28,12 +28,21 @@
     
     // TABS
     var fepTabs = function($fepElements){
+        
+        // init vars
         var windowPos = $(window).scrollTop();
         var newpage = true;
+        
+        // Events (click & hashchange)
         $($fepElements).on("click","ul a",function(event){
             event.preventDefault();
             location.hash=$(this).attr('href');
         });
+        $(window).on('hashchange',function(){
+            loadTab($("ul a[href='"+location.hash+"']",$fepElements));
+        });
+        
+        // Show or switch tab
         function loadTab($tab){
             $(".active",$fepElements).removeClass("active");
             $tab.closest('li').addClass("active");
@@ -41,23 +50,19 @@
             $($tab.attr('href')).show(0,function(){
                 var h = $(this).outerHeight() + 120;
                 $fepElements.css("height",h+"px");
-                windowPos = $(window).scrollTop();
                 if(newpage) {
                     window.scrollTo(windowPos,0);
                     newpage = false;
                 }
             });
         }
-        
+        // On page load show tab based on hash
         if(location.hash) {
-            loadTab($("ul a[href='"+location.hash+"']",$fepElements));
+            $(window).trigger('hashchange');
         } else {
             location.hash=$("ul li:first a",$fepElements).attr('href');
         }
         
-        window.onhashchange = function(){
-            loadTab($("ul a[href='"+location.hash+"']",$fepElements));;
-        }
         
     }
     
