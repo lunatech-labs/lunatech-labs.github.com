@@ -1,17 +1,13 @@
 ---
 layout: page
 path_prefix: ../
-title: Play Framework Technical Training
-level: top
-categories: services
+title: Play 1.2 Technical Training
+categories: training
+short_title: Play 1.x training
+summary: "This Play 1.2.x course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises."
 ---
 
-This Play 1.2.x course provides Java web developers the skills to make web applications with cleaner code and less effort. The course consists of an interactive presentation alongside hands-on exercises for the trainees, combining theoretical instruction with practical exercises.
-
-A Play 2 course is expected to be available in April 2013.
-
-
-### Course overview
+## Course overview
 
 The course consists of two days of mixed sessions: the first day covers the the Play framework foundation while the second day covers the advanced techniques. During the course, practical exercises will be performed by the attendees. The course will be given in English. We will adapt the course to the level of the attendees, where possible.
 
@@ -19,7 +15,7 @@ The course is designed and written by Peter Hilton, a Play framework committer s
 
 The course is aimed at experienced Java developers. Attendees are expected to have Java web development experience and a working knowledge of web application development. The course can be adjusted to cater for attendees who are new to Java or web development.
 
-### Course details
+## Course details
 
 **Price**  
 €1500 per attendee for 2 days  
