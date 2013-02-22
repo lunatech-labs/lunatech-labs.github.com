@@ -17,6 +17,7 @@
             max-width: 100%;
         }
         #masthead {
+            position: static;
             height: auto;
         }
         #masthead .menu {
@@ -90,7 +91,7 @@
             height: auto;
             font-size: 1em;
             line-height: 0;
-            background-color: @blue2;
+            background-color: @grey7;
             //background: transparent url(/styles/images/header-home.jpg) no-repeat 50% 0%;
              background-size: cover;
             a {
@@ -160,6 +161,9 @@
                 padding: @interline;
                 .columns(0);
             }
+        }
+        #content {
+            padding-top: 0;
         }
         #content #introduction,
         #content #information {
@@ -298,6 +302,11 @@
         }
         #content aside {
             position: static;
+            margin-bottom: @em;
+            width: 100%;
+        }
+        #content aside nav {
+            position: static;
             float: none;
             margin: 0;
             padding: @interline;
@@ -340,12 +349,12 @@
             width: 100%;
         }
         
-        #content .ventures:before,
-        #content .editorial:before,
-        #content .references:before,
-        #content .services:before,
-        #content .about:before,
-        #content .contact:before {
+        #content .ventures nav:before,
+        #content .editorial nav:before,
+        #content .references nav:before,
+        #content .services nav:before,
+        #content .about nav:before,
+        #content .contact nav:before {
             content: none;
         }
 

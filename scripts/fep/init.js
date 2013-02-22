@@ -73,7 +73,7 @@
                     func: 'fepValidation' 
                 },
                 {   // keep in view
-                    elem: $("nav"),
+                    elem: $("header nav"),
                     amd:  ['fep-functions','keepinview'], 
                     func: 'fepKeepInView' 
                 },

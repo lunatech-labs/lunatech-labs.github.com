@@ -5,6 +5,7 @@
     @topbar-height: 26em;
     
     #masthead {
+        position: relative;
         height: @topbar-height;
         background: @light-color;
         filter: 0;
@@ -37,7 +38,10 @@
         width: 66.66%;
         border-bottom: @l solid @lightBlue;
         background-color: @light-color;
-        filter: 0;
+        filter: 0;        
+        a {
+            color: @text-color;
+        }
     }
     #masthead .menu {
         line-height: 3.5;
@@ -49,6 +53,7 @@
         padding: 0;
         width: 100%;
         height: @topbar-height;
+        color: @text-color;
         overflow: hidden;
         &:before{
             float: left;
@@ -140,6 +145,7 @@
     //  CONTENT SECTION 
     
     #content {
+        padding-top: 0;
         color: @text-color;
         min-height: 19em;
         background: @lightBlue;

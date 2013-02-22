@@ -27,7 +27,8 @@
                 
         	<section id="content">
         		<div class="box level">
-                    <aside class="{{ page.categories }}">			
+                    <aside class="{{ page.categories }}">
+                        <nav>		
         				{% for category in page.categories %}
         					{% case category %}
         						{% when 'about' %}
@@ -48,12 +49,6 @@
         							<ul>
             							<li{% if page.title ==  'Project delivery'%} class="active"{% endif %}><a href="/services/">Project delivery</a></li>
         							{% for article in site.categories.services reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
-        							{% endfor %}
-        							</ul>
-        						{% when 'training' %}
-        							<ul>
-        							{% for article in site.categories.training reversed %}
         								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
@@ -79,6 +74,7 @@
         							</ul>
         					{% endcase %}
         				{% endfor %}
+        				</nav>
         				{% if page.sidebar %}
         				<div class="box">
         				{{ page.sidebar | markdownify }}
