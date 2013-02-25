@@ -18,11 +18,14 @@
     }
     @media screen and (color) {
         #masthead .logo{
+            padding-top: 1em;
             height: 14em;
             text-align: center
         }
         #masthead .logo a{
             top: 1em;
+            display: inline-block;
+            .border-radius(all, 50%);
             border: @l*3 solid @light-color;
             width: 9em;
             height: 9em;
@@ -124,20 +127,20 @@
             .columns(2);
         }
     }
-    #masthead #understand:before{
+    #masthead.loaded #understand:before{
         background: transparent url(/styles/images/header-understand.jpg) no-repeat 50% 70%;
         background-size: cover;
     }
-    #masthead #build:before{
+    #masthead.loaded #build:before{
         background: transparent url(/styles/images/header-build.jpg) no-repeat right bottom;
         background-size: cover;
     }
-    #masthead #deliver:before{
+    #masthead.loaded #deliver:before{
         background: transparent url(/styles/images/header-deliver.jpg) no-repeat center top;
         background-size: cover;
     }
     
-    #masthead dd:nth-of-type(1) {
+    #masthead.loaded dd:nth-of-type(1) {
         margin-top:  26em;
     }
     

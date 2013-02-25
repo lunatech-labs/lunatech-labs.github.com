@@ -33,10 +33,14 @@
 
         // We like javascript. Add 'js' class to use for styling
         $("html").attr('class','js'); 
-    
-
+                
         $(document).ready(function(){
-        
+
+            //  Load sidebar images on larger screens
+            if(!$label) { 
+                $("#masthead, aside nav").addClass('loaded');
+            }
+
             //  Loading DOM elements into an array of objects that will initiate lazy loading
             
             //  elem: The jquery object that triggers the lazy load and gets passed to 'func'

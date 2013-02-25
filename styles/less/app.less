@@ -39,6 +39,7 @@
         width: 100%;
         height: @topbar-height;
         background-color: @grey6;
+        background-color: fadeout(@grey7,10%);
         overflow: hidden;
     }
     #masthead .level {
@@ -60,24 +61,7 @@
             text-indent: -3000px;
             color: @light-color;
             background: transparent url(/styles/images/logo-lunatech-white.png) no-repeat center center;
-        }
-    }
-    @media screen and (color) {
-        #masthead {
-            background-color: fadeout(@grey7,10%);
-        }
-        #masthead .logo{
-            height: 14em;
-            text-align: center
-        }
-        #masthead .logo a{
-            position: relative;
-            display: inline-block;
-            top: -2em;
-            .border-radius(all, 50%);
-            width: 10em;
-            height: 10em;
-            background: transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center center;
+            background: none, transparent url(/styles/images/logo-lunatech-white.svg) no-repeat center 25%;
             background-size: 13em;
         }
     }
@@ -459,23 +443,14 @@
     .contact,
     .about,
     .services {
-        nav {
+        .loaded {
             position: relative;
             ul {
                 margin-top: 13em;
             }
         }
     }
-    .blog #content aside{
-        position: relative;
-        h3 {
-            margin-top: 14em;
-        }
-        h3 ~ h3 {
-            margin-top: 0;
-        }
-    }
-    #content aside nav:before {
+    #content aside .loaded:before {
         position: absolute;
         top: 0;
         content: " ";
@@ -487,19 +462,19 @@
         background-position: center center;
         background-size: cover;
     }
-    .references nav:before {
+    .references .loaded:before {
         background-image: url(/styles/images/header-references.jpg);
     }
-    .ventures nav:before {
+    .ventures .loaded:before {
         background-image: url(/styles/images/header-ventures.jpg);
     }
-    .services nav:before {
+    .services .loaded:before {
         background-image: url(/styles/images/header-services.jpg);
     }
-    .about nav:before {
+    .about .loaded:before {
         background-image: url(/styles/images/header-serverroom.jpg);
     }
-    .contact nav:before {
+    .contact .loaded:before {
         background-image: url(/styles/images/header-contact.jpg);
     }
     

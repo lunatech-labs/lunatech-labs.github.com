@@ -107,9 +107,6 @@
                 background-size: 200px;
             }
         }
-        #masthead .logo {
-            //.box-shadow(inset 0 -2px 5px 0 rgba(0,0,0,0.5));
-        }
         #masthead nav {
             position: static;
             width: 100%;
@@ -124,6 +121,9 @@
         }
         #masthead dl {
             display: none; // temporary solution. 
+            &:before{
+                background: none;
+            }
         }
         #masthead dl:before{
             display: none;
@@ -349,14 +349,6 @@
             width: 100%;
         }
         
-        #content .ventures nav:before,
-        #content .editorial nav:before,
-        #content .references nav:before,
-        #content .services nav:before,
-        #content .about nav:before,
-        #content .contact nav:before {
-            content: none;
-        }
 
 
         //  FORM OVERRIDES
