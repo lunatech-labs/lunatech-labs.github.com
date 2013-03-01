@@ -3,14 +3,14 @@ layout: page
 categories: jobs
 path_prefix: ../
 level: top
-title: "Front-end developer vacancy"
+title: "Junior Front-end developer"
 short_title: "Front-end"
 summary: "We’re looking for a young front-end developer to help us design and build first-class web stack applications."
 ---
 
 ### Working for Lunatech
 
-Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web) applications we’re looking for a young front-end developer to help our developers integrate design in to our web sites and applications. 
+Lunatech, founded in 1993, has had yet another great year of building web sites and applications. Having completed large projects building modern desktop and mobile (web) applications we’re looking for a junior front-end developer to help our developers integrate design in to our web sites and applications. 
 
 You’ll be creating the front-end for (mobile) web sites and applications from scratch as well as adapting current projects to meet today’s standards. You’ll get room to grow by designing and creating new user interfaces from a code and usability point of view. 
 
