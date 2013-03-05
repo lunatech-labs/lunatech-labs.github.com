@@ -14,9 +14,11 @@ summary: "This two-day course, by Typesafe, covers what you need to build web ap
 Rotterdam, 30-31 May 2013 - special introductory price €800
 
 
-## Course overview
+## Course Description and Objectives
 
-This course is for developers who are interested in building web applications and who have some exposure to Scala, as well as experience with HTML and JavaScript. Attendees must bring their own laptop.
+This two-day course covers what you need to build web applications with Play and Scala. It also introduces Slick, a type safe and modern database query and access library for Scala. The course is based on building a Play web application from scratch.
+
+Code examples and exercises will be written in Scala, so previous experience with Scala is required. Experience with HTML and JavaScript is also a prerequisite. You will also need to bring a laptop with Java 6 or higher installed. 
 
 ![Play](../services/images/play.png)
 
