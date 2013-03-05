@@ -37,7 +37,7 @@
         $(document).ready(function(){
 
             //  Load sidebar images on larger screens
-            if(!$label) { 
+            if(!$label || $label ==="none") { 
                 $("#masthead, aside nav").addClass('loaded');
             }
 
@@ -45,7 +45,7 @@
             
             //  elem: The jquery object that triggers the lazy load and gets passed to 'func'
             //  amd:  Asyncronous Script Modules (AMD) that need to load (see the require.config above)
-            //  func: The function to execute (mostly found in fep-functions.js)
+            //  func: The function, with a gobal scope, to execute (mostly found in fep-functions.js)
             var $lazyLoadArray = [
             
                 
@@ -107,14 +107,12 @@
                 var func = this.func;
                 require(this.amd, function(){ 
                     if (func) {
-                    
-                        //  Constructor: 
-                        //  Create a new function with the 'func' string and return it
-                        var lazyFunc = new Function("return "+func)();
-                        
-                        //  Call the Constructor and pass the target element
-                        lazyFunc(elem);
-                        
+                        // Pass the function reference to a variable
+                        var fn = window[func];
+                        // Use the variable to execute the function
+                        if(typeof fn === 'function') {
+                            fn(elem);
+                        }
                     }
                 });
             }
