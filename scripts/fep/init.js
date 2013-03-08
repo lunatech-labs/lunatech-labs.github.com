@@ -7,7 +7,7 @@
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
-            "jquery":           "jquery-1.9.0-min",
+            "jquery":           "jquery-1.9.1-min",
             "validate":         "jquery.validate-min",
             "keepinview":       "keepinview-min",
             "tweet":            "jquery.tweet-min",
@@ -29,26 +29,49 @@
     _gaq.push(['_trackPageview']);
 
 
+    //  LAZYLOADING CONSTRUCTOR AND METHOD
+    //  Lazyload constructor
+    function lazyObject(elem, amd, func){
+        this.elem = elem;
+        this.amd = amd;
+        this.func = func;
+    }
+    
+    //  Lazyload function
+    function lazyLoad(){
+        var elem = this.elem;
+        var func = this.func;
+        require(this.amd, function(){ 
+            if (func) {
+                // Assign the global function reference to a variable
+                var fn = window[func];
+                // Use the variable to invoke the function
+                if(typeof fn === 'function') {
+                    fn(elem);
+                }
+            }
+        });
+    }
+    // Declare method instance
+    lazyObject.prototype.lazyLoad = lazyLoad;
+
+
+    //  START DOM MANIPULATION 
     require(['jquery'],function(){ 
 
         // We like javascript. Add 'js' class to use for styling
         $("html").attr('class','js'); 
-                
-        $(document).ready(function(){
-
-            //  Load sidebar images on larger screens
-            if(!$label || $label ==="none") { 
-                $("#masthead, aside nav").addClass('loaded');
-            }
-
-            //  Loading DOM elements into an array of objects that will initiate lazy loading
-            
-            //  elem: The jquery object that triggers the lazy load and gets passed to 'func'
-            //  amd:  Asyncronous Script Modules (AMD) that need to load (see the require.config above)
-            //  func: The function, with a gobal scope, to execute (mostly found in fep-functions.js)
-            var $lazyLoadArray = [
-            
-                
+    
+        
+        /*  Loading DOM elements into an array of objects that will initiate lazy loading
+        
+         *  elem: The jquery selector that triggers the lazy load and gets passed to 'func'
+         *  amd:  Asyncronous Script Modules (AMD) that need to load (see the require.config above)
+         *  func: The function to execute (mostly found in fep-functions.js)od
+         */
+         
+        var $lazyLoadArray = [
+        
                 {   // Twitter
                     elem: $("#twitter-feed"),
                     amd:  ['fep-functions','tweet'], 
@@ -94,37 +117,21 @@
                 
             ];
             
-            // Lazyload method
-            function lazyObject(elem, amd, func){
-                this.elem = elem;
-                this.amd = amd;
-                this.func = func;
+        //  JQUERY DOMREADY 
+        $(document).ready(function(){
+        
+            //  Load sidebar images on larger screens
+            if(!$label || $label ==="none") { 
+                $("#masthead, aside nav").addClass('loaded');
             }
             
-            // Lazyload prototype
-            function lazyLoad(){
-                var elem = this.elem;
-                var func = this.func;
-                require(this.amd, function(){ 
-                    if (func) {
-                        // Pass the function reference to a variable
-                        var fn = window[func];
-                        // Use the variable to execute the function
-                        if(typeof fn === 'function') {
-                            fn(elem);
-                        }
-                    }
-                });
-            }
-            lazyObject.prototype.lazyLoad = lazyLoad;
-            
-            //  Iterate through the $lazyLoadArray 
+            //  Iterate through the objects in the $lazyLoadArray 
             for(obj in $lazyLoadArray){
-                //  Check if the DOM elements is present on the page 
+                //  Check if the current object returns any DOM elements from the jQuery selector
                 if($lazyLoadArray[obj].elem.length>0){
-                    //  Lazyload constructor
+                    //  Load the current object values in to a new Lazyload object using the lazyObject construtor
                     var lazyObj = new lazyObject($lazyLoadArray[obj].elem, $lazyLoadArray[obj].amd, $lazyLoadArray[obj].func);
-                    //  pass object with new arguments to the lazy loader
+                    //  Invoke lazyLoad method with the new object 
                     lazyObj.lazyLoad();
                 }
             }
