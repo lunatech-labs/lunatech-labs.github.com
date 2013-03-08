@@ -50,40 +50,40 @@
         font-style: italic;
     }
     
+    @font-face {
+        font-family: 'SourceSansPro';
+        src: url('@{font-root}SourceSansPro-Regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SourceSansPro';
+        src: url('@{font-root}SourceSansPro-It-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+    }
+    @font-face {
+        font-family: 'SourceSansPro';
+        src: url('@{font-root}SourceSansPro-Bold-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'SourceSansPro';
+        src: url('@{font-root}SourceSansPro-BoldIt-webfont.woff') format('woff');
+        font-weight: bold;
+        font-style: italic;
+    }
     
-    @font-face {
-        font-family: 'OpenSans';
-        src: url('@{font-root}OpenSans-Regular-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'OpenSans';
-        src: url('@{font-root}OpenSans-Italic-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: italic;
-    }
-    @font-face {
-        font-family: 'OpenSans';
-        src: url('@{font-root}OpenSans-Bold-webfont.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'OpenSans';
-        src: url('@{font-root}OpenSans-BoldItalic-webfont.woff') format('woff');
-        font-weight: bold;
-        font-style: italic;
-    }
 
     @body-scale:            100%;          // Used on the body element
     @transport:             1.6;           // For line height (no units!)
     @interline:             1em;           // Interline / leading  http://en.wikipedia.org/wiki/Interline_spacing
     @typeface:              "PTSerif", Georgia, Times, serif;
-    @typeface-header:       "OpenSans", Helvetica, Arial, sans-serif;
+    @typeface-header:       "SourceSansPro", Helvetica, Arial, sans-serif;
     @typeface-alt:          "PTSerifCaption", Georgia, Times, serif;
     
-    @fontsize-adjust:       0.825;
+    @fontsize-adjust:       0.85;
     @header-style:          normal;        // normal, inherit, oblique, italic
     @header-variant:        normal;        // normal, small-caps
     @header-weight:         normal;
