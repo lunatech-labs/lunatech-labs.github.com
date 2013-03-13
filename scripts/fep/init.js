@@ -29,15 +29,9 @@
     _gaq.push(['_trackPageview']);
 
 
-    //  LAZYLOADING CONSTRUCTOR AND METHOD
-    //  Lazyload constructor
-    function lazyObject(elem, amd, func){
-        this.elem = elem;
-        this.amd = amd;
-        this.func = func;
-    }
+    //  LAZY LOADING ###########################################################
     
-    //  Lazyload function
+    //  Lazyload method
     function lazyLoad(){
         var elem = this.elem;
         var func = this.func;
@@ -52,9 +46,31 @@
             }
         });
     }
-    // Declare method instance
-    lazyObject.prototype.lazyLoad = lazyLoad;
-
+    
+    
+    function loadLazyScripts(array){
+        
+        //  Copy array 
+        var items = array.concat();
+        
+        // Asyncronous invocation 
+        setTimeout(function(){
+        
+            var item = items.shift();
+            
+            //  Check if the current object returns any DOM elements from the jQuery selector
+            if(item.elem.length>0){
+                //  Invoke lazyLoad method with the current object 
+                lazyLoad.call(item);
+            }
+            
+            //  Iterate through the objects in the array 
+            if (items.length > 0){
+                setTimeout(arguments.callee, 0);
+            }
+            
+        }, 0);
+    }
 
     //  START DOM MANIPULATION 
     require(['jquery'],function(){ 
@@ -125,17 +141,7 @@
                 $("#masthead, aside nav").addClass('loaded');
             }
             
-            //  Iterate through the objects in the $lazyLoadArray 
-            for(obj in $lazyLoadArray){
-                //  Check if the current object returns any DOM elements from the jQuery selector
-                if($lazyLoadArray[obj].elem.length>0){
-                    //  Load the current object values in to a new Lazyload object using the lazyObject construtor
-                    var lazyObj = new lazyObject($lazyLoadArray[obj].elem, $lazyLoadArray[obj].amd, $lazyLoadArray[obj].func);
-                    //  Invoke lazyLoad method with the new object 
-                    lazyObj.lazyLoad();
-                }
-            }
-            
+            loadLazyScripts($lazyLoadArray);
         });
         
                     
