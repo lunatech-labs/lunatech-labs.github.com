@@ -1,9 +1,25 @@
 /*  ###########################################################################
-    Author:     Lunatech Research
-    Date:       November 2012
+    Author:     Lunatech 
     ########################################################################### */
     
-    // ROUTING 
+    
+    //  VIEWPORT SIZE
+    var $label = (typeof window.getComputedStyle==='function') ? getComputedStyle(document.body, '::before')['content'] : false;
+
+
+    // GOOGLE ANALYTICS SETTINGS
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-6087516-1']);
+    _gaq.push(['_gat._anonymizeIp']);
+    _gaq.push(['_trackPageview']);
+
+    // We like javascript. Add 'js' class to use for styling
+    document.getElementsByTagName("HTML")[0].className="js";
+
+
+    //  LAZY LOADING ###########################################################
+
+    // AMD ROUTING 
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
@@ -17,20 +33,7 @@
             "ga":               "http://www.google-analytics.com/ga",
         }
     });
-    
-    //  VIEWPORT SIZE
-    var $label = (typeof window.getComputedStyle==='function') ? getComputedStyle(document.body, '::before')['content'] : false;
-
-
-    // GOOGLE ANALYTICS SETTINGS
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-6087516-1']);
-    _gaq.push(['_gat._anonymizeIp']);
-    _gaq.push(['_trackPageview']);
-
-
-    //  LAZY LOADING ###########################################################
-    
+        
     //  Lazyload method
     function lazyLoad(){
         var elem = this.elem;
@@ -47,10 +50,9 @@
         });
     }
     
-    
+    //  Initiate lazyloading per object 
     function loadLazyScripts(array){
         
-        //  Copy array 
         var items = array.concat();
         
         // Asyncronous invocation 
@@ -74,10 +76,6 @@
 
     //  START DOM MANIPULATION 
     require(['jquery'],function(){ 
-
-        // We like javascript. Add 'js' class to use for styling
-        $("html").attr('class','js'); 
-    
         
         /*  Loading DOM elements into an array of objects that will initiate lazy loading
         
@@ -119,6 +117,11 @@
                     elem: $("header nav"),
                     amd:  ['fep-functions','keepinview'], 
                     func: 'fepKeepInView' 
+                },             
+                {   // Responsive labels
+                    elem: $("body .childpage"),
+                    amd:  ['fep-functions'], 
+                    func: 'fepResponsive' 
                 },
                 {   // Homepage header
                     elem: $(".homepage #masthead dl"),
@@ -136,12 +139,8 @@
         //  JQUERY DOMREADY 
         $(document).ready(function(){
         
-            //  Load sidebar images on larger screens
-            if(!$label || $label ==="none") { 
-                $("#masthead, aside nav").addClass('loaded');
-            }
-            
             loadLazyScripts($lazyLoadArray);
+
         });
         
                     

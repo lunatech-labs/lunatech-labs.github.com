@@ -1,4 +1,15 @@
-
+/*  ###########################################################################
+    Author:     Lunatech
+    ########################################################################### */
+    
+    var fepResponsive = function(){
+        
+        //  Load sidebar images on larger screens
+        if ($label!=="SMALL") { 
+            $("#masthead, aside nav").addClass('loaded');
+        }
+    }   
+    
     //  Tag Selectors 
     var fepTagSelectors = function($fepElement){
         var loc = location.pathname;
@@ -82,7 +93,12 @@
     //  Promo viewer 
     var fepHeaderPromo = function($fepElements){
         
-        if ($label==="SMALL") { return false; }
+        if ($label==="SMALL") { 
+            return false; 
+        } else {
+            fepResponsive(); 
+        }
+        
         
         var dd = new Array();
         var counter = 0;
@@ -195,6 +211,4 @@
         
     }    
     
-
-
-
+    

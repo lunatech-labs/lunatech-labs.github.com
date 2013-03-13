@@ -8,19 +8,20 @@
         position: relative;
         height: @topbar-height;
         background: @light-color;
-        filter: 0;
+        filter: none ;
     }
     
     #masthead .logo {
         width: 33.33%;
         background: transparent none;
-        filter: 0;
+        filter: ~"progid:DXImageTransform.Microsoft.gradient( startColorstr='#33000000', endColorstr='#33000000',GradientType=0 )"; 
     }
     @media screen and (color) {
         #masthead .logo{
             padding-top: 1em;
             height: 14em;
-            text-align: center
+            text-align: center;
+            filter: none;
         }
         #masthead .logo a{
             top: 1em;
@@ -106,7 +107,7 @@
     #masthead dd {
         .box;
         clear: both;
-        position: relative;
+        position: static;
         display: block;
         margin: 0;
         padding: 14em 0 0 0;
@@ -115,36 +116,37 @@
         font-size: 1.1em;
         font-family: @typeface-header;
         overflow: hidden;
-        &:before{
-            float: left;
-            margin-top: -14em;
-            margin-right: @block;
-            content: " ";
-            width: 33.33%;
-            height: 26em;
-        }
         p {
             margin: 0;
             .columns(2);
         }
     }
+    
+    #masthead.loaded dd:before{
+        float: left;
+        margin-top: -14em;
+        margin-right: @block;
+        content: "\0020";
+        width: 33.33%;
+        height: 26em;
+        zoom: 1;
+    }
+
     #masthead.loaded #understand:before{
-        background: transparent url(/styles/images/header-understand.jpg) no-repeat 50% 70%;
+        background: transparent url('/styles/images/header-understand.jpg') no-repeat 50% 70%;
         background-size: cover;
     }
     #masthead.loaded #build:before{
-        background: transparent url(/styles/images/header-build.jpg) no-repeat right bottom;
+        background: transparent url('/styles/images/header-build.jpg') no-repeat right bottom;
         background-size: cover;
     }
     #masthead.loaded #deliver:before{
-        background: transparent url(/styles/images/header-deliver.jpg) no-repeat center top;
+        background: transparent url('/styles/images/header-deliver.jpg') no-repeat center top;
         background-size: cover;
     }
-    
-    #masthead.loaded dd:nth-of-type(1) {
+    #masthead.loaded dl > dt:first-child + dd {
         margin-top:  26em;
     }
-    
     
     //  CONTENT SECTION 
     
