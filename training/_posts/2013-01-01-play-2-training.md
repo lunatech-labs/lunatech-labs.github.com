@@ -40,6 +40,11 @@ _(group discounts available)_
 **Location**  
 On-site, or at our location in Rotterdam, the Netherlands.
 
+**Registration**
+
+Please register <a href="/training/registration">here</a> for this training.
+
+
 **More information**  
 [contact us](/contact)
 
