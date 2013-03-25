@@ -6,26 +6,37 @@ title: Play framework support services
 categories: services
 ---
 
-Lunatech is a [Typesafe consultancy partner](http://typesafe.com/company/partners), and provides consultancy and training to help you with your Play projects.
+Lunatech is a [Typesafe consultancy partner](http://typesafe.com/company/partners), 
+and provides consultancy and training to help you with your Play projects.
 
 ## Consultancy
 
-The Play framework promotes and integrates beautifully with a RESTful service-oriented architecture. We can help you design an elegant architecture, reuse your existing services and build rock-solid RESTful web services and applications.
+The Play framework promotes and integrates beautifully with a RESTful
+service-oriented architecture. We can help you design an elegant architecture,
+reuse your existing services and build rock-solid RESTful web services and
+applications.
 
-If you are starting a Play project, we can advise you on the best way to tackle it, and put you on the right track.
+If you are starting a Play project, we can advise you on the best way to tackle
+it, and put you on the right track.
 
-We can also assist you in making sure Play fits the way you work. If you also want to integrate your Play application with your existing Java EE service stack, but you don't really know how, just ask us. We have a Work! toolbox that can help.
+We can also assist you in making sure Play fits the way you work. If you also
+want to integrate your Play application with your existing Java EE service
+stack, but you don't really know how, just ask us. We have a Work! toolbox that
+can help.
 
 ## Technical training
 
-Play offers flexibility and agility in the Java world. The goal of our Play 1.x training course is to teach your development team how to exploit this flexibility and agility. They will be studying best practices and how to become agile and flexible. This intermediate-level two-day training course targets developers and architects who want to learn more about the specifics and internals of the framework. Java and web development knowledge is a pre-requisite.
+Although Lunatech’s focus is on development projects and consultancy, we
+occasionally offer training. Lunatech Play framework training consists of
+practical courses that in which developers benefit from our expertise and
+practical experience of using Play on commercial projects and learn how to build
+a web application with Play.
 
-A Play 2 course is expected to be available in April 2013.
-
-[Learn More](play-framework-technical-training)
+[Learn More](/training)
 
 ## Books
 
-As well as development projects, several Lunatech staff have used their Play expertise to write two Play framework books for Manning Publications.
+As well as development projects, several Lunatech staff have used their Play
+expertise to write two Play framework books for Manning Publications.
 
 [Learn More](/books)

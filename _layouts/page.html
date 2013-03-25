@@ -51,6 +51,14 @@
         							{% for article in site.categories.services reversed %}
         								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
+        								<li><a href="/training">Training</a></li>
+        							</ul>
+        						{% when 'training' %}
+        							<ul>
+            							<li{% if page.title ==  'Training' %} class="active"{% endif %}><a href="/training/">Training</a></li>
+        							{% for article in site.categories.training reversed %}
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        							{% endfor %}
         							</ul>
         						{% when 'ventures' %}
         							<ul>
