@@ -31,7 +31,8 @@
             "fep-functions":    "fep-functions-min",
             "cookie":           "jquery.cookie-min",
             "ga":               "http://www.google-analytics.com/ga",
-        }
+        },
+        waitSeconds: 14
     });
         
     //  Lazyload method
