@@ -5,10 +5,7 @@ title: |
 summary: |
     Much as we’d like to build everything, we know that you can get more done if you help other people to do it for themselves. Knowledge transfer isn’t just about working with our customer’s developers and training them: we also write. Lunatech staff are currently using their Play Framework expertise to produce two books about Play 2 for Manning Publications, in addition to their active contributions to the open-source project.
 sidebar: |
-    ### Books
-    
-    [ ![Play for Scala](images/play-for-scala-cover.jpg) ](http://bit.ly/playscala)
-    
+    [ ![Play for Scala](images/play-for-scala-cover.jpg) ](http://bit.ly/playscala) 
     [ ![Play for Java](images/play-for-java-cover.jpg) ](http://bit.ly/playjava)
 ---
 

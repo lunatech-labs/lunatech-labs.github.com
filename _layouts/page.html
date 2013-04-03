@@ -81,13 +81,13 @@
         							{% endfor %}
         							</ul>
         					{% endcase %}
-        				{% endfor %}
+            				{% endfor %}
+            				{% if page.sidebar %}
+            				<div class="promo-images">
+            				{{ page.sidebar | markdownify }}
+            				</div>
+            				{% endif %}
         				</nav>
-        				{% if page.sidebar %}
-        				<div class="box">
-        				{{ page.sidebar | markdownify }}
-        				</div>
-        				{% endif %}
                     </aside>
         	        <article class="copy-{{ page.categories }} {{ page.column }}">
                         <h1>{{ page.title }}</h1>
