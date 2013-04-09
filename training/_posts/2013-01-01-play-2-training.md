@@ -34,7 +34,7 @@ The format includes lectures, discussions and exercises.
 ## Course details
 
 **Price**  
-€1450 per attendee for 2 days (discounted to €800 until June 2013, group discounts available).
+€1450 per attendee for 2 days (discounted to €800 for the May 2013 course, group discounts available).
 
 **Location**  
 On-site, or at our location in Rotterdam, the Netherlands.
