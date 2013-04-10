@@ -85,15 +85,16 @@
             outro_text: '<span class="link-twitter"><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a> <i class="icon-arrow-right"></i></span>',
             count: 3,
             template: '{text}<span class="time">{time}</span><a href="{tweet_url}"><i class="icon-link"></i></a>',
-            loading_text: "loading tweets..."
+            loading_text: "Loading tweets..."
         });
+        $( ".loading", $fepElements ).prepend( '<i class="icon-refresh icon-spin"></i>&nbsp;&nbsp;' );
         function timeOut(){
-            var loading = $( ".loading", $fepElements ).length
-            if(loading>0) {
-                $fepElements.html('<h3><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a></h3><p>Apologies, we\'re having trouble finding our Twitter feed. Twitter could be having a <a href="http://www.whatisfailwhale.info">Fail Whale</a> moment</p><p>If our tweets refuse to load it might be due to extentions or addons blocking twitter. Common culprits are the excellent Disconnect and Adblock.</p>');
+            var loading = $( ".loading", $fepElements ).length;
+            if( loading > 0 ) {
+                $fepElements.html('<h3><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a></h3><p>Apologies, we\'re having trouble finding our Twitter feed. Twitter could be having a <a href="http://www.whatisfailwhale.info">Fail Whale</a> moment. Reloading the page sometimes helps.</p><p>If our tweets refuse to load it might be due to extensions or addons blocking twitter. Common culprits are the excellent Disconnect and Adblock.</p>');
             }
         }
-        setTimeout(timeOut, 16000);
+        setTimeout( timeOut, 16000 );
     }
     
     
