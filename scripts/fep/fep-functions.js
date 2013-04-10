@@ -87,6 +87,13 @@
             template: '{text}<span class="time">{time}</span><a href="{tweet_url}"><i class="icon-link"></i></a>',
             loading_text: "loading tweets..."
         });
+        function timeOut(){
+            var loading = $( ".loading", $fepElements ).length
+            if(loading>0) {
+                $fepElements.html('<h3><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a></h3><p>Apologies, we\'re having trouble finding our Twitter feed. Twitter could be having a <a href="http://www.whatisfailwhale.info">Fail Whale</a> moment</p><p>If our tweets refuse to load it might be due to extentions or addons blocking twitter. Common culprits are the excellent Disconnect and Adblock.</p>');
+            }
+        }
+        setTimeout(timeOut, 16000);
     }
     
     
