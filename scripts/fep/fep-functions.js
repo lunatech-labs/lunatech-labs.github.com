@@ -91,7 +91,7 @@
         function timeOut(){
             var loading = $( ".loading", $fepElements ).length;
             if( loading > 0 ) {
-                $fepElements.html('<h3><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a></h3><p>Apologies, we\'re having trouble finding our Twitter feed. Twitter could be having a <a href="http://www.whatisfailwhale.info">Fail Whale</a> moment. Reloading the page sometimes helps.</p><p>If our tweets refuse to load it might be due to extensions or addons blocking twitter. Common culprits are the excellent Disconnect and Adblock.</p>');
+                $fepElements.html('<h3><a href="http://twitter.com/LunatechLabs">Follow us on Twitter!</a></h3><p>Apologies, we\'re having trouble finding our Twitter feed. Twitter could be having a <a href="http://www.whatisfailwhale.info">Fail Whale</a> moment. Reloading the page sometimes helps.</p><p>If our tweets refuse to load it might be due to extensions or addons blocking Twitter. Common culprits are the excellent Disconnect and Adblock.</p>');
             }
         }
         setTimeout( timeOut, 16000 );
