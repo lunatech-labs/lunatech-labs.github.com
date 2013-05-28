@@ -11,7 +11,7 @@ summary: "This two-day course, by Typesafe, covers what you need to build web ap
 			
 ## Course dates
 
-Rotterdam, 30-31 May 2013 - special introductory price €800
+Rotterdam, 26-27 September 2013
 
 
 ## Course Description and Objectives
@@ -34,7 +34,7 @@ The format includes lectures, discussions and exercises.
 ## Course details
 
 **Price**  
-€1450 per attendee for 2 days (discounted to €800 for the May 2013 course, group discounts available).
+€1450 per attendee for 2 days (group discounts available).
 
 **Location**  
 On-site, or at our location in Rotterdam, the Netherlands.
