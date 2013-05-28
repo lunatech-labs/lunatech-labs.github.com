@@ -34,7 +34,7 @@ The format includes lectures, discussions and exercises.
 ## Course details
 
 **Price**  
-€1450 per attendee for 2 days (group discounts available).
+€800 (ex. VAT) per attendee for 2 days (group discounts available).
 
 **Location**  
 On-site, or at our location in Rotterdam, the Netherlands.
