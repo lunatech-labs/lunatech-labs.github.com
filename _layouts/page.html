@@ -36,20 +36,20 @@
             							<li{% if page.title ==  'About Lunatech'%} class="active"{% endif %}><a href="/about/">About Lunatech</a></li>
         							{% for article in site.categories.about reversed %}
         							    {% assign linkname = article.title %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         						{% when 'jobs' %}
         							<ul>
         							{% for article in site.categories.jobs reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'jobs/','' | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         						{% when 'services' %}
         							<ul>
             							<li{% if page.title ==  'Project delivery'%} class="active"{% endif %}><a href="/services/">Project delivery</a></li>
         							{% for article in site.categories.services reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         								<li><a href="/training">Training</a></li>
         							</ul>
@@ -57,27 +57,27 @@
         							<ul>
             							<li{% if page.title ==  'Training' %} class="active"{% endif %}><a href="/training/">Training</a></li>
         							{% for article in site.categories.training reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         						{% when 'ventures' %}
         							<ul>
             							<li{% if page.title ==  'We are seed investors'%} class="active"{% endif %}><a href="/ventures/">Ventures</a></li>
         							{% for article in site.categories.ventures reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         						{% when 'contact' %}
         							<ul>
             							<li{% if page.title ==  'Contact us'%} class="active"{% endif %}><a href="/contact/">Contact us</a></li>
         							{% for article in site.categories.contact reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         						{% when 'references' %}
         							<ul>
         							{% for article in site.categories.references reversed %}
-        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="/{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
+        								<li{% if article.title ==  page.title%} class="active"{% endif %}><a href="{{ article.url | replace:'.html','' }}">{% if article.short_title %}{{ article.short_title }}{% else %}{{ article.title }}{% endif %}</a></li>
         							{% endfor %}
         							</ul>
         					{% endcase %}
