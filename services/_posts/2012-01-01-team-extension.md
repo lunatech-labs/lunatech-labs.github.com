@@ -7,6 +7,7 @@ categories: services
 
 Team extension is increasing a team’s capabilities in a specific expertise. Team extension is not about simply growing the size of a team, but rather about increasing the team’s effectiveness without reducing its efficiency. This is achieved by adding an expert to an existing team, within a clear context of roles, responsibilities, process and deliverables.
 
+Lunatech can provide team extension for technical expertise, such as the Play Framework or Scala, as well as for broader competences, such as agile coaching or software architecture.
 
 ## Goals
 
@@ -17,7 +18,7 @@ The goals of team extension are to:
 * deliver the benefits of the new expertise to the project results
 * reduce project risk associated with new techniques.
 
-When knowledge transfer is included, an additional goal is frictionless knowledge acquisition by an existing team who will himself become an expert in the long term.
+When knowledge transfer is included, an additional goal is frictionless knowledge acquisition by an existing team member who will also become an expert in the long term.
 
 ## Roles and responsibilities
 
