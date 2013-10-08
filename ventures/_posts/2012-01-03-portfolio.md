@@ -26,10 +26,11 @@ Stager is a webbased ERP, CRM and ticketing system for organizing events and rel
 
 To streamline your event production processes, Stager brings all information together in one place, online. Accessible to all people involved to amend and monitor. Stager functionality includes: Calendars, Production information, Personell planning, Marketing and publicity, Forecasting, CRM, Management and reporting, Newsletters, Online ticket sales (e-tickets) and payment, Door sales and APIs to link with external systems.
 
-### RobotiCamera360 (RCAM360)
-<img src="/images/rcam360-logo.png" alt="rcam360-logo" width="112" height="76" /> 
+### <a href="http://www.viewlogiq.com/">ViewlogiQ</a>
 
-RobotiCamera360 (RCAM360 for short) is an innovative camera production- and control system to register your events without the need for a real cameraman. Using a combination of Sonar and RFID technologies it offers unique precision and ease-of-use in automated video registration. The system is fully automated and can be used for any video format or webcast environment.
+<a href="http://www.viewlogiq.com/"><img src="/images/viewlogiq-logo.png" alt="viewlogiq-logo" width="112" height="76" /></a>
+
+ViewlogiQ builds exciting products in the field of automated video registration. Its first product, <a href="http://viewlogiq.com/videmus/videos/">Videmus</a>, is an innovative camera production- and control system to register your events without the need for a real cameraman. Using a combination of Sonar and RFID technologies it offers unique precision and ease-of-use in automated video registration. The system is fully automated and can be used for any video format or webcast environment.
 
 ### <a href="http://www.minotovideo.com/">MinotoVideo</a>
 
