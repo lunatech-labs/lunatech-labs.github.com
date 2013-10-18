@@ -6,38 +6,29 @@ categories: services
 ---
 
 <section class="infographic">
-
-    <div id="infographic_nodejs" class="framework">Node&shy;js</div>
-    <div id="infographic_jsf" class="framework">JSF</div>
-    <div id="infographic_angular" class="framework">Angular</div>
-
-    <div id="infographic_app" class="business">Application</div>
-
-    <div id="infographic_java" class="services">Java / C#</div>
-    <div id="infographic_js" class="services">JavaScript</div>
-
-    <p class="infographic-nodejs-text"><strong>Lunatech &amp; Nodejs</strong>: Nodejs already has a presence withing the Java community as it drives many development tools. As it is part of the stack we can make use of it. Templating on the back- &amp; front-end anybody?
-        <br/><br/>
-        <strong>Pro</strong>: Web developers can usually deal with the entire stack. <br/>
-        <strong>Con</strong>: Requires that the team designs a stable and scalable architecture and sticks to it.
-    </p>
-
-    <p class="infographic-jsf-text"><strong>Lunatech &amp; Componant based frameworks</strong>: Richfaces, Iceface and other JSF 'enhancements' are still being used on many enterprise solutions. there front-end technology is effectively a black box and obscured from the developer.<br/><br/>
-        <strong>Pro</strong>: Java developers can usually deal with the entire stack. <br/>
-        <strong>Con</strong>: Near zero customisation options as you're locked out from the front-end.
-    </p>
-
-    <p class="infographic-angular-text"><strong>Lunatech &amp; Client based MVC frameworks</strong>: There is no denying, JavaScript is here to stay and is being improved at a rapid rate. Utilising mature server based services and moving logic to the browser we can have the best of both worlds.
-        <br/><br/>
-        <strong>Pro</strong>: Specialist can quickly develop within there own technology and do this in parallel.  <br/>
-        <strong>Con</strong>: Projects can over time become complicated as logic changes and both the server and the front-end can end up fighting over the markup.
-    </p>
-
-    <p class="infographic-app-text"><strong>The application</strong>: No matter the technology the customers needs have to be met. Picking a technology can have significant impact on development, especially when we rely on specific resources. </p>
-
-    <p class="infographic-java-text"><strong>Mature technology</strong>: Java and .NET are considered mature in that they are stable and well understood by its community. No excitement, just steady as she goes. </p>
-    <p class="infographic-js-text"><strong>The web</strong>: The web itself is still growing and the technology that drives it even more so. JavaScript is the defacto language of the browser and making great strides on the server via Nodejs. It may be a fashion but it sure is a popular one.</p>
-
+<div id="infographic_nodejs" class="framework">Node&shy;js</div>
+<div id="infographic_jsf" class="framework">JSF</div>
+<div id="infographic_angular" class="framework">Angular</div>
+<div id="infographic_app" class="business">Application</div>
+<div id="infographic_java" class="services">Java / C#</div>
+<div id="infographic_js" class="services">JavaScript</div>
+<p class="infographic-nodejs-text"><strong>Lunatech &amp; Nodejs</strong>: Nodejs already has a presence withing the Java community as it drives many development tools. As it is part of the stack we can make use of it. Templating on the back- &amp; front-end anybody?
+    <br><br>
+    <strong>Pro</strong>: Web developers can usually deal with the entire stack. <br>
+    <strong>Con</strong>: Requires that the team designs a stable and scalable architecture and sticks to it.
+</p>
+<p class="infographic-jsf-text"><strong>Lunatech &amp; Componant based frameworks</strong>: Richfaces, Iceface and other JSF 'enhancements' are still being used on many enterprise solutions. there front-end technology is effectively a black box and obscured from the developer.<br><br>
+    <strong>Pro</strong>: Java developers can usually deal with the entire stack. <br>
+    <strong>Con</strong>: Near zero customisation options as you're locked out from the front-end.
+</p>
+<p class="infographic-angular-text"><strong>Lunatech &amp; Client based MVC frameworks</strong>: There is no denying, JavaScript is here to stay and is being improved at a rapid rate. Utilising mature server based services and moving logic to the browser we can have the best of both worlds.
+    <br><br>
+    <strong>Pro</strong>: Specialist can quickly develop within there own technology and do this in parallel. <br>
+    <strong>Con</strong>: Projects can over time become complicated as logic changes and both the server and the front-end can end up fighting over the markup.
+</p>
+<p class="infographic-app-text"><strong>The application</strong>: No matter the technology the customers needs have to be met. Picking a technology can have significant impact on development, especially when we rely on specific resources. </p>
+<p class="infographic-java-text"><strong>Mature technology</strong>: Java and .NET are considered mature in that they are stable and well understood by its community. No excitement, just steady as she goes. </p>
+<p class="infographic-js-text"><strong>The web</strong>: The web itself is still growing and the technology that drives it even more so. JavaScript is the defacto language of the browser and making great strides on the server via Nodejs. It may be a fashion but it sure is a popular one.</p>
 </section>
 
 Lunatech understands the need for multidisciplinary software development, with decades of experience in building and integrating enterprise level applications.
