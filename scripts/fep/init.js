@@ -6,7 +6,6 @@
     //  VIEWPORT SIZE
     var $label = (typeof window.getComputedStyle==='function') ? getComputedStyle(document.body, '::before')['content'] : false;
 
-
     // GOOGLE ANALYTICS SETTINGS
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-6087516-1']);
@@ -23,7 +22,7 @@
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
-            "jquery":           "jquery-2.0.3.min",
+            "jquery":           ( lunatech.jquery > 1 ) ? "jquery-2.0.3.min" : "jquery-1.9.1-min",
             "validate":         "jquery.validate-min",
             "keepinview":       "keepinview-min",
             "tweet":            "jquery.tweet-min",
