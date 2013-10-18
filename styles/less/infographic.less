@@ -1,0 +1,367 @@
+/*  ###########################################################################
+    Author:     Lunatech Research
+    ########################################################################### */
+    
+
+
+@black : fadeout( black, 15% );
+
+
+.node(@top, @left, @size ){
+    top: @top - 3em;
+    left: @left;
+    width: @size;
+    height: @size;
+    line-height: @size;
+    overflow: hidden;
+    &.lunatech:not(#infographic_methodology):hover{
+        & ~ #infographic_web {
+            background: #eb7d29;
+            .nodehover(6.25em, 21.25em, 8.5em );
+        }
+    
+        & ~ #infographic_mob {
+            background: #eb7d29;
+            .nodehover(15.45em, 17em, 4em);
+        }
+
+        &:not(#infographic_ux) ~ #infographic_api {
+            background: #eb7d29;
+            .nodehover(13em, 19.9em, 5.5em);
+        }
+        & ~ .business {
+            z-index: 24;
+        }
+        & ~ .services {
+            z-index: 10;
+        }
+    }
+    &.business:hover{
+        & ~ .services {
+            z-index: 4242;
+        }
+    }
+  &.framework:hover{
+    &:not(#infographic_nodejs):not(#infographic_x-code) ~ #infographic_java {
+      background: #eb7d29;
+      .nodehover(6.25em, 21.25em, 8.5em );
+    }
+
+    &:not(#infographic_angular):not(#infographic_jsf):not(#infographic_nodejs) ~ #infographic_obj-c {
+      background: #eb7d29;
+      .nodehover(15.45em, 17em, 4em);
+    }
+
+    &:not(#infographic_jsf):not(#infographic_x-code) ~ #infographic_js {
+      background: #eb7d29;
+      .nodehover(13em, 19.9em, 5.5em);
+    }
+    & ~ .business {
+      z-index: 24;
+    }
+    & ~ .services {
+      z-index: 10;
+    }
+  }
+}
+
+.nodehover(@top, @left, @size ){
+    top: @top - 3em;
+    left: @left;
+    width: @size;
+    height: @size;
+    line-height: @size;
+    z-index: 42;
+}
+
+
+.infographic {
+    position: relative;
+    padding: 1em;
+    //background: #ebf4ff;
+    width: 100%;
+    height: 13em;
+    font-family: Arial, sans-serif;
+}
+.infographic div {
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    line-height: 10em;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    .transition( all 0.3s ease-in-out );
+    .transform(translate3d(0,0,0));
+    cursor: default;
+}
+.infographic p {
+    position: absolute;
+    z-index: 42;
+    vertical-align: middle;
+    top: 15em;
+    left: 0;
+    right: 0;
+    padding: 1.4em;
+    line-height: 1.3;
+    color: transparent;
+    .transition( all 0.3s ease-in-out );
+    .transform(translate3d(0,0,0));
+    &:before {
+        content: "\f0d8";
+        position: absolute;
+        top: -0.65em;
+        left: 47.5%;
+        font-size: 2em;
+        line-height: 1;
+        font-family: 'FontAwesome';
+        color: transparent;
+    }
+}
+    
+
+.infographic h1 {
+    position: absolute;
+    z-index: 42;
+    bottom: 1em;
+    font-weight: normal;
+    font-size: 1.25em;
+    width: 22em;
+    .lunatech {
+        color: fadeout( blue, 30% );
+    }
+    .services {
+        float: right;
+        color: fadeout( green, 30% );
+    }
+}
+.infographic {
+    div.framework{
+      background-color: fadeout( #1252c7, 30% );
+    }
+    div.lunatech {
+        background-color: fadeout( #1252c7, 30% );
+    }
+    div.business {
+        background-color: fadeout( black, 40% );
+    }
+    div.services {
+        background-color: fadeout( #eb7d29, 30% );
+    }
+}
+.hovertext(){
+    color: black;
+    z-index: 4242;
+    background-color: @lightBlue2;
+    &:before {
+        color: @lightBlue2;
+    }
+}
+
+#infographic_ux {
+    .node(16.25em, 12em, 3em);
+    &:hover {
+        background-color: @black;
+        .nodehover(14em, 11.4em, 5em );
+    }
+    &:hover ~ .infographic-ux-text {
+        .hovertext();
+    }
+    &:hover ~ #infographic_sysint {
+        background: @black;
+        z-index: 24;
+    }
+}
+
+#infographic_expert {
+    .node(14.5em, 7.5em, 5em);
+    &:hover {
+        background-color: @black;
+        .nodehover(13em, 7.5em, 6em );
+    }
+    &:hover ~ .infographic-expert-text {
+        .hovertext();
+    }
+    &:hover ~ #infographic_sysint {
+        background: @black;
+        z-index: 24;
+    }
+}
+
+#infographic_methodology {
+    .node(10em, 3em, 7em);
+    &:hover {
+        background-color: @black;
+        .nodehover(8.5em, 4em, 9em);
+    }
+    &:hover ~ .infographic-methodology-text {
+        .hovertext();
+    }
+    &:hover ~ #infographic_sysint {
+        background: @black;
+        z-index: 24;
+    }
+}
+
+
+#infographic_webapps {
+    .node(3em, 1em, 9em);
+    &:hover {
+        background-color: @black;
+        .nodehover(3.1em, 1.25em, 11em );
+    }
+    &:hover ~ .infographic-webapps-text {
+        .hovertext();
+    }
+    &:hover ~ #infographic_sysint {
+        background: @black;
+        z-index: 24;
+    }
+}
+#infographic_sysint {
+    z-index: 1;
+    .node(4.6em, 9.5em, 12em );
+    &:hover {
+        background-color: @black;
+        .nodehover(3.1em, 8em, 15em);
+    }
+    &:hover ~ .infographic-sysint-text {
+        .hovertext();
+    }
+}
+
+#infographic_web {
+    .node(6.5em, 21.5em, 8em);
+    &:hover {
+        background-color: @black;
+        .nodehover(5.5em, 19.5em, 10em );
+    }
+    &:hover ~ .infographic-web-text {
+        .hovertext();
+    }
+}
+
+#infographic_mob {
+    .node(15.7em, 17.25em, 3.5em);
+    &:hover {
+        background-color: @black;
+        .nodehover(13.7em, 16em, 5em );
+    }
+    &:hover ~ .infographic-mob-text {
+        .hovertext();
+    }
+}
+
+#infographic_api {
+    .node(13em, 19.9em, 5em);
+    &:hover {
+        background-color: @black;
+        .nodehover(11em, 17.9em, 7em );
+    }
+    &:hover ~ .infographic-api-text {
+        .hovertext();
+    }
+}
+
+
+
+ #infographic_nodejs{
+  .node(14.25em, 8.6em, 3em);
+  &:hover {
+    background-color: @black;
+    .nodehover(12em, 8.6em, 5em );
+  }
+  &:hover ~ .infographic-nodejs-text {
+    .hovertext();
+  }
+  &:hover ~ #infographic_app {
+    background: @black;
+    z-index: 24;
+  }
+}
+ #infographic_jsf {
+  .node(10em, 3em, 7em);
+  &:hover {
+    background-color: @black;
+    .nodehover(8.5em, 4em, 9em);
+  }
+  &:hover ~ .infographic-jsf-text {
+    .hovertext();
+  }
+  &:hover ~ #infographic_app {
+    background: @black;
+    z-index: 24;
+  }
+}
+#infographic_x-code{
+  .node(14.5em, 7.5em, 5em);
+  &:hover {
+    background-color: @black;
+    .nodehover(13em, 7.5em, 6em );
+  }
+  &:hover ~ .infographic-x-code-text {
+    .hovertext();
+  }
+  &:hover ~ #infographic_app {
+    background: @black;
+    z-index: 24;
+  }
+}
+#infographic_angular{
+  .node(3em, 1em, 9em);
+  &:hover {
+    background-color: @black;
+    .nodehover(3.1em, 1.25em, 11em );
+  }
+  &:hover ~ .infographic-angular-text {
+    .hovertext();
+  }
+  &:hover ~ #infographic_app {
+    background: @black;
+    z-index: 24;
+  }
+}
+#infographic_app{
+  z-index: 1;
+  .node(4.6em, 9.5em, 12em );
+  &:hover {
+    background-color: @black;
+    .nodehover(3.1em, 8em, 15em);
+  }
+  &:hover ~ .infographic-app-text {
+    .hovertext();
+  }
+}
+#infographic_java{
+  .node(6.5em, 21.5em, 8em);
+  &:hover {
+    background-color: @black;
+    .nodehover(5.5em, 19.5em, 10em );
+  }
+  &:hover ~ .infographic-java-text {
+    .hovertext();
+  }
+}
+#infographic_js{
+  .node(13em, 19.9em, 5em);
+  &:hover {
+    background-color: @black;
+    .nodehover(11em, 17.9em, 7em );
+  }
+  &:hover ~ .infographic-js-text {
+    .hovertext();
+  }
+}
+#infographic_obj-c{
+  .node(15.7em, 17.25em, 3.5em);
+  &:hover {
+    background-color: @black;
+    .nodehover(13.7em, 16em, 5em );
+  }
+  &:hover ~ .infographic-obj-c-text {
+    .hovertext();
+  }
+}
