@@ -217,6 +217,19 @@
             require(['ga']);
         }
         
-    }    
-    
+    }
+        
+    // Detect Border Radius
+	$.support.borderRadius = false;
+	$.each(['BorderRadius','MozBorderRadius','WebkitBorderRadius','OBorderRadius','KhtmlBorderRadius'], function() {
+		if(document.body.style[this] !== undefined) $.support.borderRadius = true;
+		return (!$.support.borderRadius);
+	});
+	
+    //  Hide elements using border-radius
+    var hideBorderRadius = function($fepElements){
+        if ( !$.support.borderRadius ) { 
+            $fepElements.hide();
+        } 
+    }
     

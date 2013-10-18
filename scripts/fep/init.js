@@ -23,7 +23,7 @@
     require.config({ 
         baseUrl: "/scripts/minified",
         paths: {
-            "jquery":           "jquery-1.9.1-min",
+            "jquery":           "jquery-2.0.3.min",
             "validate":         "jquery.validate-min",
             "keepinview":       "keepinview-min",
             "tweet":            "jquery.tweet-min",
@@ -87,56 +87,62 @@
          
         var $lazyLoadArray = [
         
-                {   // Twitter
-                    elem: $("#twitter-feed"),
-                    amd:  ['fep-functions','tweet'], 
-                    func: 'fepTweet' 
-                },
-                {   // Google Analytics
-                    elem: $('body'),
-                    amd:  ['ga'], 
-                    func: false 
-                },
+            {   // Twitter
+                elem: $("#twitter-feed"),
+                amd:  ['fep-functions','tweet'], 
+                func: 'fepTweet' 
+            },
+            {   // Google Analytics
+                elem: $('body'),
+                amd:  ['ga'], 
+                func: false 
+            },
 /*
-                {   // Cookie loader/blocker
-                    elem: $('body'),
-                    amd:  ['cookie','fep-functions'], 
-                    func: 'fepCookieApproval' 
-                },
+            {   // Cookie loader/blocker
+                elem: $('body'),
+                amd:  ['cookie','fep-functions'], 
+                func: 'fepCookieApproval' 
+            },
 */
-                {   // Tabs
-                    elem: $(".tabs"),
-                    amd:  ['fep-functions'], 
-                    func: 'fepTabs' 
-                },
-                {   // Validation
-                    elem: $("form.validate"),
-                    amd:  ['fep-functions','validate'], 
-                    func: 'fepValidation' 
-                },
-                {   // keep in view
-                    elem: $("header nav"),
-                    amd:  ['fep-functions','keepinview'], 
-                    func: 'fepKeepInView' 
-                },             
-                {   // Responsive labels
-                    elem: $("body .childpage"),
-                    amd:  ['fep-functions'], 
-                    func: 'fepResponsive' 
-                },
-                {   // Homepage header
-                    elem: $(".homepage #masthead dl"),
-                    amd:  ['fep-functions','easing'], 
-                    func: 'fepHeaderPromo' 
-                },
-                {   // Block links
-                    elem: $(".link-reference"),
-                    amd:  ['fep-functions'], 
-                    func: 'fepBlockLink' 
-                }             
-                
-            ];
+            {   // Tabs
+                elem: $(".tabs"),
+                amd:  ['fep-functions'], 
+                func: 'fepTabs' 
+            },
+            {   // Validation
+                elem: $("form.validate"),
+                amd:  ['fep-functions','validate'], 
+                func: 'fepValidation' 
+            },
+            {   // keep in view
+                elem: $("header nav"),
+                amd:  ['fep-functions','keepinview'], 
+                func: 'fepKeepInView' 
+            },             
+            {   // Responsive labels
+                elem: $("body .childpage"),
+                amd:  ['fep-functions'], 
+                func: 'fepResponsive' 
+            },
+            {   // Homepage header
+                elem: $(".homepage #masthead dl"),
+                amd:  ['fep-functions','easing'], 
+                func: 'fepHeaderPromo' 
+            },
+            {   // Block links
+                elem: $(".link-reference"),
+                amd:  ['fep-functions'], 
+                func: 'fepBlockLink' 
+            },             
+            {   // Block links
+                elem: $(".infographic"),
+                amd:  ['fep-functions'], 
+                func: 'hideBorderRadius' 
+            }             
             
+        ];
+            
+    	
         //  JQUERY DOMREADY 
         $(document).ready(function(){
         
