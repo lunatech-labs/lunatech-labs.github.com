@@ -232,4 +232,7 @@
             $fepElements.hide();
         } 
     }
-    
+    $(".infographic").on( "click", "div", function(event){
+        event.preventDefault();
+        $(event.target).trigger('mouseover');
+    });
