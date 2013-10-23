@@ -25,7 +25,7 @@
             "jquery":           ( lunatech.jquery > 1 ) ? "jquery-2.0.3.min" : "jquery-1.9.1-min",
             "validate":         "jquery.validate-min",
             "keepinview":       "keepinview-min",
-            "tweet":            "jquery.tweet-min",
+/*             "tweet":            "jquery.tweet-min", */
             "easing":           "jquery.easing.1.3-min",
             "fep-functions":    "fep-functions-min",
             "cookie":           "jquery.cookie-min",
@@ -86,11 +86,13 @@
          
         var $lazyLoadArray = [
         
+/*
             {   // Twitter
                 elem: $("#twitter-feed"),
                 amd:  ['fep-functions','tweet'], 
                 func: 'fepTweet' 
             },
+*/
             {   // Google Analytics
                 elem: $('body'),
                 amd:  ['ga'], 

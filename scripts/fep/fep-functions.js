@@ -78,6 +78,7 @@
     }
     
     // TWEET
+/*
     var fepTweet = function($fepElements){
         $fepElements.tweet({
             username: "lunatechlabs",
@@ -96,6 +97,7 @@
         }
         setTimeout( timeOut, 16000 );
     }
+*/
     
     
     //  Promo viewer 
