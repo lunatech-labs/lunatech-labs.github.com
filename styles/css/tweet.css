@@ -25,6 +25,7 @@
         
 html, body, h1, h2, h3, blockquote, p, ol, ul, li, img, iframe, button { 
 font-family: "SourceSansPro", Helvetica, Arial, sans-serif !important; 
+line-height: 1.4 !important;
 }
 
 img { display: none !important; }
