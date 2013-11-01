@@ -53,5 +53,3 @@ On-site, or at our location in Rotterdam, the Netherlands.
 * JSON
 * Futures
 * Ajax
-
-We will do our best to make sure the course goes ahead as planned, but we reserve the right to cancel or postpone the course in case of insufficient attendees or unavoidable circumstances. We will give at least two weeks’ notice of any changes.
