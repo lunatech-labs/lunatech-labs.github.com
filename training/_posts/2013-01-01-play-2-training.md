@@ -4,7 +4,7 @@ path_prefix: ../
 title: Fast Track to Play with Scala
 categories: training
 short_title: Fast Track to Play
-summary: "This two-day course, by Typesafe, covers what you need to build web applications with Play 2.1 and Scala. This is a practical course, based on building a working application from scratch."
+summary: "This two-day course, by Typesafe, covers what you need to build web applications with Play 2.2 and Scala. This is a practical course, based on building a working application from scratch."
 ---
 
 ![Typesafe](../about/images/typesafe.png)
