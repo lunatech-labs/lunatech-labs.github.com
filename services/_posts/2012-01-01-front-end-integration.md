@@ -12,7 +12,7 @@ categories: services
 <div id="infographic_app" class="business">Application</div>
 <div id="infographic_java" class="services">Java / C#</div>
 <div id="infographic_js" class="services">JavaScript</div>
-<p class="infographic-nodejs-text"><strong>Lunatech &amp; Node.js</strong>: Node.js already has a presence withing the Java community as it drives many development tools. As part of the stack, we can make use of it. Templating on the back- &amp; front-end anybody?
+<p class="infographic-nodejs-text"><strong>Lunatech &amp; Node.js</strong>: Node.js already has a presence within the Java community as it drives many development tools. As part of the stack, we can make use of it. Templating on the back- &amp; front-end anybody?
     <br><br>
     <strong>Pro</strong>: Web developers can usually deal with the entire stack. <br>
     <strong>Con</strong>: Requires that the team designs a stable and scalable architecture and sticks to it.
