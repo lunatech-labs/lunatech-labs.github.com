@@ -35,5 +35,5 @@ You get to set up your own working environment. Most us work on MacBook Pros, bu
 
 ### Send your CV 
 
-Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we’re looking forward to hearing from you. 
+Send us your CV with motivation to employment@lunatech.com, we’re looking forward to hearing from you. 
 If you have any web sites to show us, including your own blog or portfolio, please include these links in your CV.
