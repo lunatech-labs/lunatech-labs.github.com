@@ -15,7 +15,7 @@ Play for Scala shows you how to build web applications in Scala using Play 2, th
 
 Readers need this book because despite the rising popularity of Scala as a post-Java language that runs on the Java Virtual Machine (JVM), none of the existing web frameworks have captured the attention of mainstream web developers.
 
-Play has achieved this for Java web developers in the two years since Play 1.0’s October 2009 release, and fully-integrated Scala support in 2012. Play 2 puts Scala on equal footing with Java, making Play a true Scala web application development framework.
+Play first achieved this for Java web developers in the two years since Play 1.0’s October 2009 release, and added fully-integrated Scala support in 2012. Since then, Play 2 has put Scala on equal footing with Java, making Play a true Scala web application development framework.
 
 [Book Details](http://bit.ly/playscala)
 
@@ -26,6 +26,6 @@ Play for Java shows you how to build web applications in Java using Play 2, high
 
 The purpose of this book is to explain that web development does not need to be complex: simplicity is at the core of Play. The book explains all aspects of the Play framework, and can serve as a complete tutorial as well as a reference book.
 
-The book addresses JEE developer concerns, and demonstrates the a stateless web application can fit in an enterprise environment. It will show the productivity bonuses one can get from using Play.
+The book addresses JEE developer concerns, and demonstrates that a stateless web application can fit in an enterprise environment. It shows the productivity bonuses one can get from using Play.
 
 [Book Details](http://bit.ly/playjava)
