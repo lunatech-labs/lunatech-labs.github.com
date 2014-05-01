@@ -8,7 +8,7 @@ categories: services
 
 Lunatech has a long track record of successful project delivery, based on small and effective teams of self-managing software developers. Our senior developers combine their technical expertise with technical project management experience, which allows Lunatech to deliver projects more efficiently, with less management overhead.
 
-Our philosophy of managed risk and incremental software development is fully-aligned with modern [agile software development](http://en.wikipedia.org/wiki/Agile_software_development) practices. In particular, we use [Scrum](http://en.wikipedia.org/wiki/Scrum_(development) where appropriate.
+Our philosophy of managed risk and incremental software development is fully-aligned with modern [agile software development](http://en.wikipedia.org/wiki/Agile_software_development) practices. In particular, we use [Scrum](http://en.wikipedia.org/wiki/Scrum_(software%20development%29) where appropriate.
 
 ## Project visibility
 
