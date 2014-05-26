@@ -3,8 +3,8 @@ layout: page
 categories: jobs
 path_prefix: ../
 level: top
-title: "Junior Front-end developer"
-short_title: "Front-end"
+title: "Junior front-end developer"
+short_title: "Front-ender"
 summary: "We’re looking for a young front-end developer to help us design and build first-class web stack applications."
 ---
 
