@@ -26,3 +26,6 @@ To streamline your event production processes, Stager brings all information tog
 
 MinotoVideo enables you to manage, monitor, monetize and share your premium video content. Upload and monitor your videos for free, share your videos in a stunning quality and make money through our shared revenue advertising or hosted service model.
 
+### <a href="https://www.facebook.com/FritezHauteFriture">Fritez - Haute Friture</a>
+
+Fritez serves delicious hand-cut fries from locally grown potatoes on location, at food festivals and in its flagship Cafe Entraordinaire in the Witte de Withstraat.
