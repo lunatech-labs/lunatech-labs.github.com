@@ -4,11 +4,11 @@
 
     <ul>
         {% for article in tabs reversed %}
-        <li><a href="#{{ article.short_title }}">{{ article.short_title }}</a></li>
+        <li><a href="#{{ article.short_title | replace:' ','_' }}">{{ article.short_title }}</a></li>
         {% endfor %}
     </ul>
     {% for article in tabs reversed %}
-    <div id="{{ article.short_title }}" class="tab clearfix">
+    <div id="{{ article.short_title | replace:' ','_' }}" class="tab clearfix">
         <!-- a href="/{{ article.url | replace:'.html','' }}" rel='external'><i class="icon-external-link"></i></a-->
         <h2>{{article.title}} </h2>
         {{article.content | markdownify}}

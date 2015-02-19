@@ -4,14 +4,12 @@ path_prefix: ../
 title: Fast Track to Play with Scala
 categories: training
 short_title: Fast Track to Play
-summary: "This two-day course, by Typesafe, covers what you need to build web applications with Play 2.1 and Scala. This is a practical course, based on building a working application from scratch."
+summary: "This two-day course, by Typesafe, covers what you need to build web applications with Play 2.2 and Scala. This is a practical course, based on building a working application from scratch."
 ---
 
 ![Typesafe](../about/images/typesafe.png)
-			
-## Course dates
 
-Rotterdam, TBC October 2013
+As an alternative to scheduled training courses, you can ‘charter’ Lunatech to train your own development team when it suits you.
 
 
 ## Course Description and Objectives
@@ -34,15 +32,10 @@ The format includes lectures, discussions and exercises.
 ## Course details
 
 **Price**  
-€1200 (ex. VAT) per attendee for 2 days (group discounts available).
+€1200 (ex. VAT) per attendee for 2 days (group discounts available). Minimum five attendees.
 
 **Location**  
 On-site, or at our location in Rotterdam, the Netherlands.
-
-**Registration**
-
-[Register on-line](/training/registration) for this training course.
-
 
 **More information**  
 [contact us](/contact)
@@ -60,5 +53,3 @@ On-site, or at our location in Rotterdam, the Netherlands.
 * JSON
 * Futures
 * Ajax
-
-We will do our best to make sure the course goes ahead as planned, but we reserve the right to cancel or postpone the course in case of insufficient attendees or unavoidable circumstances. We will give at least two weeks’ notice of any changes.

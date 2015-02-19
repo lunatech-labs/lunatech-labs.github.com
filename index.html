@@ -40,17 +40,15 @@ title: Home
                     <article id="introduction">
                         <h1>We breathe software development</h1>
                         <p>Lunatech is your software development partner. Our technology experts provide architecture and software development services in several industries for large enterprise customers. <br/><a href="/services/">More on our software services. <i class="icon-circle-arrow-right"></i></a></p>
-                    </article>
-                    
+                    </article>                    
                     <article id="information">
-                        <h3>Lunatech Ventures</h3>
-                        <p><img src="/images/ventures-icon.png" alt="research-icon">Lunatech is also a seed investor, focused on Internet and Interactive technologies. <br/><a href="/ventures/">View our ventures! <i class="icon-circle-arrow-right"></i></a></p>
+                        <h3>Front-end integration</h3>
+                        <p>Webstandards, User Experience and usability all play a part in modern web applications and so do we.<br/><a href="/services/front-end-integration">More on our Front-end services! <i class="icon-circle-arrow-right"></i></a></p>
                         <h3>Lunatech blog</h3>
-                        <p><img src="/images/research-icon.png" alt="research-icon">With technology, open source or otherwise, Lunatech has its insights and opinions. <br/><a href="http://blog.lunatech.com/">Read what we have to say. <i class="icon-circle-arrow-right"></i></a></p>
+                        <p>With technology, open source or otherwise, Lunatech has its insights and opinions. <br/><a href="http://blog.lunatech.com/">Read what we have to say. <i class="icon-circle-arrow-right"></i></a></p>
                     </article>
                     <article id="twitter-feed">
-                        <h2><a href="http://twitter.com/LunatechLabs">Lunatech on Twitter</a></h2>
-                        <!-- Start from Tweet number! -->
+                        <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/LunatechLabs" data-widget-id="392945679623938048" data-chrome="noheader nofooter transparent noscrollbar noborders" data-tweet-limit="2">Tweets by @LunatechLabs</a>
                     </article>
                 </div>
             </section>
@@ -92,6 +90,55 @@ title: Home
                 </div>
             </section>
             {% include footer.html %}
-        </div>        
+        </div>     
+           
+        <script>
+            // Twitter widget script 
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        
+            // http://kevinburke.github.io/customize-twitter-1.1/
+            
+            var CustomizeTwitterWidget = function(e) {
+                window.console && console.log || (console = {
+                    log: function() {},
+                    debug: function() {},
+                    info: function() {},
+                    warn: function() {},
+                    error: function() {}
+                });
+                var t = function(e) {
+                    return isNaN(parseFloat(e)) && isFinite(e)
+                }, n = function(e, t) {
+                    var n = e.createElement("link");
+                    return n.href = t, n.rel = "stylesheet", n.type = "text/css", n
+                }, o = function(e, t) {
+                    var o = n(e, t), i = e.getElementsByTagName("head")[0];
+                    i.appendChild(o)
+                }, i = function(e, t) {
+                    return e.indexOf(t) >= 0
+                }, r = function(e) {
+                    return e.frameElement.id.indexOf("twitter-widget") >= 0
+                }, u = function(t, n, c) {
+                    for (var l = 0; l < frames.length; l++)
+                        try {
+                            r(frames[l])&&!i(t, frames[l].name) && (o(frames[l].document, e.url), t.push(l))
+                    } catch (f) {
+                        console.log("caught an error"), console.log(f)
+                    }
+                    t.length < n && setTimeout(function() {
+                        u(t)
+                    }, c)
+                };
+                if (void 0 === e.url)
+                    return console.log("need to specify a link to your CSS file. quitting"), void 0;
+                var c;
+                c = void 0 === e.widget_count || t(e.widget_count) ? 1 : e.widget_count;
+                var l;
+                l = void 0 === e.timeout_length || t(e.timeout_length) ? 300 : e.timeout_length, setTimeout(function() {
+                    u([], c, l)
+                }, l)
+            };
+            CustomizeTwitterWidget({"url":"/styles/css/tweet.css"});
+        </script>
     </body>
 </html>

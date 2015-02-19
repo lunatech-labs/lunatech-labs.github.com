@@ -78,6 +78,7 @@
     }
     
     // TWEET
+/*
     var fepTweet = function($fepElements){
         $fepElements.tweet({
             username: "lunatechlabs",
@@ -96,6 +97,7 @@
         }
         setTimeout( timeOut, 16000 );
     }
+*/
     
     
     //  Promo viewer 
@@ -217,6 +219,22 @@
             require(['ga']);
         }
         
-    }    
-    
-    
+    }
+        
+    // Detect Border Radius
+	$.support.borderRadius = false;
+	$.each(['BorderRadius','MozBorderRadius','WebkitBorderRadius','OBorderRadius','KhtmlBorderRadius'], function() {
+		if(document.body.style[this] !== undefined) $.support.borderRadius = true;
+		return (!$.support.borderRadius);
+	});
+	
+    //  Hide elements using border-radius
+    var hideBorderRadius = function($fepElements){
+        if ( !$.support.borderRadius ) { 
+            $fepElements.hide();
+        } 
+    }
+    $(".infographic").on( "click", "div", function(event){
+        event.preventDefault();
+        $(event.target).trigger('mouseover');
+    });

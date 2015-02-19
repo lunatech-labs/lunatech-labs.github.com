@@ -3,8 +3,8 @@ layout: page
 categories: jobs
 path_prefix: ../
 level: top
-title: "Junior Front-end developer"
-short_title: "Front-end"
+title: "Junior front-end developer"
+short_title: "Front-ender"
 summary: "We’re looking for a young front-end developer to help us design and build first-class web stack applications."
 ---
 
@@ -35,5 +35,5 @@ You get to set up your own working environment. Most us work on MacBook Pros, bu
 
 ### Send your CV 
 
-Send us your CV with motivation to Egor Kloos (egor.kloos@lunatech.com), we’re looking forward to hearing from you. 
+Send us your CV with motivation to employment@lunatech.com, we’re looking forward to hearing from you. 
 If you have any web sites to show us, including your own blog or portfolio, please include these links in your CV.
