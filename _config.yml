@@ -1,2 +1,2 @@
 permalink: "/:categories/:title.html"
-exclude: less, lib, fep, old-posts
+exclude: ["less", "lib", "fep", "old-posts"]
