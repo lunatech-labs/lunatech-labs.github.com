@@ -1,0 +1,73 @@
+.intro {
+  margin-bottom: 5em;
+  margin-left: 5%;
+  margin-top: -2em;
+  padding-bottom: 1em;
+  border-bottom: 1px #F9F9F9 solid;
+}
+
+.intro img {
+  width: 20%;
+}
+
+.menu {
+  margin-top: 2em;
+}
+
+.menu h4 {
+  display: inline;
+  margin: 0 30pt;
+}
+
+.menu h4 b a {
+  font-weight: 900;
+}
+
+.menu h4 a {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box b {
+  text-transform: uppercase;
+}
+.box {
+  color: #fff;
+  border-radius: 4px;
+  height: 15em;
+  background-color: rgb(230,43,30);
+  padding: 2em;
+  margin: 8px;
+  z-index: 44
+}
+
+.col-md-6 {
+  width: 48%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+}
+
+.box:before {
+  content: " ";
+  position: absolute;
+  top: -0px;
+  left: 0;
+  width: 100%;
+  height: 331px;
+  opacity: 1;
+  background: url(../images/logo_square_red.png) no-repeat center;
+  z-index: -1;
+  background-size: 50%;
+}
+
+
+.bottom {
+  border-top: 1px #F9F9F9 solid;
+  padding-top: 2em;
+  clear: both;
+  margin-top: 5em;
+}
