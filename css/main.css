@@ -104,6 +104,7 @@ body {
 }
 
 html, body {
+    /* height: 88%; */
     text-align: center;
 }
 
@@ -204,34 +205,21 @@ header a:first-child {
 }
 
 #expertises div.expertise .text-left {
+  /*float: left;
+  width: 50%;
+  text-align: left;
+  margin: 20px;*/
   padding: 20px;
 }
 
-#expertises div i {
-  border-radius: 100px;
-    width: 50px;
-    height: 50px;
-    font-size: 30px;
-    line-height: 44px;
-    margin-right: 10px;
-    text-indent: 10px;
-    position: relative;
-    background: #E22;
-    color: #fff;
-    vertical-align: middle;
-    position: relative;
-    top:0px;
-    transition: top 300ms cubic-bezier(0.6, 0, 0.4, 1.0), background-color 400ms ease-out;
-    -webkit-transition: top 300ms cubic-bezier(0.6, 0, 0.4, 1.0), background-color 400ms ease-out;
-    -moz-transition: top 300ms cubic-bezier(0.6, 0, 0.4, 1.0), background-color 400ms ease-out;
-    -ms-transition: top 300ms cubic-bezier(0.6, 0, 0.4, 1.0), background-color 400ms ease-out;
-    -o-transition: top 300ms cubic-bezier(0.6, 0, 0.4, 1.0), background-color 400ms ease-out;
+
+.expertise .fa-circle {
+  color: #F00;
 }
 
 
 #expertises div a:hover i {
   top: -15px;
-  background: #F00;
 }
 
 #expertises a {
@@ -301,7 +289,7 @@ header a:first-child {
   width: 330px;
   height: 330px;
   position: relative;
-  top: 52px;
+  top: 48px;
   left: 10px;
   text-indent: 0em;
   z-index:1000;
@@ -430,6 +418,106 @@ html.backgroundsize #linkedin {
 }
 
 
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
 
 /* MEDIA QUERIES */
 
