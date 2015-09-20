@@ -1,103 +1,333 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
 <html lang="en">
+<!--<![endif]-->
 <head>
-  <!-- Meta, title, CSS, favicons, etc. -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="Nicolas Leroux">
-
-  <title>
-
-    Lunatech.com
-
-  </title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <!-- Bootstrap core CSS -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-  <link href="./css/lunatech.css" rel="stylesheet">
-
-
-  <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" href="/favicon.ico">
-
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<title>Lunatech</title>
+<link rel='stylesheet' href='assets/css/bootstrap.min.css'> <!-- bootstrap -->
+<link rel='stylesheet' href='assets/css/style.css'> <!-- template style -->
+<link rel='stylesheet' href='assets/css/color.css'> <!-- template color -->
+<link rel='stylesheet' href='assets/css/custom.css'> <!-- custom style -->
+<link rel="icon" href="assets/img/favicon.ico">
 </head>
-
 <body>
-  <div class="menu text-right">
-    <h4><b><a href="">Home</a></b></h4>
-    <h4><a href="">Our work</a></h4>
-    <h4><a href="">Jobs</a></h4>
-    <h4><a href="">About</a></h4>
+
+  <!-- preloader -->
+  <div id="preloader">
+    <img id="preloader-img" src="assets/img/preloader.gif" alt="preloader">
   </div>
+  <!-- /preloader -->
 
-  <div class="intro text-left">
-    <img src="./images/Lunatech_Logo_Line_RGB_Diap_A.png">
+  <div id="bg"></div> <!-- background image container -->
+  <div id="video"></div> <!-- video container -->
+  <div id="overlay"></div> <!-- overlay container -->
 
-  </div>
-  <div class="separator"></div>
-
-  <!-- <div class="separator">  </div> -->
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-6 box lead">
-        <b>Sofware development with passion</b>  <br><br>Our passion is to build large scale IT system and make it fit in your ecosystem.
-      </div>
-
-      <div class="col-md-6 box lead">
-        <p><b>Our expertises</b> <br><br>Systems integration · Project delivery · Technology expertise · Continuous software development · Cloud architecture · Web services and applications development</p>
-      </div>
-
-      <div class="col-md-6 box lead">
-        <b>Simplicity is the ultimate sophistication</b><br><br> Many enterprises struggle to get their IT under control because of the complexity. With pragmatic analysis and focus on solution we make things work together.
-      </div>
-
-      <div class="col-md-6 box lead">
-        <b>We are devoted but not religious</b><br><br> As the IT landscape is constantly changing it requires adaptivness to change, agility and pragmatism. We don't believe hypes but surf the learning curve permanently.
-      </div>
-    </div>
-
-    <div class="row bottom">
-
-      <div class="col-md-6 text-center">
-          <p>
-            <h4>Address</h4>
-            <address>Heemraadssingel 70<br>
-            3021DD Rotterdam<br>
-            The Netherlands</address>
-          </p>
-
-      </div>
-
-      <div class="col-md-6 text-center">
-        <p>
-          <h4>Contact</h4>
-          <p><email>info@lunatech.com</email><br>
-          +31 10 750 2600<br>
-          @lunatechlabs
-          </p>
-
+  <!-- navbar -->
+  <header id="site-header" class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img style="height:60px" src="assets/img/logo-lunatech-red.png" alt="logo" class="logo"> <!-- navbar logo -->
+          <i class="icons fa fa-bars menu-toggle"></i> <!-- menu toggle -->
         </div>
-
-
+      </div>
     </div>
-  </div>
+  </header>
+  <!-- /navbar -->
 
+  <!-- menu -->
+  <nav id="menu-wrap">
+    <ul id="menu">
+      <!-- data-link-to for the link section id -->
+      <li><a href="#" data-link-to="#intro">intro</a></li>
+      <li><a href="#" data-link-to="#about">about us</a></li>
+      <li><a href="#" data-link-to="#services">services</a></li>
+      <li><a href="#" data-link-to="#contact">contact</a></li>
+    </ul>
+  </nav>
+  <!-- /menu -->
 
+  <!-- intro section -->
+  <section id="intro" class="active">
+    <div class="tb">
+      <div class="tb-cell">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 tc"> <!-- section wrap -->
+                <div class="section-heading">
+                  <h1 class="section-title">
+                    <span class="letter">L</span><img style="width:40%" src="assets/img/logo_lunatech_long.png">
+                    <!-- letter and title-->
+                  </h1>
+                  <p class="sub-title">we are coming very soon.</p> <!-- subtitle -->
+                </div>
+                <div class="section-content row">
+                  <ul id="countdown"> <!-- countdown -->
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                      <span class="time days">--</span>
+                      <p class="unit days_ref">days</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                      <span class="time hours">--</span>
+                      <p class="unit hours_ref">hours</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                      <span class="time minutes">--</span>
+                      <p class="unit minutes_ref">minutes</p>
+                    </li>
+                    <li class="time-wrap col-xs-6 col-sm-3">
+                      <span class="time seconds">--</span>
+                      <p class="unit seconds_ref">seconds</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="section-footer">
+                  <a href="#subscribe-form-popup" id="pop-with-subscribe-form" class="btn btn-default btn-lg shadow">subscribe</a> <!-- subscribe button -->
+                  <a href="#" class="btn btn-theme btn-lg shadow" data-link-to="#about">about us</a> <!-- link button -->
+                  <!-- subscribe form-->
+                  <div id="subscribe-form-popup" class="mfp-hide white-popup-block">
+                    <form id="subscribe-form" class="border-form">
+                      <h3 class="form-heading">Newsletter</h3>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="email" name="email" placeholder="enter your email" id="subscribe-email" class="form-control input-lg">
+                          <span class="input-group-btn">
+                            <button type="submit" class="btn btn-theme btn-lg">
+                              SEND
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                      <label class="subscribe-notice" for="subscribe-email">subscribe to our newsletter</label>
+                    </form>
+                  </div>
+                  <!-- /subscribe form-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /intro section -->
+
+  <!-- about section -->
+  <section id="about">
+    <div class="tb">
+      <div class="tb-cell">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-6"> <!-- section wrap -->
+                <div class="section-heading">
+                  <h2 class="section-title">
+                    <span class="letter">A</span>abo<span class="color">ut</span>. <!-- letter and title-->
+                  </h2>
+                  <p class="sub-title">
+                    We are specialised with system integration, custom software implementation and web applications
+                  </p> <!-- subtitle -->
+                </div>
+                <div class="section-content">
+                  <p>Lunatech was founded in 1993 as an IT consulting, product research and development team. As a team of adept self-managing architects and programmers, Lunatech has a successful track record of implementing medium-sized to large systems. </p>
+                </div>
+                <div class="section-footer">
+                  <a href="#" class="btn btn-theme btn-lg shadow" data-link-to="#services">our services</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about section -->
+
+  <!-- services section -->
+  <section id="services">
+    <div class="tb">
+      <div class="tb-cell">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 tc"> <!-- section wrap -->
+                <div class="section-heading">
+                  <h2 class="section-title">
+                    <span class="letter">S</span>servi<span class="color">ces</span>. <!-- letter and title-->
+                  </h2>
+                  <p class="sub-title">We craft or help your craft IT solutions for you. We’re proud to provide mission critical software to our clients. We are very technical creative nerds.</p> <!-- subtitle -->
+                </div>
+                <div class="row section-content">
+                  <div id="carousel-services" class="owl-carousel owl-theme">
+                    <div class="col-md-12">
+                      <div class="services-grid">
+                          <img src="assets/img/systemintegration.png" style="height:80px"/>
+
+                          <!-- <i class="icons icon icon-Starship2"></i> -->
+                          <h3>System integration</h3>
+                          <p>We are making sure to consolidate and simplify your existing information systems while adding extra features.<p>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="services-grid">
+                        <img src="assets/img/webapplication.png" style="height:80px"/>
+
+                        <!-- <i class="icons icon icon-TeaMug"></i> -->
+                        <h3>Web applications</h3>
+                        <p>Lunatech is experienced in building modern, real time, multiplatform applications that fulfill user needs and customer requirements. <p>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="services-grid">
+                        <img src="assets/img/publishingsolution.png" style="height:80px"/>
+
+                        <!-- <i class="icons icon icon-MusicMixer"></i> -->
+                        <h3>Publishing solutions</h3>
+                        <p>We believe every publisher is unique, so we offer custom solutions to match your exact needs. Let our expertise work for you.<p>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="services-grid">
+                        <img src="assets/img/logisticssolution.png" style="height:80px"/>
+                        <!-- <i class="icons icon icon-Pen"></i> -->
+                        <h3>Logistics solutions</h3>
+                        <p>Lunatech Labs has more than ten years of experience in the logistics world integrating third-parties such as carriers and brokers. <p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section-footer">
+                  <a href="#" class="btn btn-theme btn-lg shadow" data-link-to="#contact">contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /services section -->
+
+  <!-- contact section -->
+  <section id="contact" data-bg="assets/img/bg/about.jpg">
+    <div class="tb">
+      <div class="tb-cell">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 tc"> <!-- section wrap -->
+                <div class="section-heading">
+                  <h2 class="section-title">
+                    <span class="letter">C</span>cont<span class="color">act</span>. <!-- letter and title-->
+                  </h2>
+                  <p class="sub-title">If you would like to get in touch feel free to call us at +31 10 750 2600 or just send us an e-mail.</p> <!-- subtitle -->
+                </div>
+                <div class="row section-content">
+                  <div class="col-md-8 col-md-offset-4 col-contact">
+                    <!-- contact info -->
+                    <address>
+                      <div class="contact-info">
+                        <span>Phone: (+31) 10 750 2600 </span>
+                      </div>
+                    </address>
+                    <address>
+                      <div class="contact-info">
+                        <span>Address: Baan 74, 3011 CD, Rotterdam</span>
+                      </div>
+                    </address>
+                    <address>
+                      <div class="contact-info">
+                        <span>E-mail: <a href="mailto:info@lunatech.com">info@lunatech.com</a></span>
+                      </div>
+                    </address>
+                    <!-- /contact info -->
+                    <!-- social -->
+                    <ul class="social-list">
+                      <li>
+                        <a href="https://www.facebook.com/pages/Lunatech-Labs/175385962491343" title="facebook" target="_blank"> <!-- social link, title -->
+                          <i class="icons fa fa-facebook"></i> <!-- social icon -->
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://twitter.com/lunatechlabs" title="twitter" target="_blank">
+                          <i class="icons fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <!-- <li>
+                        <a href="https://plus.google.com/u/0/communities/101302966507968735666" title="google plus" target="_blank">
+                          <i class="icons fa fa-google-plus"></i>
+                        </a>
+                      </li> -->
+                      <li>
+                        <a href="http://www.linkedin.com/company/lunatech-research" title="linkedin" target="_blank">
+                          <i class="icons fa fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <!-- <li>
+                        <a href="#" title="behance" target="_blank">
+                          <i class="icons fa fa-behance"></i>
+                        </a>
+                      </li> -->
+                    </ul>
+                    <!-- /social -->
+                  </div>
+                </div>
+                <div class="row section-content">
+
+                  <!-- <div class="col-md-7">
+                    <form id="contact-form" class="line-form">
+                      <div class="row form-group">
+                        <div class="col-xs-6">
+                          <input type="text" name="name" placeholder="name" id="contact-name" class="form-control input-lg">
+                        </div>
+                        <div class="col-xs-6">
+                          <input type="text" name="email" placeholder="e-mail" id="contact-email" class="form-control input-lg">
+                        </div>
+                      </div>
+                      <div class="row form-group">
+                        <div class="col-md-12">
+                          <textarea name="message" rows="4" placeholder="message" id="contact-message" class="form-control input-lg"></textarea>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-block btn-default btn-lg shadow border">Submit</button>
+                      <div class="contact-notice">&nbsp;</div>
+                    </form>
+                  </div>
+                </div> -->
+                <div class="section-footer">
+                  <a href="#" class="btn btn-theme btn-lg shadow" data-link-to="#intro">back to home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact section -->
+
+  <!-- script start -->
+  <script src='assets/js/vendor/jquery-1.11.3.min.js'></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <!--[if lt IE 10]>
+  <script src='assets/js/vendor/ie/jquery.placeholder.min.js'></script>
+  <![endif]-->
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/custom.js'></script>
+  <!-- script end -->
 
 </body>
 </html>

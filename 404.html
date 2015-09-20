@@ -1,32 +1,92 @@
----
-layout: page
----
-			<hgroup>
-    			<h1>The requested page could not be found</h1>
-    			<h4>We probably broke a link. Sorry about that.</h4>
-			</hgroup>
-			
-            <h3>All pages</h3>
-            <ul>
-        	{% for page in site.posts %}
-        		<li><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></li>
-        	{% endfor %}
-            </ul>
-            <h3>Lunatech services</h3>
-        	<ul>
-        	{% for page in site.categories.services %}
-        		<li><a href="{{ site.url_prefix }}/{{ page.url | replace:'.html','' }}">{{ page.title }}</a></li>
-        	{% endfor %}
-        	</ul>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie ie9 ie-lt10 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<title>Lunatech</title>
+<link rel='stylesheet' href='assets/css/bootstrap.min.css'> <!-- bootstrap -->
+<link rel='stylesheet' href='assets/css/style.css'> <!-- template style -->
+<link rel='stylesheet' href='assets/css/color.css'> <!-- template color -->
+<link rel='stylesheet' href='assets/css/custom.css'> <!-- custom style -->
+<link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+
+  <!-- preloader -->
+  <div id="preloader">
+    <img id="preloader-img" src="assets/img/preloader.gif" alt="preloader">
+  </div>
+  <!-- /preloader -->
+
+  <div id="bg"></div> <!-- background image container -->
+  <div id="video"></div> <!-- video container -->
+  <div id="overlay"></div> <!-- overlay container -->
+
+  <!-- navbar -->
+  <header id="site-header" class="navbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img style="height:60px" src="assets/img/logo-lunatech-red.png" alt="logo" class="logo"> <!-- navbar logo -->
+          <i class="icons fa fa-bars menu-toggle"></i> <!-- menu toggle -->
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /navbar -->
+
+  <!-- intro section -->
+  <section id="intro" class="active">
+    <div class="tb">
+      <div class="tb-cell">
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1 tc"> <!-- section wrap -->
+                <div class="section-heading">
+                  <h1 class="section-title">
+										<span class="letter">L</span>not <span class="color">found</span>. <!-- letter and title-->
+										<!-- letter and title-->
+                  </h1>
+                  <p class="sub-title">we are coming very soon.</p> <!-- subtitle -->
+                </div>
 
 
+                  <!-- /subscribe form-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /intro section -->
 
 
+  <!-- /contact section -->
 
+  <!-- script start -->
+  <script src='assets/js/vendor/jquery-1.11.3.min.js'></script>
+  <script src='assets/js/vendor/bootstrap.min.js'></script>
+  <script src='assets/js/vendor/plugin.js'></script>
+  <!--[if lt IE 10]>
+  <script src='assets/js/vendor/ie/jquery.placeholder.min.js'></script>
+  <![endif]-->
+  <script src='assets/js/variable.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src='assets/js/custom.js'></script>
+  <!-- script end -->
 
-
-
-
-
-
-
+</body>
+</html>
