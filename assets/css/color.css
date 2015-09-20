@@ -1,0 +1,292 @@
+/*==================================================
+find and replace below code
+
+#ff2d2d - red
+#16c9d0 - blue
+#27c8a3 - green
+#ff2591 - pink
+#9d7f48 - brown
+#121213 - overlay
+rgba(18, 18, 19, 0.9) - menu overlay
+==================================================*/
+
+/*==================================================
+overlay
+==================================================*/
+#overlay {
+  /* overlay color */
+  background-color: #121213;
+  opacity: .65;
+}
+
+/*==================================================
+menu overlay
+==================================================*/
+#menu-wrap {
+  background-color: rgba(18, 18, 19, 0.9);
+}
+
+/*==================================================
+red
+==================================================*/
+.red .color {
+  /* main color */
+  color: #ff2d2d;
+}
+.red .btn-theme {
+  /* theme button */
+  color: #ffffff;
+  background-color: #ff2d2d;
+  border-color: #ff2d2d;
+}
+.red .btn-theme.border {
+  color: #ff2d2d;
+  background-color: transparent;
+  border-color: #ff2d2d;
+}
+.red .btn-theme:hover,
+.red .btn-theme:focus,
+.red .btn-theme.focus,
+.red .btn-theme:active,
+.red .btn-theme.active,
+.open > .dropdown-toggle.red .btn-theme {
+  color: #ff2d2d;
+  background-color: transparent;
+  border-color: #ff2d2d;
+}
+.red .btn-theme.border:hover,
+.red .btn-theme.border:focus,
+.red .btn-theme.border.focus,
+.red .btn-theme.border:active,
+.red .btn-theme.border.active,
+.open > .border.dropdown-toggle.red .btn-theme.border {
+  color: #ffffff;
+  background-color: #ff2d2d;
+  border-color: #ff2d2d;
+}
+.red #menu a:before {
+  /* menu hover background color */
+  background-color: #ff2d2d;
+  opacity: .9;
+}
+.red .services-grid .icons {
+  /* services icon color */
+  color: #ff2d2d;
+}
+.red #subscribe-form .input-group-btn > .btn:hover,
+.red #subscribe-form .input-group-btn > .btn:focus {
+  background-color: transparent;
+  border-color: #ff2d2d;
+}
+
+/*==================================================
+blue
+==================================================*/
+.blue .color {
+  /* main color */
+  color: #16c9d0;
+}
+.blue .btn-theme {
+  /* theme button */
+  color: #ffffff;
+  background-color: #16c9d0;
+  border-color: #16c9d0;
+}
+.blue .btn-theme.border {
+  color: #16c9d0;
+  background-color: transparent;
+  border-color: #16c9d0;
+}
+.blue .btn-theme:hover,
+.blue .btn-theme:focus,
+.blue .btn-theme.focus,
+.blue .btn-theme:active,
+.blue .btn-theme.active,
+.open > .dropdown-toggle.blue .btn-theme {
+  color: #16c9d0;
+  background-color: transparent;
+  border-color: #16c9d0;
+}
+.blue .btn-theme.border:hover,
+.blue .btn-theme.border:focus,
+.blue .btn-theme.border.focus,
+.blue .btn-theme.border:active,
+.blue .btn-theme.border.active,
+.open > .border.dropdown-toggle.blue .btn-theme.border {
+  color: #ffffff;
+  background-color: #16c9d0;
+  border-color: #16c9d0;
+}
+.blue #menu a:before {
+  /* menu hover background color */
+  background-color: #16c9d0;
+  opacity: .9;
+}
+.blue .services-grid .icons {
+  /* services icon color */
+  color: #16c9d0;
+}
+.blue #subscribe-form .input-group-btn > .btn:hover,
+.blue #subscribe-form .input-group-btn > .btn:focus {
+  background-color: transparent;
+  border-color: #16c9d0;
+}
+
+/*==================================================
+green
+==================================================*/
+.green .color {
+  /* main color */
+  color: #27c8a3;
+}
+.green .btn-theme {
+  /* theme button */
+  color: #ffffff;
+  background-color: #27c8a3;
+  border-color: #27c8a3;
+}
+.green .btn-theme.border {
+  color: #27c8a3;
+  background-color: transparent;
+  border-color: #27c8a3;
+}
+.green .btn-theme:hover,
+.green .btn-theme:focus,
+.green .btn-theme.focus,
+.green .btn-theme:active,
+.green .btn-theme.active,
+.open > .dropdown-toggle.green .btn-theme {
+  color: #27c8a3;
+  background-color: transparent;
+  border-color: #27c8a3;
+}
+.green .btn-theme.border:hover,
+.green .btn-theme.border:focus,
+.green .btn-theme.border.focus,
+.green .btn-theme.border:active,
+.green .btn-theme.border.active,
+.open > .border.dropdown-toggle.green .btn-theme.border {
+  color: #ffffff;
+  background-color: #27c8a3;
+  border-color: #27c8a3;
+}
+.green #menu a:before {
+  /* menu hover background color */
+  background-color: #27c8a3;
+  opacity: .9;
+}
+.green .services-grid .icons {
+  /* services icon color */
+  color: #27c8a3;
+}
+.green #subscribe-form .input-group-btn > .btn:hover,
+.green #subscribe-form .input-group-btn > .btn:focus {
+  background-color: transparent;
+  border-color: #27c8a3;
+}
+
+/*==================================================
+pink
+==================================================*/
+.pink .color {
+  /* main color */
+  color: #ff2591;
+}
+.pink .btn-theme {
+  /* theme button */
+  color: #ffffff;
+  background-color: #ff2591;
+  border-color: #ff2591;
+}
+.pink .btn-theme.border {
+  color: #ff2591;
+  background-color: transparent;
+  border-color: #ff2591;
+}
+.pink .btn-theme:hover,
+.pink .btn-theme:focus,
+.pink .btn-theme.focus,
+.pink .btn-theme:active,
+.pink .btn-theme.active,
+.open > .dropdown-toggle.pink .btn-theme {
+  color: #ff2591;
+  background-color: transparent;
+  border-color: #ff2591;
+}
+.pink .btn-theme.border:hover,
+.pink .btn-theme.border:focus,
+.pink .btn-theme.border.focus,
+.pink .btn-theme.border:active,
+.pink .btn-theme.border.active,
+.open > .border.dropdown-toggle.pink .btn-theme.border {
+  color: #ffffff;
+  background-color: #ff2591;
+  border-color: #ff2591;
+}
+.pink #menu a:before {
+  /* menu hover background color */
+  background-color: #ff2591;
+  opacity: .9;
+}
+.pink .services-grid .icons {
+  /* services icon color */
+  color: #ff2591;
+}
+.pink #subscribe-form .input-group-btn > .btn:hover,
+.pink #subscribe-form .input-group-btn > .btn:focus {
+  background-color: transparent;
+  border-color: #ff2591;
+}
+
+/*==================================================
+brown
+==================================================*/
+.brown .color {
+  /* main color */
+  color: #9d7f48;
+}
+.brown .btn-theme {
+  /* theme button */
+  color: #ffffff;
+  background-color: #9d7f48;
+  border-color: #9d7f48;
+}
+.brown .btn-theme.border {
+  color: #9d7f48;
+  background-color: transparent;
+  border-color: #9d7f48;
+}
+.brown .btn-theme:hover,
+.brown .btn-theme:focus,
+.brown .btn-theme.focus,
+.brown .btn-theme:active,
+.brown .btn-theme.active,
+.open > .dropdown-toggle.brown .btn-theme {
+  color: #9d7f48;
+  background-color: transparent;
+  border-color: #9d7f48;
+}
+.brown .btn-theme.border:hover,
+.brown .btn-theme.border:focus,
+.brown .btn-theme.border.focus,
+.brown .btn-theme.border:active,
+.brown .btn-theme.border.active,
+.open > .border.dropdown-toggle.brown .btn-theme.border {
+  color: #ffffff;
+  background-color: #9d7f48;
+  border-color: #9d7f48;
+}
+.brown #menu a:before {
+  /* menu hover background color */
+  background-color: #9d7f48;
+  opacity: .9;
+}
+.brown .services-grid .icons {
+  /* services icon color */
+  color: #9d7f48;
+}
+.brown #subscribe-form .input-group-btn > .btn:hover,
+.brown #subscribe-form .input-group-btn > .btn:focus {
+  background-color: transparent;
+  border-color: #9d7f48;
+}
